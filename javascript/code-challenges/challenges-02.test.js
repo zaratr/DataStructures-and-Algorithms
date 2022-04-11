@@ -39,7 +39,9 @@ const addQuestion = (arr) => arr.map(element => element + "?");
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
 
-Write a function named forLoopTwoToThe that, given an array of integers as input, iterates over the array and returns a new array. The returned array should contain the result of raising 2 to the power of the original input element.
+Write a function named forLoopTwoToThe that, given an array of integers as input, 
+iterates over the array and returns a new array. 
+The returned array should contain the result of raising 2 to the power of the original input element.
 
 You may choose to complete this challenge using a for loop, for...in syntax, or for...of syntax.
 
@@ -47,7 +49,15 @@ For example, twoToThe([1,2,3]) returns [2,4,8] because 2 ^ 1 = 2, 2 ^ 2 = 4, and
 ------------------------------------------------------------------------------------------------ */
 
 const forLoopTwoToThe = (arr) => 
-{}
+{
+  const newArr = [];
+  for(let element of arr)
+  {
+    newArr.push(Math.pow(2, element));
+  }
+  return newArr;
+}
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
 
@@ -56,6 +66,12 @@ Write a function named forEachTwoToThe that produces the same output as your for
 
 const forEachTwoToThe = (arr) => {
   // Solution code here...
+  const newArr = [];
+  arr.forEach(element =>
+    {
+      newArr.push(Math.pow(2, element));
+    });
+    return newArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
