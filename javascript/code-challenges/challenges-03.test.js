@@ -9,11 +9,8 @@ Return the new array.
 ------------------------------------------------------------------------------------------------ */
 
 const addTwo = (arr) => 
-{
   //arr = arr.map( e => e+2);
-  this.arr = arr.map( e => e+2);
-  return this.arr;
-};
+  arr.map( e => e+2);
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -64,8 +61,9 @@ Write a function named notInFirstArray that, given two arrays as input, uses fil
 For example, notInFirstArray([1,2,3], [1,2,3,4]) returns [4].
 ------------------------------------------------------------------------------------------------ */
 
-const notInFirstArray = (forbiddenValues, arr) => {
-  // Solution code here...
+const notInFirstArray = (forbiddenValues, arr) => 
+{
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -254,7 +252,7 @@ describe('Testing challenge 5', () => {
     expect(notInFirstArray([1,2,3,4,5], [])).toStrictEqual([]);
   });
 });
-
+/*
 xdescribe('Testing challenge 6', () => {
   test('It should return an array containing the stats that are greater than the input', () => {
     expect(getBaseStatGreaterThan(snorlaxData.stats, 75)).toStrictEqual([ { stat: { url: 'https://pokeapi.co/api/v2/stat/5/', name: 'special-defense' }, effort: 2, baseStat: 110 } ]);
@@ -304,3 +302,4 @@ xdescribe('Testing challenge 9', () => {
     expect(evenOddNumericValues(['1', 2, 3, '4', 5,'6'])).toStrictEqual(['even', 'odd', 'odd']);
   });
 });
+*/
