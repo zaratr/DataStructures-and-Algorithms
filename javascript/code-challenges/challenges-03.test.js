@@ -63,10 +63,11 @@ that are not included in the first array.
 For example, notInFirstArray([1,2,3], [1,2,3,4]) returns [4].
 ------------------------------------------------------------------------------------------------ */
 
-const notInFirstArray = (forbiddenValues, arr) => 
-{
+const notInFirstArray = (first, second) => 
+  second.filter(element => 
+    !(first.includes(element))
+  ); 
 
-};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6 - Stretch Goal
