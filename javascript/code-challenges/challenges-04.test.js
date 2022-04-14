@@ -5,7 +5,8 @@ CHALLENGE 1 - Review
 
 Write a function named updateAnimal that takes in array of animals (strings) and some callback function.
 
-This function should first create a new array. Then iterate over the input array and modify each value based on the callback function provided.
+This function should first create a new array. 
+Then iterate over the input array and modify each value based on the callback function provided.
 
 Push each updated animal string into the new array. Return the new array.
 
@@ -21,8 +22,12 @@ function lower(str) {
   return str.toLowerCase();
 }
 
-const updateAnimal = (arr, callback) => {
-  // Solution code here...
+const updateAnimal = (arr, callback) => 
+{
+  let newArr  = [];
+  arr.forEach(string => newArr.push(callback(string))
+  );
+  return newArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -224,7 +229,7 @@ describe('Testing challenge 1', () => {
     expect(updateAnimal(arr, lower)[1]).toStrictEqual('lion');
   });
 });
-
+/*
 describe('Testing challenge 2', () => {
   test('It should return an array of names sorted alphabetically', () => {
     expect(sortNames(['able', 'Bob'])[0]).toStrictEqual('Bob');
@@ -355,3 +360,4 @@ xdescribe('Testing challenge 13', () => {
     ]);
   });
 });
+*/
