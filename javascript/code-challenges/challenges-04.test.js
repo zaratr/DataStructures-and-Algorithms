@@ -33,13 +33,16 @@ const updateAnimal = (arr, callback) =>
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
-Write a function called sortNames that takes an array of names and sorts them alphabetically. Capital letters should come before lowercase letters.
+Write a function called sortNames that takes an array of names and sorts them alphabetically.
+ Capital letters should come before lowercase letters.
 
 For example: 'Cat' would come before 'apple'
 ------------------------------------------------------------------------------------------------ */
 
-const sortNames = (arr) => {
-  // Solution code here...
+const sortNames = (arr) => 
+{
+  arr.sort().push();
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -51,7 +54,8 @@ HINT: Beware... JS default is "Lexical" ordering.
 ------------------------------------------------------------------------------------------------ */
 
 const sortNumbers = (arr) => {
-  // Solution code here...
+  arr.sort((a,b) => a - b).push();
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -63,7 +67,8 @@ HINT: Do it with a custom sort callback, not with using `.reverse()`. ;)
 ------------------------------------------------------------------------------------------------ */
 
 const sortBackwards = (arr) => {
-  // Solution code here...
+  arr.sort((a,b) => b -a ).push();
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -76,9 +81,7 @@ In this alphabetization, capital letters come before lower case letters.
 For example, ['Alphabet', 'Zebra', 'alphabet', 'carrot'] is correctly sorted.
 ------------------------------------------------------------------------------------------------ */
 
-const alphabetize = (arr) => {
-  // Solution code here...
-};
+const alphabetize = (arr) => arr.sort();
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
@@ -93,9 +96,10 @@ Here is an example of the input:
 ];
 ------------------------------------------------------------------------------------------------ */
 
-const sortByPrice = (arr) => {
-  // Solution code here...
-};
+const sortByPrice = (arr) => 
+  arr.sort((a,b) =>{
+    return a.price - b.price;
+  });
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
@@ -229,7 +233,6 @@ describe('Testing challenge 1', () => {
     expect(updateAnimal(arr, lower)[1]).toStrictEqual('lion');
   });
 });
-/*
 describe('Testing challenge 2', () => {
   test('It should return an array of names sorted alphabetically', () => {
     expect(sortNames(['able', 'Bob'])[0]).toStrictEqual('Bob');
@@ -277,6 +280,7 @@ describe('Testing challenge 6', () => {
   });
 });
 
+/*
 xdescribe('Testing challenge 7', () => {
   test('It should alphabetize without regard to capitalization', () => {
     expect(alphabetizeBetter(['Alice', 'apple', 'alert', 'Average'])).toStrictEqual([ 'alert', 'Alice', 'apple', 'Average' ]);
