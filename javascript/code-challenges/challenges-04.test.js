@@ -280,7 +280,6 @@ describe('Testing challenge 6', () => {
   });
 });
 
-/*
 xdescribe('Testing challenge 7', () => {
   test('It should alphabetize without regard to capitalization', () => {
     expect(alphabetizeBetter(['Alice', 'apple', 'alert', 'Average'])).toStrictEqual([ 'alert', 'Alice', 'apple', 'Average' ]);
@@ -364,4 +363,3 @@ xdescribe('Testing challenge 13', () => {
     ]);
   });
 });
-*/

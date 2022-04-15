@@ -317,7 +317,6 @@ describe('Testing challenge 6', () => {
     expect(reversedString('Code 301')).toStrictEqual('103 edoC');
   });
 });
-/*
 xdescribe('Testing challenge 7', () => {
   test('It should return the total number of children', () => {
     expect(countNumberOfChildren(characters)).toStrictEqual(14);
@@ -348,4 +347,3 @@ xdescribe('Testing challenge 11', () => {
     expect(extractChildren(characters).length).toStrictEqual(10);
   });
 });
-*/
