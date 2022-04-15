@@ -12,7 +12,7 @@ Note the space in between first and last names.
 You can assume that neither firstName nor lastName will be blank
 ------------------------------------------------------------------------------------------------ */
 const toLastNames = people => {
-  // Solution code here...
+  return people.map(person => `${person.firstName} ${person.lastName}` );
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -22,9 +22,7 @@ Write a function named addValues that, given an array of numbers as input, uses 
 
 ------------------------------------------------------------------------------------------------ */
 
-const addValues = (arr) => {
-  // Solution code here...
-};
+const addValues = (arr) => arr.reduce((runningTotal, currentNumber) => {return runningTotal + currentNumber}, 0);
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -39,7 +37,7 @@ Write a function named addPurchases that, given an array of objects as input, us
 ------------------------------------------------------------------------------------------------ */
 
 const addPurchases = (arr) => {
-  // Solution code here...
+  return arr.reduce((a,b,index) => {return a + b.purchasePrice}, 0);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -50,9 +48,8 @@ Write a function named countNumberOfElements that, given an array as input, uses
 Note: You may not use the array's built-in length property.
 ------------------------------------------------------------------------------------------------ */
 
-const countNumberOfElements = (arr) => {
-  // Solution code here...
-};
+const countNumberOfElements = (arr) => 
+  arr.reduce((a,b,index) => index + 1)
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -110,10 +107,8 @@ let starWarsData = [{
   gender: 'female'
 }];
 
-const returnNames = (arr) => {
-  // Solution code here...
-};
-
+const returnNames = (arr) => 
+  arr.reduce((acc, curr) => {return acc.concat(curr.name)}, [])
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
 
@@ -122,9 +117,9 @@ Write a function named reversedString that takes in a string and returns a strin
 Note: You must use reduce for this challenge. You may not use the built-in .reverse() string method.
 ------------------------------------------------------------------------------------------------ */
 
-const reversedString = (str) => {
-  // Solution code here...
-};
+const reversedString = (str) => 
+  str.split('').reduce((acc, curr) => curr + acc)
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
@@ -322,7 +317,7 @@ describe('Testing challenge 6', () => {
     expect(reversedString('Code 301')).toStrictEqual('103 edoC');
   });
 });
-
+/*
 xdescribe('Testing challenge 7', () => {
   test('It should return the total number of children', () => {
     expect(countNumberOfChildren(characters)).toStrictEqual(14);
@@ -353,3 +348,4 @@ xdescribe('Testing challenge 11', () => {
     expect(extractChildren(characters).length).toStrictEqual(10);
   });
 });
+*/
