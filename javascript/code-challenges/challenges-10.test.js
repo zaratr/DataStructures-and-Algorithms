@@ -7,9 +7,10 @@ Write a function named returnTen, takes in a string and uses split and splice to
 
 ------------------------------------------------------------------------------------------------ */
 
-function returnTen(str){
-  // Solution code here...
-}
+let returnTen = (str) =>
+  str.slice(-10).split('')
+  
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -25,10 +26,18 @@ For example:
 
 return: 23
 ------------------------------------------------------------------------------------------------ */
-const findMax = (matrix) => {
-  // Solution code here...
-};
+const findMax = (matrix) => 
+{
+  let max = 0;
+  matrix.forEach(array => {
+    let subMax = 0;
+    array.forEach(element => element>max? max=element : max);
+    subMax>max? max=subMax : max;
+  });
+  return max;
+}
 
+        //console.log(element, "here is element", typeof(element), "max: ", typeof(max));
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
@@ -43,10 +52,10 @@ For example:
 
 return: 35
 ------------------------------------------------------------------------------------------------ */
-const totalSum = (matrix) => {
-  // Solution code here...
-};
-
+const totalSum = (matrix) => 
+//matrix.reduce((a,b)=> a)
+matrix.length ===0? 0 : matrix.reduce((a,b) => a.concat(b))//flatten array
+      .reduce((a,b) => a+b)//summing and reduce to a integer
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -71,9 +80,18 @@ const alkiBeach = [33, 31, 147, 130, 27, 93, 38, 126, 141, 63, 46, 17];
 const cookieStores = [firstPike, seaTac, seattleCenter, capHill, alkiBeach];
 
 const grandTotal = (stores) => {
-  // Solution code here...
+  const newArr = [];
+  stores.forEach
+  (array =>
 
-};
+    array.forEach
+    ((element, index) =>
+      newArr[index]? newArr[index] += element : newArr[index] = element
+    )
+
+  )
+  return newArr;
+}
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -86,7 +104,13 @@ Write a function named salesData that uses forEach to iterate over the hourlySal
 ------------------------------------------------------------------------------------------------ */
 
 const salesData = (hours, data) => {
-  // Solution code here...
+  const newArr = [];
+  data.forEach((element, index) =>
+  {
+    let currObj = { 'sales': `${element} cookies`, 'time': `${hours[index]}`}
+    newArr.push(currObj);
+  });
+  return newArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -110,9 +134,7 @@ const errands = [
   }
 ];
 
-const howManyTreats = (arr) => {
-  // Solution code here...
-};
+const howManyTreats = (arr) => arr[2].items[1].quantity
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
@@ -228,7 +250,6 @@ describe('Testing challenge 2', () => {
     expect(findMax([[13,24,24,2], [2,5,6], [2,3]])).toStrictEqual(24);
   });
 });
-
 describe('Testing challenge 3', () => {
   test('It should return the total sum', () => {
     expect(totalSum([[13,24,24,2], [2,5,6], [2,3]])).toStrictEqual(81);
