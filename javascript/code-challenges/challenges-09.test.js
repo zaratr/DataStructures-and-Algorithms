@@ -129,14 +129,13 @@ hasChildrenValues(characters, 'Sansa') will return false
 ------------------------------------------------------------------------------------------------ */
 
 const hasChildrenValues = (arr, character) => {
-  /*
   let kd = 0;
   arr.forEach(per => per.name === character? 
-    Objecct.keys(per).forEach((key, index) => key === 'children'? 
-        kd = object.values(per)[index].length)
-        )
-        */
-
+    Object.keys(per).forEach((key, index) => key === 'children'? 
+        kd = object.values(per)[index].length : kd = 0
+        ) : kd = 0
+  )
+  return kd;
 };
 
 /* ------------------------------------------------------------------------------------------------
