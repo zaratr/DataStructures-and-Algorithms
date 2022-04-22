@@ -112,7 +112,7 @@ const characters = [
 
 const getHouses = (arr) => {
   let houses = [];
-  arr.forEach(object => arr.push(object.house));
+  arr.forEach(object => houses.push(object.house));
   return houses;
 };
 
@@ -133,11 +133,11 @@ const hasChildrenValues = (arr, character) => {
   arr.forEach(per => 
     per.name === character? 
       Object.keys(per).forEach((key, index) => 
-        key === per.children? 
-        kd = object.values(per)[index].length 
-        : kd = 0
+        key === 'children'? 
+        kd = Object.values(per)[index].length 
+        : 0
       )
-    : kd = 0
+    : 0
   )
   return kd;
 };
