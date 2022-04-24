@@ -6,9 +6,12 @@ CHALLENGE 1 - Review
 Write a function named longestString that takes in an array of strings and returns the index position of the longest string. 
 ------------------------------------------------------------------------------------------------ */
 
-const longestString = (arr) => {
-// Solution code here...
-};
+const longestString = (arr) => 
+
+arr.indexOf(
+  arr.reduce((a,b) => (b.length > a.length?b:a
+    ), '')
+  );
   
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -18,9 +21,7 @@ Write a function named firstLetters that takes in an array of strings and return
 For example, ['this is great :)', 'wow', 'whyyyyyy :(', ':)))))'] returns ['t', 'w', 'w', ':']
 ------------------------------------------------------------------------------------------------ */
 
-const firstLetters = (arr) => {
-  // Solution code here...
-};
+const firstLetters = (arr) => arr.map(str=> str[0])
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -30,9 +31,7 @@ Write a function named findHappiness that takes in an array of strings and retur
 For example, ['this is great :)', 'wow', 'whyyyyyy :(', ':)))))'] returns ['this is great :)', ':)))))']
 ------------------------------------------------------------------------------------------------ */
 
-const findHappiness = (arr) => {
-  // Solution code here...
-};
+const findHappiness = (arr) => arr.filter(str=>str.includes(':)'))
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -42,9 +41,7 @@ Write a function named standardizePhoneNumbers that takes in an array of phone n
 For example, (123) 456-7890 returns 1234567890
 ------------------------------------------------------------------------------------------------ */
 
-const standardizePhoneNumbers = (arr) => {
-  // Solution code here...
-};
+const standardizePhoneNumbers = (arr) => arr.map(number=>number.match(/\d/g).join(''))
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5 
@@ -54,9 +51,7 @@ Write a function named onlyOddChars that takes in a string and returns only the 
 For example, 'abcdefg' returns 'bdf'
 ------------------------------------------------------------------------------------------------ */
 
-const onlyOddChars = (str) => {
-  // Solution code here...
-};
+const onlyOddChars = (str) => str.split('').filter((letter,index) => index %2 !== 0).join('')
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6 
@@ -64,9 +59,8 @@ CHALLENGE 6
 Write a function named allHappy that takes in an array of strings and returns a Boolean indicating whether all those strings contain ":)".
 ------------------------------------------------------------------------------------------------ */
 
-const allHappy = (arr) => {
-  // Solution code here...
-};
+const allHappy = (arr) => 
+arr.every(str => str.includes(':)'))
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
