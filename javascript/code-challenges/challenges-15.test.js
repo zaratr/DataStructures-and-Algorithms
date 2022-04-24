@@ -7,20 +7,15 @@ Write a function named screenForNames that takes in an array of strings and uses
 * the name must contain only letter characters (white spaces are ok)
 ------------------------------------------------------------------------------------------------ */
 
-const screenForNames = (arr) => {
-  // Solution code here...
-}
-
+const screenForNames = (arr) => arr.filter(str => /^(Mr.|Mrs.|Ms.|Dr.)\s[A-Za-z]+/.test(str))
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 Write a function named toTitleCase that takes in an array of strings and returns an array of strings with the first character in upper case and the rest as is.
 For example, ['apple', 'banana', 'MacGyver'] returns ['Apple', 'Banana', 'MacGyver'].
 ------------------------------------------------------------------------------------------------ */
 
-const toTitleCase = (arr) => {
-  // Solution code here...
-};
-
+const toTitleCase = (arr) => 
+  arr.map(str => str.charAt(0).toUpperCase() + str.substring(1))
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 Write a function named biggerThanLuke that, given the Star Wars data, below, returns the names of the characters whose mass is greater than Luke's.
@@ -90,9 +85,10 @@ let starWarsData = [{
 }];
 
 let biggerThanLuke = (arr) => {
-  // Solution code here...
-};
 
+  let luke = arr.find(char => char.name === 'Luke Skywalker');
+  return arr.filter(char => parseInt(char.mass) > parseInt(luke.mass)).map(char => char.name).join(' - ');
+}
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
 Write a function named sortBy that takes in an array of objects, each of which has a particular property, and sorts those objects by that property, lowest to highest, returning the same array.
@@ -105,10 +101,12 @@ Here is an example of the input:
 This data could be sorted by name or price.
 ------------------------------------------------------------------------------------------------ */
 
-const sortBy = (property, arr) => {
-  // Solution code here...
-};
-
+const sortBy = (property, arr) => 
+  arr.sort((a,b) => {
+    let x = 0;
+    a[property] < b[property]? x = -1: a[property] > b[property]? x = 1: x = 0;
+    return x;
+  })
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5 
 Write a function that determines if a given URL is secure, beginning with https://
@@ -118,10 +116,8 @@ http://www.insecure.com returns false because the URL is not secure
 https://secure.com returns true because the URL is secure
 https:/missingslash.org returns false because the URL is malformed
 ------------------------------------------------------------------------------------------------ */
-const isSecure = (url) => {
-  // Solution code here...
-};
-
+const isSecure = (url) => 
+  /https:\/\//.test(url)
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6 
 Write a function named detectTicTacToeWin that accepts a two-dimensional array of strings. Each string is guaranteed to be either "X", "O" or an empty string. Your function should check to see if any row, column, or either diagonal direction has three matching "X" or "O" symbols (non-empty strings), three-in-a-line.
@@ -136,10 +132,27 @@ Here is a sample board:
 ];
 ------------------------------------------------------------------------------------------------ */
 
-const detectTicTacToeWin = (board) => {
-  // Solution code here...
-};
+const detectTicTacToeWin = (board) => 
+{
+  let checker = (rowa, cola, rowb, colb, rowc, colc) => {
+  return board[rowa][cola] !== '' &&
+  board[rowa][cola] === board[rowb][colb] &&
+  board[rowb][colb] === board[rowc][colc]
+  }
+  if(checker(0,0,1,0,0,2)) return true;
+  if(checker(1,0,1,1,1,2)) return true;
+  if(checker(2,0,2,1,2,2)) return true;
 
+  if(checker(0,0,1,0,2,0)) return true;
+  if(checker(0,1,1,1,2,1)) return true;
+  if(checker(0,2,1,2,2,2)) return true;
+
+  if(checker(0,0,1,1,2,2)) return true;
+  if(checker(0,2,1,1,2,0)) return true;
+
+  return false;
+
+}
 /* ------------------------------------------------------------------------------------------------
 TESTS
 All the code below will verify that your functions are working to solve the challenges.
