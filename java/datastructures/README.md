@@ -11,7 +11,7 @@
 
 
 ## Whiteboard Process
-[reverse-array Whiteboarding](Public%5Creverse-array.pdf)
+[reverse-array Whiteboarding](Public/reverse-array.pdf)
 
 
 ## Approach & Efficiency
