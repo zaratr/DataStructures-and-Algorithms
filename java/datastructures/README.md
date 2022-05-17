@@ -12,6 +12,7 @@
 
 ## Whiteboard Process
 [reverse-array Whiteboarding](Public%5Creverse-array.pdf)
+
 ## Approach & Efficiency
 I knew that going through an array can be done recursively or iteratively.
 Further, I knew that no changes to memory since we don't add or remove any element.
