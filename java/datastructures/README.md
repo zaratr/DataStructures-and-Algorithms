@@ -23,7 +23,8 @@ variable to hold a value of either the front or the end of the array.
 After I have swapped first and end elements in the array, I would need to then decrement
 end and increment front pointers by one. since we only use one loop and n elements of the array
 is being traversed
-
+Time: O(n) because we iterate through full array is worse case and Space: O(1) no extra memory is added per each
+iteration
 Location: 'codechallenges/Reverse-Array/reverse-array'
 Method: reverse-array(int []);
 Location: `codechallenges/linkedlist/LinkedListChallenges`
@@ -37,6 +38,8 @@ After reviewing the barriers of nonrecursive problems and language limitation, I
 is to iteratively create a new array with old array contents with target element at the middle of array. once newArray is configured,
 I may use the assignment operator(dangerously) to replace old array and return old array (although it would still
 just be a new array at the end of day) or just return new array (without the usage of Arraylist - as instructed).
+time usage is O(n) because it depends on how long the length of array is and Space is O(1) because we dont iterate through
+and add more memory
 
 Location: 'codechallenges/insertShift/insertShiftArray'
 Method: insertShiftArray(int []x);
