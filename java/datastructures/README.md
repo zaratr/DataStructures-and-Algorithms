@@ -29,7 +29,7 @@ iteration
 - Method: reverse-array(int []);
 
 ## Whiteboard Process
-[insert-Shift-Array Whiteboarding](Public/codechallenge2.pdf)
+[insert-Shift-Array Whiteboarding](Public)
 
 
 ## Approach & Efficiency
