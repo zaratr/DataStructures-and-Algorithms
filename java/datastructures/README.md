@@ -28,4 +28,16 @@ Location: 'codechallenges/Reverse-Array/reverse-array'
 Method: reverse-array(int []);
 Location: `codechallenges/linkedlist/LinkedListChallenges`
 
-Method: `linkedListChallenge06()`
+## Whiteboard Process
+[insert-Shift-Array Whiteboarding](Public/codechallenge2.pdf)
+
+
+## Approach & Efficiency
+After reviewing the barriers of nonrecursive problems and language limitation, I figured the best solution
+is to iteratively create a new array with old array contents with target element at the middle of array. once newArray is configured,
+I may use the assignment operator(dangerously) to replace old array and return old array (although it would still
+just be a new array at the end of day) or just return new array (without the usage of Arraylist - as instructed).
+
+Location: 'codechallenges/insertShift/insertShiftArray'
+Method: insertShiftArray(int []x);
+
