@@ -23,11 +23,10 @@ variable to hold a value of either the front or the end of the array.
 After I have swapped first and end elements in the array, I would need to then decrement
 end and increment front pointers by one. since we only use one loop and n elements of the array
 is being traversed
-Time: O(n) because we iterate through full array is worse case and Space: O(1) no extra memory is added per each
+- Time: O(n) because we iterate through full array is worse case and Space: O(1) no extra memory is added per each
 iteration
-Location: 'codechallenges/Reverse-Array/reverse-array'
-Method: reverse-array(int []);
-Location: `codechallenges/linkedlist/LinkedListChallenges`
+- Location: 'codechallenges/Reverse-Array/reverse-array'
+- Method: reverse-array(int []);
 
 ## Whiteboard Process
 [insert-Shift-Array Whiteboarding](Public/codechallenge2.pdf)
@@ -41,6 +40,6 @@ just be a new array at the end of day) or just return new array (without the usa
 time usage is O(n) because it depends on how long the length of array is and Space is O(1) because we dont iterate through
 and add more memory
 
-Location: 'codechallenges/insertShift/insertShiftArray'
-Method: insertShiftArray(int []x);
+- Location: 'codechallenges/insertShift/insertShiftArray'
+- Method: insertShiftArray(int []x);
 
