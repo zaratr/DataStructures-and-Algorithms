@@ -52,7 +52,7 @@ and add more memory
 
 ## Approach & Efficiency
 this code searches for an element in array and returns the element index that matches the key.
-
+- worked with Jason Wilson
 - Location: 'codechallenges/binary-search/binary-search.jpg'
 - Method: binary-search(int []x, int target);
 
