@@ -28,9 +28,9 @@ iteration
 - Location: 'codechallenges/Reverse-Array/reverse-array'
 - Method: reverse-array(int []);
 
-### Challenge 02
-### Whiteboard Process
-[insert-Shift-Array Whiteboarding](Public/codechallenge2.pdf)
+
+## Whiteboard Process
+[insert-Shift-Array Whiteboarding](Public/codechallenge2.jpg)
 
 
 ### Approach & Efficiency
