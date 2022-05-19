@@ -4,17 +4,17 @@
 
 ## Code Challenges
 
-### Challenge 01
+## Challenge 01
 
-# Reverse an Array
+### Reverse an Array
 - Write a function called reverseArray which takes an array as an argument. Without utilizing any of the built-in methods available to your language, return an array with elements in reversed order.
 
 
-## Whiteboard Process
+### Whiteboard Process
 [reverse-array Whiteboarding](Public/reverse-array.pdf)
 
 
-## Approach & Efficiency
+### Approach & Efficiency
 I knew that going through an array can be done recursively or iteratively.
 Further, I knew that no changes to memory since we don't add or remove any element.
 Thus, the simplest way to approach this problem was to
@@ -28,11 +28,12 @@ iteration
 - Location: 'codechallenges/Reverse-Array/reverse-array'
 - Method: reverse-array(int []);
 
+
 ## Whiteboard Process
 [insert-Shift-Array Whiteboarding](Public/codechallenge2.jpg)
 
 
-## Approach & Efficiency
+### Approach & Efficiency
 After reviewing the barriers of nonrecursive problems and language limitation, I figured the best solution
 is to iteratively create a new array with old array contents with target element at the middle of array. once newArray is configured,
 I may use the assignment operator(dangerously) to replace old array and return old array (although it would still
@@ -42,4 +43,16 @@ and add more memory
 
 - Location: 'codechallenges/insertShift/insertShiftArray'
 - Method: insertShiftArray(int []x);
+
+### Challenge 03
+### Whiteboard Process
+[Binary-Search Whiteboarding](Public/binary-search.jpg)
+
+
+## Approach & Efficiency
+this code searches for an element in array and returns the element index that matches the key.
+
+- Location: 'codechallenges/binary-search/binary-search.jpg'
+- Method: binary-search(int []x, int target);
+
 
