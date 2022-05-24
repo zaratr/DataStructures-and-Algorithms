@@ -94,4 +94,42 @@ class AppTest {
     assert(sut.toString().equals("{3} -> {2} -> {1} -> NULL"));
   }
 
+  @Test
+  public void testAppend()
+  {
+    LinkedList list = new LinkedList();
+    list.append(12);
+    list.append(1);
+    assert(list.toString().equals("{12} -> {1} -> NULL"));
+  }
+  @Test
+  public void testAppendInit()
+  {
+    LinkedList list = new LinkedList();
+    list.append(12);
+    assert(list.toString().equals("{12} -> NULL"));
+  }
+
+  @Test
+  public void testInsertBefore()
+  {
+    LinkedList list = new LinkedList();
+    list.append(12);
+    list.append(1);
+    list.insertBefore(1, 14);
+    assert (list.toString().equals("{12} -> {14} -> {1} -> NULL"));
+    return;
+  }
+
+  @Test
+  public void testInsertAfter()
+  {
+    LinkedList list = new LinkedList();
+    list.append(12);
+    list.append(1);
+    list.insertAfter(1, 14);
+    assert (list.toString().equals("{12} -> {1} -> {14} -> NULL"));
+    return;
+  }
+
 }

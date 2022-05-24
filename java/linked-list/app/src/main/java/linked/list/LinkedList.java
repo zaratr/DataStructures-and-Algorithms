@@ -17,6 +17,7 @@ public class LinkedList {
     if(head == null)
     {
       head = new Node(data);
+      tail = head;
       return ;
     }
     Node temp = new Node(data);
@@ -54,5 +55,77 @@ public class LinkedList {
   public Node getList(){
     return head;
   }
+/**********  LAB6 **********/
+  public void append(int data)
+  {
+    if(head == null)
+    {
+      head = new Node(data);
+      tail = head;
+      return;
+    }
+    Node current = head;
+    while(current != null)
+    {
+      if(current.getNext() == null)
+      {
+        Node temp = new Node(data);
+        temp.setNext(head.getNext());
+        head.setNext(temp);
+        tail = temp;
+        temp = head;
+        break;
+      }
+      current = current.getNext();
+    }
+    return;
+  }
 
+  public void insertBefore(int data, int newData)
+  {
+    if(head == null)
+    {
+      head = new Node(newData);
+      tail = head;
+    }
+    Node prev = head;
+    Node current = head;
+    while(current != null)
+    {
+      if(current.getData() == data)
+      {
+        Node temp = new Node(newData);
+        temp.setNext(prev.getNext());
+        prev.setNext(temp);
+        break;
+      }
+      prev = current;
+      current = current.getNext();
+    }
+    return ;
+  }
+
+  public void insertAfter(int data, int newData)
+  {
+    if(head == null)
+    {
+      head = new Node(newData);
+      tail = head;
+    }
+    Node current = head;
+    while(current != null)
+    {
+      if(current.getData() == data)
+      {
+        Node temp = new Node(newData);
+        temp.setNext(current.getNext());
+        current.setNext(temp);
+        //temp = current;
+        break;
+      }
+      current = current.getNext();
+    }
+    return ;
+  }
+/**********  LAB6 **********/
 }
