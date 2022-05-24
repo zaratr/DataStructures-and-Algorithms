@@ -22,3 +22,4 @@ To run your tests
 
 ### Algorithms
 - [CodeChallenge WhiteBoarding](java/datastructures/README.md)
+- [CodeChallenge LinkedList Implementations](java/linked-list/README.md)

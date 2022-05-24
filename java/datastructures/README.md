@@ -57,14 +57,20 @@ this code searches for an element in array and returns the element index that ma
 - Method: binary-search(int []x, int target);
 
 
-# Singly Linked List
-- Created a singly linked list
+### Challenge 04
+### Whiteboard Process
+[Binary-Search Whiteboarding](Public/binary-search.jpg)
 
-## Challenge
-<!-- Description of the challenge -->
 
 ## Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+this code searches for an element in array and returns the element index that matches the key.
+- worked with Jason Wilson
+- Location: 'codechallenges/binary-search/binary-search.jpg'
+- Method: binary-search(int []x, int target);
 
-## API
-<!-- Description of each method publicly available to your Linked List -->
+### Challenge 05
+### Whiteboard Process
+[AddSum WhiteBoarding](Public/AddSum.jpg)
+## Approach & Efficiency
+- the code adds the sum of each row in the matrix. Then the sum is returned into a new array.
+- the Time complexity is O(n) and space is O(1);
