@@ -1,4 +1,4 @@
-# Singly Linked List
+# Singly Linked List - Insert, toString, includes
 - Created a singly linked list that inserts, Overrides toString, includes
 
 ## Challenge
@@ -12,7 +12,7 @@
 ## API
 - no api was used for this.
 
-# Singly Linked List
+# Singly Linked List - appends, insertBefore, insertAfter
 - Created a singly linked list that appends, insertBefore, insertAfter.
 
 ## Challenge
