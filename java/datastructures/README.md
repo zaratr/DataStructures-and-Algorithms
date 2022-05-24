@@ -58,7 +58,7 @@ this code searches for an element in array and returns the element index that ma
 
 
 # Singly Linked List
-<!-- Short summary or background information -->
+- Created a singly linked list
 
 ## Challenge
 <!-- Description of the challenge -->
