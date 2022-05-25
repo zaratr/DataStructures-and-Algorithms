@@ -26,3 +26,15 @@
 
 ## API
 - no api was used for this.
+
+
+# Challenge Summary
+- Linked list return the value of the node  length - k in linkedlist.
+
+## Whiteboard Process
+No white board needed for process on today's lab. it seemed straight forward. especially iteratively.
+
+## Approach & Efficiency
+I solved it just subtracting the length - k and the time complexity is O(n) space O(1)
+## Solution
+running libraryTest will run tests. or create a static main and call the function in main.
