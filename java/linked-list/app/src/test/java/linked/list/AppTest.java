@@ -132,4 +132,19 @@ class AppTest {
     return;
   }
 
+  @Test
+  public void testKthFromEnd()
+  {
+    int k = 0;
+    LinkedList list = new LinkedList(1);
+    list.append(3);
+    list.append(8);
+    list.append(2);
+    int x = list.kthFromEnd(k);
+    LinkedList sut = new LinkedList(x);
+
+    assert (sut.toString().equals("{2} -> NULL"));
+    return;
+  }
+
 }

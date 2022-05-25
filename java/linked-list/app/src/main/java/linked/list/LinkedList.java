@@ -70,10 +70,10 @@ public class LinkedList {
       if(current.getNext() == null)
       {
         Node temp = new Node(data);
-        temp.setNext(head.getNext());
-        head.setNext(temp);
+        temp.setNext(current.getNext());
+        current.setNext(temp);
         tail = temp;
-        temp = head;
+        //temp = head;
         break;
       }
       current = current.getNext();
@@ -127,5 +127,43 @@ public class LinkedList {
     }
     return ;
   }
+
 /**********  LAB6 **********/
+
+  /**********  LAB7 **********/
+  public int size()
+  {
+    if(head == null) return 0;
+    Node current = head;
+    int num = 1;
+    while(current.getNext() != null)
+    {
+      ++num;
+      current = current.getNext();
+    }
+    return num;
+  }
+
+public int kthFromEnd(int k) {
+  if(head == null) return 0;
+  if(size() < k) return 0;
+  int stopCondition = size() - k;
+  int i = 1,output = 0;
+  Node current = head;
+
+  while(current != null )
+  {
+    if(stopCondition == i)
+    {
+      output = current.getData();
+      break;
+    }
+    ++i;
+    current = current.getNext();
+
+  }
+  return output;
+}
+/**********  LAB7 **********/
+
 }
