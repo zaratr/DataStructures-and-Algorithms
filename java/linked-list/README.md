@@ -12,6 +12,7 @@
 ## API
 - no api was used for this.
 
+- [code location](app/src/main/java/linked/list)
 # Singly Linked List - appends, insertBefore, insertAfter
 - Created a singly linked list that appends, insertBefore, insertAfter.
 
@@ -27,6 +28,7 @@
 ## API
 - no api was used for this.
 
+- [code location](app/src/main/java/linked/list)
 
 # Challenge Summary
 - Linked list return the value of the node  length - k in linkedlist.
@@ -39,6 +41,7 @@ I solved it just subtracting the length - k and the time complexity is O(n) spac
 ## Solution
 running libraryTest will run tests. or create a static main and call the function in main.
 
+- [code location](app/src/main/java/linked/list)
 
 # Challenge Summary
 - merges unsorted linked lists and uses iteration.
@@ -50,4 +53,5 @@ running libraryTest will run tests. or create a static main and call the functio
 ## Solution
 - run test cases in case 1 and many
  ![](../datastructures/Public/Code-Challenge-08.png)
+- [code location](app/src/main/java/linked/list)
 

@@ -21,5 +21,5 @@ To run your tests
 ### 401 Data Structures, Code Challenges
 
 ### Algorithms
-- [CodeChallenge WhiteBoarding](java/datastructures/README.md)
-- [CodeChallenge LinkedList Implementations](java/linked-list/README.md)
+- [CodeChallenge WhiteBoarding - labs 1 -5](java/datastructures/README.md)
+- [CodeChallenge LinkedList Implementations - lab 6 and greater](java/linked-list/README.md)
