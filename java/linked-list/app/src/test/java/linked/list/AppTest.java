@@ -178,7 +178,7 @@ class AppTest {
     list3.append(9);
     list3.append(4);
 
-    LinkedList sut1 = list1.ziplist2(list2);//returns a new list but can be refactored return true or false
+    LinkedList sut1 = list3.ziplist2(list4);//returns a new list but can be refactored return true or false
 
 
     assertEquals(sut.toString(),"{1} -> {5} -> {9} -> {4} -> NULL");
@@ -186,7 +186,23 @@ class AppTest {
     return;
   }
 
+@Test
+public void testZipBase()
+{
+  LinkedList list1 = new LinkedList(1);
+  LinkedList list2 = new LinkedList();
+  list1.ziplist2(list2);
+  list1.ziplist(list2);
 
+  LinkedList list3 = new LinkedList();
+  LinkedList list4 = new LinkedList(1);
+  list3.ziplist2(list4);
+  //list3.ziplist(list4);
+
+  assertEquals(list1.toString(), "{1} -> NULL");
+  assertEquals(list3.toString(), "{1} -> NULL");
+  return;
+}
 
   @Test
   public void testZipifOne()
@@ -194,11 +210,12 @@ class AppTest {
     LinkedList list1 = new LinkedList(1);
 
     LinkedList list2 = new LinkedList(5);
+    //change the list2 to list1 to test one node
     list2.append(4);
     list2.append(7);
 
-    list1.ziplist(list2);//returns a new list but can be refactored return true or false
-    //assert
+    LinkedList sut = list1.ziplist(list2);//returns a new list but can be refactored return true or false
+    assertEquals(sut.toString(), "{1} -> {5} -> {4} -> {7} -> NULL");
     return;
   }
 
