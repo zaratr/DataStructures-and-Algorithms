@@ -6,6 +6,10 @@ public class LinkedList {
   {
     this.head = null;
   }
+  public LinkedList(Node newHead)
+  {
+    this.head = newHead;
+  }
   public LinkedList(int data)
   {
     this.head = new Node(data);
@@ -165,5 +169,85 @@ public int kthFromEnd(int k) {
   return output;
 }
 /**********  LAB7 **********/
+
+/********* challenge 8 *******/
+public LinkedList ziplist(LinkedList list)
+{
+  if(head == null || list.head == null)
+  {
+    if(head == null)
+    {
+      return list;
+    }
+    else
+      return new LinkedList(head);
+  }
+  Node current1 = head;
+  Node current2 = list.head;
+  if(current1.getNext() == null)
+  {
+    current1.setNext(current2);
+    return new LinkedList(current1);
+  }
+
+  while(current1!= null && current2 != null )
+  {
+    Node temp = current2;
+    if(current2 != null) current2 = current2.getNext();
+    temp.setNext(current1.getNext());
+    current1.setNext(temp);
+    current1 = temp.getNext();
+
+    if(current1 != null) current1 = current1.getNext();
+
+  }
+  return new LinkedList(current1);
+}
+/********* challenge 8 *******/
+
+public LinkedList ziplist2(LinkedList list)
+{
+  if(head == null || list.head == null)
+  {
+    if(head == null)
+    {
+      return list;
+    }
+    else
+      return new LinkedList(head);
+  }
+  Node newHead = new Node();
+  Node newCurr = newHead;
+
+  Node cur1 = head;
+  Node cur2 = list.head;
+  //cur1 = cur1.getNext();
+  while(cur1 != null && cur2 != null)
+  {
+
+    if(cur1 !=null)
+    {
+      Node temp = new Node(cur1.getData());
+      newCurr.setNext(temp);
+      newCurr = newCurr.getNext();
+    }
+    if(cur2 != null)
+    {
+      Node temp = new Node(cur2.getData());
+      newCurr.setNext(temp);
+      newCurr = newCurr.getNext();
+
+    }
+    cur1 = cur1.getNext();
+    cur2 = cur2.getNext();
+  }
+
+  if(cur2!=null) newCurr.setNext(cur2);
+  else if(cur1 != null) newCurr.setNext(cur1);
+  newHead = newHead.getNext();
+  return new LinkedList(newHead);
+}
+
+
 
 }

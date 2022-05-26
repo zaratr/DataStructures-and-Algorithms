@@ -38,3 +38,16 @@ No white board needed for process on today's lab. it seemed straight forward. es
 I solved it just subtracting the length - k and the time complexity is O(n) space O(1)
 ## Solution
 running libraryTest will run tests. or create a static main and call the function in main.
+
+
+# Challenge Summary
+- merges unsorted linked lists and uses iteration.
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+
+## Approach & Efficiency
+- O(n + m) for time complexity since we are iterating two arrays and space complexity of O(1)
+## Solution
+- run test cases in case 1 and many
+ ![](../datastructures/Public/Code-Challenge-08.png)
+

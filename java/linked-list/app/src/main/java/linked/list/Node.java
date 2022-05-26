@@ -19,7 +19,7 @@ public class Node {
   }
   public void setData(int data)
   {
-    data = data;
+    this.data = data;
     return;
   }
 
