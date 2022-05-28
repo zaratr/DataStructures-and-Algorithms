@@ -172,7 +172,7 @@ public int kthFromEnd(int k) {
 /**********  LAB7 **********/
 
 /********* challenge 8 *******/
-public LinkedList ziplist(LinkedList list)
+public LinkedList zippylist(LinkedList list)
 {
     if(head == null)
     {
@@ -206,7 +206,7 @@ public LinkedList ziplist(LinkedList list)
   return new LinkedList(current1);
 }
 
-public LinkedList ziplist2(LinkedList list) //Greedy Algorithm
+public LinkedList zippylist2(LinkedList list) //Greedy Algorithm
 {
   //Base Case
   if(head == null)
@@ -218,16 +218,19 @@ public LinkedList ziplist2(LinkedList list) //Greedy Algorithm
   //else -> continue with code below.
 
   //local Declaration/Instantiation
-  Node newHead = new Node(), newCurr = newHead;//instantiation of new list
-  Node cur1 = head, cur2 = list.head;//using current for traversals on both lists
+  Node newHead = new Node(),
+    newCurr = newHead;//instantiation of new list
+  Node cur1 = head,
+    cur2 = list.head;//using current for traversals on both lists
 
   //iteration loop - (T and T -> T, T and F -> F, F and T -> F, F and F -> F;//
   // SideNote, Negation !(T and F) -> !T or !F -> T) - DeMorgan Theorem(Boolean Algebra)//
   while(!(cur1 == null || cur2 == null)) //Stopping condition
+    //while(current1!= null && current2 != null )
   {
     //Temporary Nodes as placeholders to be added onto newHead Node
-    Node tempOne = new Node(cur1.getData());
-    Node tempTwo = new Node(cur2.getData());
+    Node tempOne = new Node(cur1.getData()); //[x] -> NULL
+    Node tempTwo = new Node(cur2.getData()); //[x] -> NULL
 
     //insert with no limitation to unsorted lists
     newCurr.setNext(tempOne);
