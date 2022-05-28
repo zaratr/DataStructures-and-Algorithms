@@ -4,7 +4,11 @@ import datastructures.linkedlist.Node;
 
 public class Queue {
 
-  Node head, tail;
+  private Node head, tail;
+  public Node getHead()
+  {
+    return head;
+  }
   public Queue()
   {
     head = null;
@@ -44,6 +48,10 @@ public class Queue {
     }
     int x = head.getData();
     head = head.getNext();
+    if(head == null)
+    {
+      tail = head;
+    }
     return x;
   }
 
@@ -51,4 +59,9 @@ public class Queue {
       if(head == null) return 0;
       return tail.getData();
     }
+
+  public boolean isEmpty() {
+    if(head == null) return true;
+    return false;
+  }
 }

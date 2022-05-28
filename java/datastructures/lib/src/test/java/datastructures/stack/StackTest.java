@@ -14,7 +14,15 @@ public class StackTest {
     sut.push(6);
     assertEquals(sut.peek(), 6);
   }
-
+  @Test
+  public void  testStackisEmpty() {
+    Stack sut = new Stack();
+    sut.push(1);
+    sut.push(2);
+    sut.pop();
+    sut.pop();
+    assertTrue(sut.isEmpty());
+  }
   @Test
   public void testStackPop()
   {
@@ -34,6 +42,17 @@ public class StackTest {
     sut.push(3);
 
     assertEquals(sut.peek(), 3);
+  }
+
+  @Test
+  public void testNullException()
+  {
+    Stack sut = new Stack();
+    sut.push(2);
+    sut.pop();
+    //assertThrows(sut.peek(), NullPointerException);
+    assertNull(sut.head);
+
   }
   @Test
   public void testQueueEnqueue()
@@ -73,4 +92,22 @@ public class StackTest {
     assertEquals(x, 3);
     return;
   }
-}
+  @Test
+  public void  testDequeueEmpty()
+  {
+    Queue sut = new Queue();
+    sut.enqueue(1);
+    sut.dequeue();
+    assertNull(sut.getHead());
+  }
+
+  @Test
+  public void  testDequeueisEmpty() {
+    Queue sut = new Queue();
+    sut.enqueue(1);
+    sut.dequeue();
+    assertTrue(sut.isEmpty());
+  }
+
+
+  }
