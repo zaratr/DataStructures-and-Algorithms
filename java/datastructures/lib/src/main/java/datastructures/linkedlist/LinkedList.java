@@ -1,7 +1,10 @@
 package datastructures.linkedlist;
 
 public class LinkedList {
-  Node head = null, tail = null;
+  protected Node head;
+  protected Node tail;
+
+  //Constructor
   public LinkedList()
   {
     this.head = null;
@@ -16,7 +19,10 @@ public class LinkedList {
   }
 
 
-  /* insert at head*/
+  public Node getList(){
+    return head;
+  }
+  /*insert at head*/
   public void insert(int data)
   {
     if(head == null)
@@ -57,9 +63,6 @@ public class LinkedList {
     return toDisplay + "NULL";
   }
 
-  public Node getList(){
-    return head;
-  }
 /**********  LAB6 **********/
   public void append(int data)
   {

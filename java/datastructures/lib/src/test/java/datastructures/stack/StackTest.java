@@ -5,6 +5,7 @@ import datastructures.queue.Queue;
 import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
 
+
 public class StackTest {
 
   @Test
@@ -45,69 +46,15 @@ public class StackTest {
   }
 
   @Test
-  public void testNullException()
+  public void testNullException() throws NullPointerException
   {
     Stack sut = new Stack();
     sut.push(2);
     sut.pop();
-    //assertThrows(sut.peek(), NullPointerException);
-    assertNull(sut.head);
+    assertThrows(NullPointerException.class, sut::pop);
 
   }
-  @Test
-  public void testQueueEnqueue()
-  {
-    Queue sut = new Queue();
-    sut.enqueue(6);
-    sut.enqueue(4);
 
-    assertEquals(sut.peek(), 4);
-  }
-
-  @Test
-  public void testQueueDequeue()
-  {
-    Queue sut = new  Queue();
-
-    sut.enqueue(2);
-    sut.enqueue(3);
-
-    assertEquals(sut.dequeue(), 2);
-    return;
-  }
-
-  @Test void testPeekQueue()
-  {
-    Queue sut = new Queue();
-
-    sut.enqueue(2);
-    sut.enqueue(3);
-
-    sut.dequeue();
-
-    sut.enqueue(2);
-    sut.enqueue(3);
-
-    int x  = sut.peek();
-    assertEquals(x, 3);
-    return;
-  }
-  @Test
-  public void  testDequeueEmpty()
-  {
-    Queue sut = new Queue();
-    sut.enqueue(1);
-    sut.dequeue();
-    assertNull(sut.getHead());
-  }
-
-  @Test
-  public void  testDequeueisEmpty() {
-    Queue sut = new Queue();
-    sut.enqueue(1);
-    sut.dequeue();
-    assertTrue(sut.isEmpty());
-  }
 
 
   }

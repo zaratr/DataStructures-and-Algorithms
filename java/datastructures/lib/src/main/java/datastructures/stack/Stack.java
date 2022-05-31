@@ -4,24 +4,24 @@ import datastructures.linkedlist.LinkedList;
 import datastructures.linkedlist.Node;
 
 public class Stack {
-  Node head, tail;
+  Node top, topRemove;
 
   public Stack()
   {
-    this.head = null;
-    this.tail = null;
+    this.top = null;
+    this.topRemove = null;
   }
 
 
   public void push(int data)
   {
-    if(head == null)
+    if(top == null)
     {
-      head = new Node(data);
-      tail = head;
+      top = new Node(data);
+      topRemove = top;
       return;
     }
-    Node current = head;
+    Node current = top;
     while(current != null)
     {
       if(current.getNext() == null)
@@ -29,8 +29,8 @@ public class Stack {
         Node temp = new Node(data);
         temp.setNext(current.getNext());
         current.setNext(temp);
-        tail = temp;
-        //temp = head;
+        topRemove = temp;
+        //temp = top;
         break;
       }
       current = current.getNext();
@@ -39,23 +39,23 @@ public class Stack {
 
   }
 
-  public int pop()
+  public int pop() throws NullPointerException
   {
-    if(head == null) return 0;
-    Node current = head;
+    if(top == null) throw new NullPointerException("Stack is empty");
+    Node current = top;
     while(current != null)
     {
-      if(current.getNext() == tail)
+      if(current.getNext() == topRemove)
       {
-        int temp = tail.getData();
-        tail = current;
+        int temp = topRemove.getData();
+        topRemove = current;
         current.setNext(null);
         return temp;
       }
       if(current.getNext() == null)
       {
-        int temp = head.getData();
-        head = tail = null;
+        int temp = top.getData();
+        top = topRemove = null;
         return temp;
       }
       current = current.getNext();
@@ -67,22 +67,15 @@ public class Stack {
 
   public int peek() throws NullPointerException
   {
-
-    try {
-      return tail.getData();
-    }
-    catch (NullPointerException e)
+    if(top == null)
     {
-      e.printStackTrace();
-      System.exit(-1);
+      throw new NullPointerException("Stack is empty");
     }
-
-    return 0;
+    return topRemove.getData();
   }
 
   public boolean isEmpty()
   {
-    if(head == null) return true;
-    return false;
+    return top == null? true:false;
   }
 }

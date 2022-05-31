@@ -4,25 +4,27 @@ import datastructures.linkedlist.Node;
 
 public class Queue {
 
-  private Node head, tail;
-  public Node getHead()
+  private Node rear, front;
+
+  //NOTE: head = rear, tail = front
+  public Node getRear()
   {
-    return head;
+    return rear;
   }
   public Queue()
   {
-    head = null;
-    tail = null;
+    rear = null;
+    front = null;
   }
   public void enqueue(int data)
   {
-    if(head == null)
+    if(rear == null)
     {
-      head = new Node(data);
-      tail = head;
+      rear = new Node(data);
+      front = rear;
       return;
     }
-    Node current = head;
+    Node current = rear;
     while(current != null)
     {
       if(current.getNext() == null)
@@ -30,8 +32,8 @@ public class Queue {
         Node temp = new Node(data);
         temp.setNext(current.getNext());
         current.setNext(temp);
-        tail = temp;
-        //temp = head;
+        front = temp;
+        //temp = rear;
         break;
       }
       current = current.getNext();
@@ -40,28 +42,29 @@ public class Queue {
 
   }
 
-  public int dequeue()
+  public int dequeue() throws NullPointerException
   {
-    if(head == null)
+    if(rear == null)
     {
-      return 0;
+      throw new NullPointerException("Queue is empty");
     }
-    int x = head.getData();
-    head = head.getNext();
-    if(head == null)
+    int x = rear.getData();
+    rear = rear.getNext();
+    if(rear == null)
     {
-      tail = head;
+      front = rear;
     }
     return x;
   }
 
-  public int peek() {
-      if(head == null) return 0;
-      return tail.getData();
+  public int peek() throws NullPointerException
+  {
+      if(rear == null)
+        throw new NullPointerException("Queue is empty");
+      return front.getData();
     }
 
   public boolean isEmpty() {
-    if(head == null) return true;
-    return false;
+    return rear == null? true:false;
   }
 }
