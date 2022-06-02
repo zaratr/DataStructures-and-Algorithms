@@ -67,3 +67,16 @@ running libraryTest will run tests. or create a static main and call the functio
 - time is still O(N) by creation of new memory
 - [Code Challenge 11 - PseudoMerge](../datastructures/lib/src/main/java/datastructures/queue/PseudoQueue.java)
 
+
+
+#Challenge Summary
+- Pseudo Queue using Stacks to implement the Animal Class
+- Code Challenge 12
+## WhiteBoard Process
+-
+## Approach & Efficiency
+- O(2N^2) using iteration and using pre implemented code, traversing to the end of the stack to remove an item takes N time. However, adding on T1 will have to use two loops
+- the first loop will call on another function using pop() and Push() to t2, then inversely add popped items back to t1 from t2.
+- time is still O(N) by creation of new memory
+- [Code Challenge 11 - PseudoMerge](../datastructures/lib/src/main/java/datastructures/animal/Animal.java)
+- [Code Challenge 11 - PseudoMerge](../datastructures/lib/src/main/java/datastructures/animal/AnimalShelter.java)
