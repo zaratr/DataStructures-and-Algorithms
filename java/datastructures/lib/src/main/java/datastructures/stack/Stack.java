@@ -4,12 +4,17 @@ import datastructures.linkedlist.LinkedList;
 import datastructures.linkedlist.Node;
 
 public class Stack {
-  Node top, topRemove;
+  public Node top, topRemove;
 
   public Stack()
   {
     this.top = null;
     this.topRemove = null;
+  }
+  public Stack(int data)
+  {
+    this.top = new Node(data);
+    this.topRemove = new Node(data);
   }
 
 
@@ -77,5 +82,18 @@ public class Stack {
   public boolean isEmpty()
   {
     return top == null? true:false;
+  }
+
+  @Override
+  public String toString()
+  {
+    String toDisplay = "";
+    Node current = top;
+    while(current != null)
+    {
+      toDisplay = toDisplay + "{" + current.getData() + "} -> ";
+      current = current.getNext();
+    }
+    return toDisplay + "NULL";
   }
 }
