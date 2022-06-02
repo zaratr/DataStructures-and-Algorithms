@@ -1,4 +1,4 @@
-package linked.list;
+package datastructures.linkedlist;
 
 public class Node {
   private int data;
@@ -30,5 +30,7 @@ public class Node {
   public Node getNext() {
     return next;
   }
+
+
 
 }
