@@ -67,4 +67,17 @@ public class Queue {
   public boolean isEmpty() {
     return rear == null? true:false;
   }
+
+  @Override
+  public String toString()
+  {
+    String toDisplay = "";
+    Node current = rear;
+    while(current != null){
+      toDisplay = toDisplay + "{" + current.getData() + "} -> ";
+      current = current.getNext();
+    }
+    return toDisplay + "NULL";
+  }
+
 }
