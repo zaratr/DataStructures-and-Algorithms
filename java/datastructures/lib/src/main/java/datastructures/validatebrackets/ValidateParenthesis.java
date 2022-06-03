@@ -5,7 +5,7 @@ import java.util.Stack;
 
 public class ValidateParenthesis {
   private HashMap<Character, Character> types;
-  public ValidateParenthesis(String str){
+  public ValidateParenthesis(){
     this.types = new HashMap<>();
     this.types.put(')', '(');
     this.types.put('}', '{');
@@ -13,7 +13,7 @@ public class ValidateParenthesis {
   }
   public boolean isValid(String str)
   {
-    Stack<Character> stack = new Stack<Character>();
+    Stack<Character> stack = new Stack<>();
     for(int i = 0; i < str.length(); ++i)
     {
       char c = str.charAt(i);
@@ -23,9 +23,9 @@ public class ValidateParenthesis {
       {
         return false;
       }
-      else{
+    }
+    else{
         stack.push(c);
-      }
       }
     }
     return stack.isEmpty();
