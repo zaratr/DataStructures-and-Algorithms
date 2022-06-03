@@ -1,4 +1,4 @@
-package datastructures;
+package datastructures.validateparenthesis;
 
 import datastructures.validatebrackets.ValidParenth3;
 import datastructures.validatebrackets.ValidateParenth;
