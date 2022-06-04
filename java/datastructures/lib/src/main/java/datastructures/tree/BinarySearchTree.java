@@ -41,8 +41,6 @@ public class BinarySearchTree extends BinaryTree{
     else if(data > root.getData())
       root.setRightNode(add(root.getRightNode(), data));
 
-    else
-      return root;
     return root;
   }
 }
