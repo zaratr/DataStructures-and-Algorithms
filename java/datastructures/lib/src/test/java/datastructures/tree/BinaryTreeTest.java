@@ -102,7 +102,9 @@ public class BinaryTreeTest {
     sut.root = new Node<>(1);
     sut.add(9);
     sut.add(8);
+    sut.add(2);
     return ;
   }
+
 
 }
