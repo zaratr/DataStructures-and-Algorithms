@@ -81,6 +81,20 @@ running libraryTest will run tests. or create a static main and call the functio
 - [Code Challenge 11 - PseudoMerge](../datastructures/lib/src/main/java/datastructures/animal/Animal.java)
 - [Code Challenge 11 - PseudoMerge](../datastructures/lib/src/main/java/datastructures/animal/AnimalShelter.java)
 
+#Challenge Summary - 13
+## WhiteBoard Process
+![](../datastructures/Public/Code-Challenge-13.jpg)
+-Write a function called validate brackets
+- Arguments: string
+- Return: boolean representing whether or not the brackets in the string are balanced
+## Approach & Efficiency
+- data structure calls the with one iterative loop that traverses n times. thus, O(n) and
+- space is O(1) since no new memory is created.
+
+- [Code Challenge 13 - Tnode](../datastructures/lib/src/main/java/datastructures/validatebrackets/ValidParenth3.java)
+
+
+
 
 #Challenge Summary
 - Write a function called validate brackets
