@@ -82,21 +82,15 @@ running libraryTest will run tests. or create a static main and call the functio
 - [Code Challenge 11 - PseudoMerge](../datastructures/lib/src/main/java/datastructures/animal/AnimalShelter.java)
 
 
-#Challenge Summary
-- Write a function called validate brackets
-- Arguments: string
-- Return: boolean representing whether or not the brackets in the string are balanced
+#Challenge Summary -15
+- Create a Node and BinaryTree and Binary Search tree that adds and displays preorder, post order, and inorder
 ## WhiteBoard Process
-![](../datastructures/Public/Code-Challenge-13.jpg)
+![](../datastructures/Public/Code-Challenge-15.jpg)
 -
 ## Approach & Efficiency
-- I created three different algorithms. a bit more effiecient than the other.
-- the final Validate is O(N) and Space O(N)
-- using a search algorithm is always traversing to N (length N is dependant on our String passed in thus {1+2+...+N-1})
-- since I use only iteration, then O(N) because loop breaks out if N < N-1. thus, O(N) + cO(1) .
+- data structure only uses one recursive call which O(N). However, some implelmentation using finding and searching takes two recursive calls.
+- therefor, it is O(2N) which is O(N)
 
-- [Code Challenge 13(1) - ValidateParenthesis](../datastructures/lib/src/main/java/datastructures/validatebrackets/ValidateParenth.java)
-- [Code Challenge 13(2) - ValidateParenthesis](../datastructures/lib/src/main/java/datastructures/validatebrackets/ValidateParenthesis.java)
-- [Code Challenge 13(3) - ValidateParenthesis](../datastructures/lib/src/main/java/datastructures/validatebrackets/ValidParenth3.java)
-
-
+- [Code Challenge 15 - Tnode](../datastructures/lib/src/main/java/datastructures/tree/Node.java)
+- [Code Challenge 15 - BinaryTree](../datastructures/lib/src/main/java/datastructures/tree/BinaryTree.java)
+- [Code Challenge 15 - BinarySearchTree](../datastructures/lib/src/main/java/datastructures/tree/BinarySearchTree.java)
