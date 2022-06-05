@@ -43,7 +43,7 @@ running libraryTest will run tests. or create a static main and call the functio
 
 - [code location](app/src/main/java/linked/list)
 
-# Challenge Summary
+# Challenge Summary - 08
 - merges unsorted linked lists and uses iteration.
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
@@ -55,8 +55,18 @@ running libraryTest will run tests. or create a static main and call the functio
  ![](../datastructures/Public/Code-Challenge-08.png)
 - [code challenge 08 location](app/src/main/java/linked/list)
 
+# Stacks and Queues - 10
+- adds a stack using lifo to pop and push, and a queue using enqueue and dequeue method
+## Challenge
+- [code challenge 10 - stack](../datastructures/lib/src/main/java/datastructures/stack/Stack.java)
+- [code challenge 10 - queue](../datastructures/lib/src/main/java/datastructures/queue/Queue.java)
+## Approach & Efficiency
+- Time is O(n^2) since we use two loops for each data structure implementing a pop, push, enqueue, dequeue.
+- Space is O(1) because we use memory to create nodes
+## API
+- no api used
 
-#Challenge Summary
+#Challenge Summary - 11
 - Pseudo Queue using Stacks to implement
 - Code Challenge 11
 ## WhiteBoard Process
@@ -69,34 +79,21 @@ running libraryTest will run tests. or create a static main and call the functio
 
 
 
-#Challenge Summary
+#Challenge Summary - 12
 - Pseudo Queue using Stacks to implement the Animal Class
 - Code Challenge 12
 ## WhiteBoard Process
--
+  ![](../datastructures/Public/Code-Challenge-12.jpg)
 ## Approach & Efficiency
 - O(2N^2) using iteration and using pre implemented code, traversing to the end of the stack to remove an item takes N time. However, adding on T1 will have to use two loops
 - the first loop will call on another function using pop() and Push() to t2, then inversely add popped items back to t1 from t2.
 - time is still O(N) by creation of new memory
-- [Code Challenge 11 - PseudoMerge](../datastructures/lib/src/main/java/datastructures/animal/Animal.java)
-- [Code Challenge 11 - PseudoMerge](../datastructures/lib/src/main/java/datastructures/animal/AnimalShelter.java)
+- [Code Challenge 12 - Animal](../datastructures/lib/src/main/java/datastructures/animal/Animal.java)
+- [Code Challenge 12 - AnimalShelter](../datastructures/lib/src/main/java/datastructures/animal/AnimalShelter.java)
+
+
 
 #Challenge Summary - 13
-## WhiteBoard Process
-![](../datastructures/Public/Code-Challenge-13.jpg)
--Write a function called validate brackets
-- Arguments: string
-- Return: boolean representing whether or not the brackets in the string are balanced
-## Approach & Efficiency
-- data structure calls the with one iterative loop that traverses n times. thus, O(n) and
-- space is O(1) since no new memory is created.
-
-- [Code Challenge 13 - Tnode](../datastructures/lib/src/main/java/datastructures/validatebrackets/ValidParenth3.java)
-
-
-
-
-#Challenge Summary
 - Write a function called validate brackets
 - Arguments: string
 - Return: boolean representing whether or not the brackets in the string are balanced
