@@ -124,5 +124,24 @@ running libraryTest will run tests. or create a static main and call the functio
 - [Code Challenge 15 - BinaryTree](../datastructures/lib/src/main/java/datastructures/tree/BinaryTree.java)
 - [Code Challenge 15 - BinarySearchTree](../datastructures/lib/src/main/java/datastructures/tree/BinarySearchTree.java)
 
+#Challenge Summary - 14
+- Find the max value in node of the Queue
+## WhiteBoard Process
+![](../datastructures/Public/Code-Challenge-14.jpg)
+-
+## Approach & Efficiency
+- data structure only uses one iteration implemented by another function O(N). However, the wrapper function to push will
+- do O(1) operations
+- therefore, it is O(N) and recreating new nodes is O(N) space
 
+#Challenge Summary - 16
+- Find the maximum value stored in the tree. You can assume that the values stored in the Binary Tree will be numeric
+## WhiteBoard Process
+![](../datastructures/Public/Code-Challenge-16.jpg)
+
+## Approach & Efficiency
+- data structure only uses one iteration implemented by another function O(N). However, the wrapper function to push will
+- do O(1) operations
+- therefore, it is O(N) and recreating new nodes is O(N) space
+- [Code Challenge 16 - ](../datastructures/lib/src/main/java/datastructures/tree/MaxTree.java)
 
