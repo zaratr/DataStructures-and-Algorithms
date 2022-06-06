@@ -143,5 +143,5 @@ running libraryTest will run tests. or create a static main and call the functio
 - data structure only uses one iteration implemented by another function O(N). However, the wrapper function to push will
 - do O(1) operations
 - therefore, it is O(N) and recreating new nodes is O(N) space
-- [Code Challenge 16 - ](../datastructures/lib/src/main/java/datastructures/tree/MaxTree.java)
+- [Code Challenge 16 - maxValue()](../datastructures/lib/src/main/java/datastructures/tree/BinaryTree.java)
 
