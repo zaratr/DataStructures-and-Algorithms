@@ -95,15 +95,69 @@ public class BinaryTreeTest {
     return;
   }
 
-  @Test
-  public void testaddOne()
+  public void build(BinaryTree sut)
   {
-    BinarySearchTree sut = new BinarySearchTree();
-    sut.root = new Node<>(1);
-    sut.add(9);
-    sut.add(8);
-    sut.add(2);
+    BinaryTree sut1a = new BinaryTree();
+    BinaryTree sut1b = new BinaryTree();
+
+    BinaryTree sut2a = new BinaryTree();
+    BinaryTree sut2b = new BinaryTree();
+    BinaryTree sut2c = new BinaryTree();
+
+    BinaryTree sut3a = new BinaryTree();
+    BinaryTree sut3b = new BinaryTree();
+    BinaryTree sut3c = new BinaryTree();
+
+    sut.root = new Node<>(2);
+    sut1a.root = new Node<>(7);
+    sut1b.root = new Node<>(5);
+
+    sut2a.root = new Node<>(2);
+    sut2b.root = new Node<>(6);
+    sut2c.root = new Node<>(9);
+
+    sut3a.root = new Node<>(5);
+    sut3b.root = new Node<>(11);
+    sut3c.root = new Node<>(4);
+
+    sut3a.root.setLeftNode(null);
+    sut3a.root.setRightNode(null);
+    sut3b.root.setLeftNode(null);
+    sut3b.root.setRightNode(null);
+    sut3c.root.setLeftNode(null);
+    sut3c.root.setRightNode(null);
+
+    sut2a.root.setLeftNode(null);
+    sut2a.root.setRightNode(null);
+
+    sut2b.root.setLeftNode(sut3a.root);
+    sut2b.root.setRightNode(sut3b.root);
+
+    sut2c.root.setLeftNode(null);
+    sut2c.root.setRightNode(sut3c.root);
+
+    sut1a.root.setLeftNode(sut2a.root);
+    sut1a.root.setRightNode(sut2b.root);
+
+    sut1b.root.setRightNode(sut2c.root);
+
+    sut.root.setLeftNode(sut1a.root);
+    sut.root.setRightNode(sut1b.root);
+
+
+
+
+
     return ;
   }
+  @Test
+  public void testMaxOne()
+  {
+    BinaryTree sut = new BinaryTree();
+    build(sut);
+    sut.maxValue();
+    return;
+  }
+
 
 }
