@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class BinaryTree {
   Node<Integer> root;
+  int max = 0;
   enum TYPE {PREORDER, INORDER, POSTORDER};
   TYPE displayType;
   public ArrayList<Integer> xList;
@@ -117,6 +118,20 @@ public class BinaryTree {
     toDisplay += toStringPOST(root.getRightNode());
     toDisplay = toDisplay + "{" + root.getData() + "} -> ";
     return toDisplay;
+
+  }
+
+  public int maxValue()
+  {
+    maxValue(root);
+    return this.max;
+  }
+  private void maxValue(Node<Integer> root) {
+    if(root == null) return ;
+    if(root.getData() >= max)
+      this.max = root.getData();
+    maxValue(root.getLeftNode());
+    maxValue(root.getRightNode());
 
   }
 
