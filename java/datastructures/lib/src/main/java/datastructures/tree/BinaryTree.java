@@ -1,9 +1,16 @@
 package datastructures.tree;
 
+//import datastructures.queue.Queue;
+
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
+import java.util.concurrent.LinkedBlockingDeque;
 
 public class BinaryTree {
   Node<Integer> root;
+  List<Integer> levels = new ArrayList<>();
   int max = 0;
   enum TYPE {PREORDER, INORDER, POSTORDER};
   TYPE displayType;
@@ -134,5 +141,25 @@ public class BinaryTree {
     maxValue(root.getRightNode());
 
   }
+
+  Queue<Node> queue = new LinkedList<>();
+  public void helper(Node<Integer> node, int level, boolean added) {
+
+    if (queue.size() == level)
+      levels.add(node.getData());
+    if()
+    //levels.add(node.getData());
+    Node<Integer> temp = queue.remove();
+    if (node.getLeftNode() != null)
+      helper(node.getLeftNode(), level + 1, queue.add(node.getLeftNode()));
+    if (node.getRightNode() != null)
+      helper(node.getRightNode(), level + 1, queue.add(node.getRightNode()));
+  }
+  public List<Integer> levelOrder(Node<Integer> root) {
+    if (root == null) return levels;
+    helper(root, 0, true);
+    return levels;
+  }
+
 
 }

@@ -2,6 +2,7 @@ package datastructures.tree;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.List;
 import java.util.Random;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -159,5 +160,13 @@ public class BinaryTreeTest {
     return;
   }
 
+  @Test
+  public void testBfs() {
+    BinaryTree sut = new BinaryTree();
+    build(sut);
+    List<Integer> test = sut.levelOrder(sut.root);
+    assertEquals("[2, 7, 5, 2, 6, 9, 5, 11, 4]", test.toString() );
+    return;
+  }
 
 }
