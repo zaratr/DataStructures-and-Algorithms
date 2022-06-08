@@ -9,21 +9,21 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class BinaryTreeTest {
 
-  public Node<Integer> treeBuilder(BinaryTree BinaryTree, int length)
+  public Tnode<Integer> treeBuilder(BinaryTree BinaryTree, int length)
   {
-    Node main = BinaryTree.root = new Node<>(new Random().nextInt(10 - 0 + 1) + 0);
+    Tnode main = BinaryTree.root = new Tnode<>(new Random().nextInt(10 - 0 + 1) + 0);
     switch (length) {
       case 1:
-        main.setLeftNode(new Node<>(new Random().nextInt(10 - 0 + 1) + 0));
-        main.setRightNode(new Node<>(new Random().nextInt(10 - 0 + 1) + 0));
+        main.setLeftNode(new Tnode<>(new Random().nextInt(10 - 0 + 1) + 0));
+        main.setRightNode(new Tnode<>(new Random().nextInt(10 - 0 + 1) + 0));
         break;
       case 2:
-        main.setLeftNode(new Node<>(new Random().nextInt(10 - 0 + 1) + 0));
-        main.setRightNode(new Node<>(null));
+        main.setLeftNode(new Tnode<>(new Random().nextInt(10 - 0 + 1) + 0));
+        main.setRightNode(new Tnode<>(null));
         break;
       case 3:
-        main.setLeftNode(new Node<>(null));
-        main.setRightNode(new Node<>(new Random().nextInt(10 - 0 + 1) + 0));
+        main.setLeftNode(new Tnode<>(null));
+        main.setRightNode(new Tnode<>(new Random().nextInt(10 - 0 + 1) + 0));
         break;
       default:
         break;
@@ -75,10 +75,10 @@ public class BinaryTreeTest {
   public void testBase()
   {
     BinaryTree sut = new BinaryTree();
-    sut.root = new Node<>(1);
-    Node<Integer> root = sut.root;
-    root.setLeftNode(new Node<>(2));
-    root.setRightNode(new Node<>(3));
+    sut.root = new Tnode<>(1);
+    Tnode<Integer> root = sut.root;
+    root.setLeftNode(new Tnode<>(2));
+    root.setRightNode(new Tnode<>(3));
     assertEquals("{1} -> {2} -> {3} -> NULL", sut.preOrder().toString());
 
     return;
@@ -88,10 +88,10 @@ public class BinaryTreeTest {
   public void testContains()
   {
     BinarySearchTree sut = new BinarySearchTree();
-    sut.root = new Node<>(1);
-    Node<Integer> root = sut.root;
-    root.setLeftNode(new Node<>(2));
-    root.setRightNode(new Node<>(3));
+    sut.root = new Tnode<>(1);
+    Tnode<Integer> root = sut.root;
+    root.setLeftNode(new Tnode<>(2));
+    root.setRightNode(new Tnode<>(3));
     boolean x = sut.contains(4);
     return;
   }
@@ -109,17 +109,17 @@ public class BinaryTreeTest {
     BinaryTree sut3b = new BinaryTree();
     BinaryTree sut3c = new BinaryTree();
 
-    sut.root = new Node<>(2);
-    sut1a.root = new Node<>(7);
-    sut1b.root = new Node<>(5);
+    sut.root = new Tnode<>(2);
+    sut1a.root = new Tnode<>(7);
+    sut1b.root = new Tnode<>(5);
 
-    sut2a.root = new Node<>(2);
-    sut2b.root = new Node<>(6);
-    sut2c.root = new Node<>(9);
+    sut2a.root = new Tnode<>(2);
+    sut2b.root = new Tnode<>(6);
+    sut2c.root = new Tnode<>(9);
 
-    sut3a.root = new Node<>(5);
-    sut3b.root = new Node<>(11);
-    sut3c.root = new Node<>(4);
+    sut3a.root = new Tnode<>(5);
+    sut3b.root = new Tnode<>(11);
+    sut3c.root = new Tnode<>(4);
 
     sut3a.root.setLeftNode(null);
     sut3a.root.setRightNode(null);
@@ -134,8 +134,8 @@ public class BinaryTreeTest {
     sut2b.root.setLeftNode(sut3a.root);
     sut2b.root.setRightNode(sut3b.root);
 
-    sut2c.root.setLeftNode(null);
-    sut2c.root.setRightNode(sut3c.root);
+    sut2c.root.setRightNode(null);
+    sut2c.root.setLeftNode(sut3c.root);
 
     sut1a.root.setLeftNode(sut2a.root);
     sut1a.root.setRightNode(sut2b.root);

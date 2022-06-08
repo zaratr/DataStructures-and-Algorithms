@@ -1,40 +1,36 @@
 package datastructures.tree;
 
-public class Node <T>{
-  public Node(T data)
-  {
-    this.data = data;
-  }
+public class Node<T> {
+  private T data;
+  private Node next;
+  //constructors
   public Node()
   {
-
+    this.data = null;
+    this.next = null;
   }
-
-  private T data;
-  private Node leftNode;
-  private Node rightNode;
-
-  public T getData() {
+  public Node(T data){
+    this.data = data;
+    //this.next = null;
+  }
+  public T getData()
+  {
     return data;
   }
-
-  public Node getLeftNode() {
-    return leftNode;
-  }
-
-  public Node getRightNode() {
-    return rightNode;
-  }
-
-  public void setData(T data) {
+  public void setData(T data)
+  {
     this.data = data;
+    return;
   }
 
-  public void setLeftNode(Node leftNode) {
-    this.leftNode = leftNode;
+  public void setNext(Node newNext) {
+    next = newNext;
   }
 
-  public void setRightNode(Node rightNode) {
-    this.rightNode = rightNode;
+  public Node getNext() {
+    return next;
   }
+
+
+
 }

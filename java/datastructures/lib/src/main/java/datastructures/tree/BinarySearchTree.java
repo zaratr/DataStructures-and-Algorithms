@@ -13,7 +13,7 @@ public class BinarySearchTree extends BinaryTree{
 
 
   //recursion
-  private boolean contains(Node<Integer> root, int target)
+  private boolean contains(Tnode<Integer> root, int target)
   {
     if(root == null) return false;
     if(root.getData() == target) return true;
@@ -30,10 +30,10 @@ public class BinarySearchTree extends BinaryTree{
 
   }
   //recursion
-  private Node<Integer> add(Node<Integer> root, int data)
+  private Tnode<Integer> add(Tnode<Integer> root, int data)
   {
     if(root == null)
-      return new Node<>(data);
+      return new Tnode<>(data);
 
     if(data < root.getData())
       root.setLeftNode(add(root.getLeftNode(), data));
