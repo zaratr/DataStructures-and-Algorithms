@@ -12,6 +12,8 @@ public class BinaryTree {
   enum TYPE {PREORDER, INORDER, POSTORDER};
   TYPE displayType;
   public ArrayList<Integer> xList;
+  ArrayList<Integer> results = new ArrayList<>();
+  Queue<Tnode<Integer>> queue = new Queue();
   BinaryTree()
   {
     displayType = TYPE.PREORDER;
@@ -139,6 +141,7 @@ public class BinaryTree {
 
   }
 
+  /*
   List<List<Integer>> levels = new ArrayList<List<Integer>>();
   HashMap<Integer, List<Integer>> hashMap = new HashMap<>();
   List<Integer> x ;
@@ -161,6 +164,8 @@ public class BinaryTree {
       helper(node.getRightNode(), level + 1);
   }
 
+   */
+
   public List<Integer> levelOrder(Tnode<Integer> root) {
     if (root == null) return null;
 //    for(List<Integer> i: levels)
@@ -175,8 +180,6 @@ public class BinaryTree {
     return xList;
   }
 
-  ArrayList<Integer> results = new ArrayList<>();
-  Queue<Tnode<Integer>> queue = new Queue();
   public ArrayList<Integer> breadFirst() {
 
     Tnode<Integer> first;
