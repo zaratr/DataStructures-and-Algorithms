@@ -145,3 +145,34 @@ running libraryTest will run tests. or create a static main and call the functio
 - therefore, it is O(N) and recreating new nodes is O(N) space
 - [Code Challenge 16 - maxValue()](../datastructures/lib/src/main/java/datastructures/tree/BinaryTree.java)
 
+
+#Challenge Summary - 17
+- add to a list by using BreadthFist traversal
+## WhiteBoard Process
+![](../datastructures/Public/Code-Challenge-17.jpg)
+
+## Approach & Efficiency
+- data structure only uses one iteration implemented by another function by dequeue we getO(N).
+- The traversal by going through the tree to place on the queue is also O(n) since we go throught the entire tree.
+- therefore, it time O(N^2) and recreating new nodes is O(N) space
+- [Code Challenge 17 - BreadFirst()](../datastructures/lib/src/main/java/datastructures/tree/BinaryTree.java)
+
+## Contributors
+- Jason Wilson
+
+#Challenge Summary - 18
+- Write a function called fizz buzz tree
+  Arguments: k-ary tree
+  Return: new k-ary tree
+## WhiteBoard Process
+![](../datastructures/Public/Code-Challenge-18.jpg)
+
+## Approach & Efficiency
+- data structure only uses one iteration implemented by another function by dequeue we getO(N).
+- The traversal by going through the tree to place on the queue is also O(n) since we go throught the entire tree.
+- therefore, it time O(N^2) and recreating new nodes is O(N) space
+- [Code Challenge 18 - FizzBuzz()](../datastructures/lib/src/main/java/datastructures/fizzbuzztree/FizzBuzzTree.java)
+- [Code Challenge 18 - KaryTree](../datastructures/lib/src/main/java/datastructures/karytree/KaryTree.java)
+- [Code Challenge 18 - KaryTree](../datastructures/lib/src/main/java/datastructures/karytree/Tnode.java)
+## Contributors
+- Jason Wilson
