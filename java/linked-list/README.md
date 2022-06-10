@@ -176,3 +176,16 @@ running libraryTest will run tests. or create a static main and call the functio
 - [Code Challenge 18 - KaryTree](../datastructures/lib/src/main/java/datastructures/karytree/Tnode.java)
 ## Contributors
 - Jason Wilson
+
+
+#Challenge Summary - 19
+- Find the sum of all the odd numbers in a binary search tree.
+- Any of the traversals (depth or breadth) will work for this
+## WhiteBoard Process
+![](../datastructures/Public/Code-Challenge-19.jpg)
+
+## Approach & Efficiency
+- data structure only uses recursion implemented to get through the worst all children. we get O(N).
+- no new nodes are created.
+- therefore, it time O(N) and recreating new nodes is O(1) space
+## Contributors
