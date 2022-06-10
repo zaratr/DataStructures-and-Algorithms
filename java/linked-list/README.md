@@ -188,4 +188,6 @@ running libraryTest will run tests. or create a static main and call the functio
 - data structure only uses recursion implemented to get through the worst all children. we get O(N).
 - no new nodes are created.
 - therefore, it time O(N) and recreating new nodes is O(1) space
+- [Code Challenge 19 - SumAll](../datastructures/lib/src/main/java/datastructures/tree/SumAll.java)
+- [Code Challenge 19 - SumAllTest](../datastructures/lib/src/test/java/datastructures/tree/SumAllTest.java)
 ## Contributors
