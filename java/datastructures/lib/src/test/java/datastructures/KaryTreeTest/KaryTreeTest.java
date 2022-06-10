@@ -1,4 +1,4 @@
-package KaryTreeTest;
+package datastructures.KaryTreeTest;
 
 import datastructures.fizzbuzztree.FizzBuzzTree;
 import datastructures.karytree.KaryTree;
