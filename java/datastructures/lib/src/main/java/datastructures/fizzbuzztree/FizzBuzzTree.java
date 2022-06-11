@@ -39,39 +39,39 @@ public class FizzBuzzTree {
     return strKary;
   }
 
+  // fizzBuzz recursive that does three things labeled [1], [2], and [3].
+  // checking fizzbuzz involves (case 1), (case 2) and (case 3). Usage of Switch(x) can be used.
 
   //recursion
   //uncomment to use case B: strRoot
   public Tnode<String> fizzBuzz(Tnode<Integer> root)//, Tnode<String> strRoot)
   {
-    /***** Base Case*****/
+    /***** [1] -Base Case*****/
     if(root == null) return null;
     Tnode<String> temp = new Tnode<>();
 //    strRoot = new Tnode<>();
 
 
-    /***** Problem Domain: Check Fizzbuzz *****/
-    /***** Case: 1 - if x mod 3x5 *****/
+    /***** [2] Problem Domain: Check Fizzbuzz *****/
+    /***** (Case: 1) - if x mod 3x5 *****/
     if(root.getData() %5 == 0 && root.getData() % 3 == 0){
-      //FizzBuzz
       temp.setData("FizzBuzz");
 //        strRoot.setData("FizzBuzz");
     }
-    /***** Case: 2 - Buzz if x mod 5*****/
+    /***** (Case: 2) - Buzz if x mod 5*****/
     else if(root.getData() %5 == 0)
     {
-      //Fizz
       temp.setData("Buzz");
 //      strRoot.setData("Buzz");
 
     }
-    /***** Case: 3 - Fizz if x mod 3 *****/
+    /***** (Case: 3) - Fizz if x mod 3 *****/
     else if( root.getData() % 3 == 0)
     {
       temp.setData("Fizz");
 //      strRoot.setData("Fizz");
     }
-    /***** Case: 4 -turn num into string *****/
+    /***** (Case: 4) - turn num into string *****/
     else //not either of three cases
     {
       temp.setData(""+root.getData());
@@ -79,11 +79,12 @@ public class FizzBuzzTree {
     }
 
 
-    /***** traversal using recursion*****/
+    /***** [3] - traversal using recursion*****/
     for (Tnode n : root.getChildren()) {
       temp.getChildren().add(fizzBuzz(n));
 //        strRoot.getChildren().add(fizzBuzz(n, strRoot));
     }
+    //[4] Final conditions
     return temp;// needs to return Tnode<string> for the add usage recursive call. doubles for returning it in the wrapper method
 //    return strRoot;
   }
