@@ -44,7 +44,7 @@ public class FizzBuzzTree {
 
   //recursion
   //uncomment to use case B: strRoot
-  public Tnode<String> fizzBuzz(Tnode<Integer> root)//, Tnode<String> strRoot)
+  private Tnode<String> fizzBuzz(Tnode<Integer> root)//, Tnode<String> strRoot)
   {
     /***** [1] -Base Case*****/
     if(root == null) return null;
@@ -79,7 +79,7 @@ public class FizzBuzzTree {
     }
 
 
-    /***** [3] - traversal using recursion*****/
+    /***** [3] - traversal using recursion ( head(direct) Recursion )*****/
     for (Tnode n : root.getChildren()) {
       temp.getChildren().add(fizzBuzz(n));
 //        strRoot.getChildren().add(fizzBuzz(n, strRoot));
