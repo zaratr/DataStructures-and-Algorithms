@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class KaryTree <T>{
   private Tnode<T> root;
-  private ArrayList<T> data = new ArrayList<>();
+  //private ArrayList<T> data = new ArrayList<>();
 
 
 
@@ -16,58 +16,33 @@ public class KaryTree <T>{
   }
 
 
-  public ArrayList preOrderTraversal(){
-    if (root == null){
-      return null;
-    }
-    data = new ArrayList<>();
-    preOrder(this.root);
-    return data;
-  }
-
-
-  private void preOrder(Tnode<T> currentNode) {
-    data.add(currentNode.getData());
-    if (currentNode.children != null){
-      for(Tnode<T> n : currentNode.getChildren()){
-        preOrder(n);
-      }
-    }
-  }
-
-
 
   public Tnode<T> getRoot() {
     return root;
   }
 
-  public void setRoot(Tnode root) {
+  public void setRoot(Tnode root)
+  {
+//    this.root =new Tnode<>();
     this.root = root;
+    //this.root.setChildren(root.getChildren());
   }
 
-  public ArrayList<T> getData() {
-    return data;
+  public T getData() {
+    return root.getData();
   }
 
-  public void setData(ArrayList<T> data) {
-    this.data = data;
+  public void setData(T data) {
+    this.root.setData(data);
   }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  @Override
+  public String toString()
+  {
+    if(root == null) return null;
+    return root.getChildren().toString();
+  }
 
 
 
