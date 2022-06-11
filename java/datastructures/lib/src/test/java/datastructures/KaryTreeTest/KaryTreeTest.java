@@ -40,7 +40,8 @@ public class KaryTreeTest {
 
     KaryTree sut = test.fizzBuzz(tree);
 
-    //assert (sut.getRoot().toString().equals("[Fizz, 4, Buzz, 7, 2, 1, FizzBuzz, 8"));
+    assertTrue (sut.toString().equals("[Data: (4) -> Children: 2 - 1 - FizzBuzz - NULL, Data: (Fizz) -> Children: NULL, Data: (7) -> Children: 8 - NULL]") &&
+      sut.getRoot().toString().equals("Data: (Buzz) -> Children: 4 - Fizz - 7 - NULL"));
     return;
   }
 
