@@ -50,14 +50,14 @@ public class FizzBuzzTree {
 //    strRoot = new Tnode<>();
 
 
-    /***** Problem Domain: Check Fizzbuzz*****/
-    /***** Case: 1*****/
+    /***** Problem Domain: Check Fizzbuzz *****/
+    /***** Case: 1 - if x mod 3x5 *****/
     if(root.getData() %5 == 0 && root.getData() % 3 == 0){
       //FizzBuzz
       temp.setData("FizzBuzz");
 //        strRoot.setData("FizzBuzz");
     }
-    /***** Case: 2*****/
+    /***** Case: 2 - Buzz if x mod 5*****/
     else if(root.getData() %5 == 0)
     {
       //Fizz
@@ -65,17 +65,15 @@ public class FizzBuzzTree {
 //      strRoot.setData("Buzz");
 
     }
-    /***** Case: 3*****/
+    /***** Case: 3 - Fizz if x mod 3 *****/
     else if( root.getData() % 3 == 0)
     {
-      //Buzz
       temp.setData("Fizz");
 //      strRoot.setData("Fizz");
     }
-    /***** Case: 4*****/
+    /***** Case: 4 -turn num into string *****/
     else //not either of three cases
     {
-      //turn num into string
       temp.setData(""+root.getData());
 //      strRoot.setData(""+root.getData());
     }
@@ -86,7 +84,7 @@ public class FizzBuzzTree {
       temp.getChildren().add(fizzBuzz(n));
 //        strRoot.getChildren().add(fizzBuzz(n, strRoot));
     }
-    return temp;
+    return temp;// needs to return Tnode<string> for the add usage recursive call. doubles for returning it in the wrapper method
 //    return strRoot;
   }
 }
