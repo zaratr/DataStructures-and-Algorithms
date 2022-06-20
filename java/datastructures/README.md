@@ -84,14 +84,19 @@ this code searches for an element in array and returns the element index that ma
 - the Time complexity is O(n) and space is O(1);
 
 
-#Challenge Summary - Insertion Sort <a name="challenge26"></a>
--
+# Challenge Summary - Insertion Sort <a name="challenge26"></a>
+- sort an unsorted array using insertion sort algorithm
 ## WhiteBoard Process
+![Whiteboarding](Public/Code-Challenge-26.jpg)
+[Coded Algorthm](lib/src/main/java/datastructures/array/insertionsort/InsertionSort.java)
+[Test Algorthm](lib/src/test/java/datastructures/array/InsertionSortTest.java)
 
 ## Approach & Efficiency
-- data structure only uses recursion implemented to get through the worst all children. we get O(N).
-- no new nodes are created.
-- therefore, it time O(N) and recreating new nodes is O(1) space
+- Insertion sort asserts everything before the key element is sorted. then traverses the sorted portion and inserts at element where  key is > then before element and > then after element replacing the key with the data at replaced element location.
+- this process happens over and over.
+- thus, this process uses two loops to iterate. one for iterating N elements and the other to travers sorted portion of array.
+- next we have constant time variables and nothing new is created.
+- thus, the time complexity Big O is O(N^2) and worst space complexity is O(1)
 ## Contributors
 
 
