@@ -6,7 +6,11 @@
 
 ## Table of Contents
 - [challenge 1](#challenge01)
+- [challenge 2](#challenge02)
+- [challenge 3](#challenge03)
+- [challenge 4](#challenge04)
 - [challenge 5](#challenge05)
+- [Insertion Sort](#challenge26)
 
 ## Challenge 01 <a name="challenge01"></a>
 
@@ -32,13 +36,13 @@ iteration
 - Location: 'codechallenges/Reverse-Array/reverse-array'
 - Method: reverse-array(int []);
 
-### Challenge 02
+### Challenge 02<a name="challenge02"></a>
 ### Whiteboard Process
 [insert-Shift-Array Whiteboarding](Public/codechallenge2.pdf)
 
 
 
-### Approach & Efficiency
+### Approach & Efficiency<a name="challenge01"></a>
 After reviewing the barriers of nonrecursive problems and language limitation, I figured the best solution
 is to iteratively create a new array with old array contents with target element at the middle of array. once newArray is configured,
 I may use the assignment operator(dangerously) to replace old array and return old array (although it would still
@@ -49,7 +53,7 @@ and add more memory
 - Location: 'codechallenges/insertShift/insertShiftArray'
 - Method: insertShiftArray(int []x);
 
-### Challenge 03
+### Challenge 03<a name="challenge03"></a>
 ### Whiteboard Process
 [Binary-Search Whiteboarding](Public/binary-search.jpg)
 
@@ -61,7 +65,7 @@ this code searches for an element in array and returns the element index that ma
 - Method: binary-search(int []x, int target);
 
 
-### Challenge 04
+### Challenge 04<a name="challenge04"></a>
 ### Whiteboard Process
 [Binary-Search Whiteboarding](Public/binary-search.jpg)
 
@@ -79,6 +83,17 @@ this code searches for an element in array and returns the element index that ma
 - the code adds the sum of each row in the matrix. Then the sum is returned into a new array.
 - the Time complexity is O(n) and space is O(1);
 
+
+#Challenge Summary - Insertion Sort <a name="challenge26"></a>
+- Find the sum of all the odd numbers in a binary search tree.
+- Any of the traversals (depth or breadth) will work for this
+## WhiteBoard Process
+
+## Approach & Efficiency
+- data structure only uses recursion implemented to get through the worst all children. we get O(N).
+- no new nodes are created.
+- therefore, it time O(N) and recreating new nodes is O(1) space
+## Contributors
 
 
 
