@@ -4,7 +4,11 @@
 
 ## Code Challenges
 
-## Challenge 01
+## Table of Contents
+- [challenge 1](#challenge01)
+- [challenge 5](#challenge05)
+
+## Challenge 01 <a name="challenge01"></a>
 
 ### Reverse an Array
 - Write a function called reverseArray which takes an array as an argument. Without utilizing any of the built-in methods available to your language, return an array with elements in reversed order.
@@ -68,9 +72,13 @@ this code searches for an element in array and returns the element index that ma
 - Location: 'codechallenges/binary-search/binary-search.jpg'
 - Method: binary-search(int []x, int target);
 
-### Challenge 05
+### Challenge 05 <a name="challenge05"></a>
 ### Whiteboard Process
 [AddSum WhiteBoarding](Public/AddSum.jpg)
 ## Approach & Efficiency
 - the code adds the sum of each row in the matrix. Then the sum is returned into a new array.
 - the Time complexity is O(n) and space is O(1);
+
+
+
+

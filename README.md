@@ -22,4 +22,5 @@ To run your tests
 
 ### Algorithms
 - [CodeChallenge WhiteBoarding - labs 1 -5](java/datastructures/README.md)
-- [CodeChallenge LinkedList Implementations - lab 6 and greater](java/linked-list/README.md)
+- [CodeChallenge LinkedList Implementations - lab 6 and 20](java/linked-list/README.md)
+- [CodeChallenges 26 and greater](java/datastructures/README.md)
