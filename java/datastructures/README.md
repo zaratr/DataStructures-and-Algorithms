@@ -85,8 +85,7 @@ this code searches for an element in array and returns the element index that ma
 
 
 #Challenge Summary - Insertion Sort <a name="challenge26"></a>
-- Find the sum of all the odd numbers in a binary search tree.
-- Any of the traversals (depth or breadth) will work for this
+-
 ## WhiteBoard Process
 
 ## Approach & Efficiency
