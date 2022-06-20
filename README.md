@@ -21,6 +21,6 @@ To run your tests
 ### 401 Data Structures, Code Challenges
 
 ### Algorithms
-- [CodeChallenge WhiteBoarding - labs 1 -5](java/datastructures/README.md)
-- [CodeChallenge LinkedList Implementations - lab 6 and 20](java/linked-list/README.md)
-- [CodeChallenges 26 and greater](java/datastructures/README.md)
+- [Array WhiteBoarding - reverse array, insert shift array, binary search array, add sum](java/datastructures/README.md)
+- [Data Structure implementations and code challenges - lab 6 and 20](java/linked-list/README.md)
+- [Data Structure implementation and code challenges insertion sort, merge sort, - lab 26 and greater](java/datastructures/README.md)
