@@ -119,3 +119,39 @@ this code searches for an element in array and returns the element index that ma
 - thus, the time complexity Big O is O(N*logn) and worst space complexity is O(N)
 ## Contributors
 
+# Hashtables
+- implementing the class Hashtable
+###Features:
+- set
+  - Arguments: key, value
+  - Returns: nothing
+  - This method should hash the key, and set the key and value pair in the table, handling collisions as needed.
+  - Should a given key already exist, replace its value from the value argument given to this method.
+- get
+  - Arguments: key
+  - Returns: Value associated with that key in the table
+  - contains
+  - Arguments: key
+  - Returns: Boolean, indicating if the key exists in the table already.
+- keys
+  - Returns: Collection of keys
+- hash
+  - Arguments: key
+  - Returns: Index in the collection for that key
+## Challenge
+<!-- Description of the challenge -->
+- this code focuses on the data structure HashTable from scratch. it is useful to know
+- how this code is implemented.
+
+###Whiteboarding
+![Whiteboarding](Public/Code-Challenge-30.jpg)
+
+## Approach & Efficiency
+
+
+## API
+<!-- Description of each method publicly available in each of your hashtable -->
+- I have a wrapper with no arguments that gets called for method that does things for data structure
+- a tostring is overriden to display contents.
+- [Coded Algorthm](lib/src/main/java/datastructures/hashtables/hashtable/HashTable.java)
+- [Test Algorthm](lib/src/test/java/datastructures/hashtables/hashtable/HashTableTest.java)
