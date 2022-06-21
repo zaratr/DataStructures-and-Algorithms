@@ -102,3 +102,20 @@ this code searches for an element in array and returns the element index that ma
 
 
 
+
+# Challenge Summary - Insertion Sort <a name="challenge27"></a>
+- sort an unsorted array using merge sort algorithm
+## WhiteBoard Process
+- ![Whiteboarding](Public/Code-Challenge-27.jpg)
+- [Coded Algorthm](lib/src/main/java/datastructures/array/mergesort/MergeSort.java)
+- [Test Algorthm](lib/src/test/java/datastructures/array/MergeSortTest.java)
+
+## Approach & Efficiency
+- the process of this code creates a two new arrays after splitting the arrays into two.
+- this process happens over and over.
+- then after all is split, into an individual array, the sorting process happens. this takes length of n times for worst case.
+- thus, this process uses N amount of space and we also have N time taken as the recusive call unwinds to compare elements.
+- thus, the time complexity Big O is O(N) and worst space complexity is O(1)
+- ![Math Logic Big O](Public/BigOMathMerge.jpg)
+## Contributors
+
