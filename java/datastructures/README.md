@@ -11,6 +11,7 @@
 - [challenge 4](#challenge04)
 - [challenge 5](#challenge05)
 - [Insertion Sort](#challenge26)
+- [Merge Sort](#challenge27)
 
 ## Challenge 01 <a name="challenge01"></a>
 
@@ -103,7 +104,7 @@ this code searches for an element in array and returns the element index that ma
 
 
 
-# Challenge Summary - Insertion Sort <a name="challenge27"></a>
+# Challenge Summary - Merge Sort <a name="challenge27"></a>
 - sort an unsorted array using merge sort algorithm
 ## WhiteBoard Process
 - ![Whiteboarding](Public/Code-Challenge-27.jpg)
