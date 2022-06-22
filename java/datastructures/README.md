@@ -163,5 +163,6 @@ this code searches for an element in array and returns the element index that ma
 - I have a wrapper with no arguments that gets called for method that does things for data structure
 - a toString is overriden to display contents.
 - uses Hashing method to create a value with the input of key.
-- [Coded Algorthm](lib/src/main/java/datastructures/hashtables/hashtable/HashTable.java)
-- [Test Algorthm](lib/src/test/java/datastructures/hashtables/hashtable/HashTableTest.java)
+- [Coded Algorthm](lib/src/main/java/datastructures/hashtables/hashtable/HashMap.java)
+- [Coded Algorthm 2](lib/src/main/java/datastructures/hashtables/hashtable/HashMapPair.java)
+- [Test Algorthm](lib/src/test/java/datastructures/hashtables/hashtable/HashMapTest.java)
