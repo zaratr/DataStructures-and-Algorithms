@@ -1,6 +1,5 @@
 package datastructures.hashtables.hashtable;
 
-import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -107,8 +106,9 @@ public List<String> keys()
 
 
 
-
-
+  public ArrayList<LinkedList<HashMapPair<K, V>>> getArr() {
+    return arr;
+  }
 
 
 
@@ -163,6 +163,7 @@ https://www.cs.miami.edu/home/odelia/teaching/csc317.sp15/syllabus/Algorithms5cS
     long unsignedHashValue = ((unsignedValue * 2654435761l) % unsignedIntMax);
     //convert bak to signed integer
     return (int) (unsignedHashValue + Integer.MIN_VALUE);
+    https://stackoverflow.com/questions/664014/what-integer-hash-function-are-good-that-accepts-an-integer-hash-key
 
 
 
@@ -171,17 +172,18 @@ https://www.cs.miami.edu/home/odelia/teaching/csc317.sp15/syllabus/Algorithms5cS
      s = k*A
      x = fractional part of s
      h(k) = floor(m*x)
-This seems to be the method that the theoreticians like.
+  This seems to be the method that the theoreticians like.
 
-To do this quickly with integer arithmetic, let w be the number of bits in a word (e.g. 32) and suppose m is 2^p. Then compute:
+  To do this quickly with integer arithmetic, let w be the number of bits in a word (e.g. 32) and suppose m is 2^p. Then compute:
 
-     s = floor(A * 2^w)
-     x = k*s
-     h(k) = x >> (w-p)      // i.e. right shift x by (w-p) bits
-                            // i.e. extract the p most significant
-                            // bits from x
+       s = floor(A * 2^w)
+       x = k*s
+       h(k) = x >> (w-p)      // i.e. right shift x by (w-p) bits
+                              // i.e. extract the p most significant
+                              // bits from x
 
-    https://stackoverflow.com/questions/664014/what-integer-hash-function-are-good-that-accepts-an-integer-hash-key
+      https://www.cs.hmc.edu/~geoff/classes/hmc.cs070.200101/homework10/hashfuncs.html
+      http://web.archive.org/web/20071223173210/http://www.concentric.net/~Ttwang/tech/inthash.htm
    */
 
   //TODO: figure out how to do this in java with a mod on N
