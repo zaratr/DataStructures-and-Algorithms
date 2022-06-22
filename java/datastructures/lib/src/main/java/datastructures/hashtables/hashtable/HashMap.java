@@ -130,31 +130,83 @@ public List<String> keys()
 https://www.cs.miami.edu/home/odelia/teaching/csc317.sp15/syllabus/Algorithms5cSlides.pdf
 
  */
+
+  public int hashing(int k)
+  {
+    //N : array size;
+    double A = .618033;
+    return (int)(N * (k * A % 1));//casting to int is a floor
+  }
   public int hashing(K key)
   {
 
     int k = key.hashCode();
-    //int N = arr.size();
-    double A = .61;
-    return (int)(N * (k * A % 1));
+    //N : array size;
+    double A = .618033;
+      int x = (int)(N * (k * A % 1));//casting to int is a floor
+//      int x = Math.abs(key.hashCode()) % N;
+    return x;
   }
   /*
-    knults vesion of Multiplication method
+    knuths vesion of Multiplication method
     - math algo is as follows: hashing(k) = ((A*k) mod 2**w)) >> (w-r)
     - where k = key, is some w bits. a is a random integer. 2**w is the right most w bits, r is the  right most second set of bits on its left most set of bits
     - shifts bits by using and and adding with >>
     - the result is then a unique value
-    https://stackoverflow.com/questions/664014/what-integer-hash-function-are-good-that-accepts-an-integer-hash-key
-   */
-  public int knultsHashing(K key)
-  {
-    int k = key.hashCode();
+
+
+   knuths method
+   int k = key;//assume key is an int or .hashcode()
     long unsignedValue = ((long) k ) - Integer.MIN_VALUE;
     long unsignedIntMax = (1l << 32);
     //knults multiplication method
     long unsignedHashValue = ((unsignedValue * 2654435761l) % unsignedIntMax);
     //convert bak to signed integer
     return (int) (unsignedHashValue + Integer.MIN_VALUE);
+
+
+
+    Multiplication Method (Cormen). Choose m to be a power of 2. Let A be some random-looking real number. Knuth suggests M = 0.5*(sqrt(5) - 1). Then do the following:
+
+     s = k*A
+     x = fractional part of s
+     h(k) = floor(m*x)
+This seems to be the method that the theoreticians like.
+
+To do this quickly with integer arithmetic, let w be the number of bits in a word (e.g. 32) and suppose m is 2^p. Then compute:
+
+     s = floor(A * 2^w)
+     x = k*s
+     h(k) = x >> (w-p)      // i.e. right shift x by (w-p) bits
+                            // i.e. extract the p most significant
+                            // bits from x
+
+    https://stackoverflow.com/questions/664014/what-integer-hash-function-are-good-that-accepts-an-integer-hash-key
+   */
+
+  //TODO: figure out how to do this in java with a mod on N
+  public int knuthsHashing(K key)
+  {
+
+    int p = 32; //prime number
+    int k = key.hashCode();
+    long goldenRatio = 2654435761l ;
+    int M = (int) Math.pow(N, p);
+    double A = .618033;
+    int s = (int) (A * Math.pow(2, goldenRatio));
+    int x = k*s;
+    return x >> (goldenRatio - p);
+  }
+
+  public int knuthsHashing(int key)
+  {
+    int k = key;
+    long unsignedValue = ((long) k ) - Integer.MIN_VALUE;
+    long unsignedIntMax = (1l << 32);
+    //knults multiplication method
+    long unsignedHashValue = ((unsignedValue * 2654435761l) % unsignedIntMax);
+    //convert bak to signed integer
+    return (int) (unsignedHashValue + Integer.MIN_VALUE) << (32 - 3);
   }
 
 }
