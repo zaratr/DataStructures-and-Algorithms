@@ -119,7 +119,7 @@ this code searches for an element in array and returns the element index that ma
 - thus, the time complexity Big O is O(N*logn) and worst space complexity is O(N)
 ## Contributors
 
-# Hashtables
+# Hashtables Abstract Data Type
 - implementing the class Hashtable
 ###Features:
 - set
@@ -147,11 +147,21 @@ this code searches for an element in array and returns the element index that ma
 ![Whiteboarding](Public/Code-Challenge-30.jpg)
 
 ## Approach & Efficiency
-
+- one to many
+- using linked list seems to be the best case for a generic case. to store in bucket.
+  - Simple Unifomity - each key is equally liekly to be hashed to any slot of the table. independant of where other keys hasing.
+  - analysis load factor λ is the n keys / slots in bucket and  λ < 1.
+- Worst case time complexity is O(N) because if all map to a single element in bucket, then searching is O(N)
+  - however, adding will be added to beginning or end of list which is O(1)
+- Worst case space complexity is only O(N) when adding a new value into linked list.
+- universal hashing for hasing(key) - hashing(key) = a*k+b mod prime mod m where prime > Universe
+  - this is best because worst case key1 != key2 is that will collide probability is 1/N which is good.
+-
 
 ## API
 <!-- Description of each method publicly available in each of your hashtable -->
 - I have a wrapper with no arguments that gets called for method that does things for data structure
-- a tostring is overriden to display contents.
+- a toString is overriden to display contents.
+- uses Hashing method to create a value with the input of key.
 - [Coded Algorthm](lib/src/main/java/datastructures/hashtables/hashtable/HashTable.java)
 - [Test Algorthm](lib/src/test/java/datastructures/hashtables/hashtable/HashTableTest.java)
