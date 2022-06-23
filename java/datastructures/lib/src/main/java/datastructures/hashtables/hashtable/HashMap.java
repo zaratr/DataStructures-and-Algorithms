@@ -111,7 +111,18 @@ public List<String> keys()
   }
 
 
-
+public List<String> keyAndValues()
+{
+  List<String> keysList = new ArrayList<>();
+  for(LinkedList<HashMapPair<K,V>> list : arr)
+  {
+    for(HashMapPair<K,V> pair : list){
+      String toTransfer = "Word: " + pair.getKey().toString() + " - Count: " + pair.getValue().toString();
+      keysList.add(toTransfer);
+    }
+  }
+  return keysList;
+}
 
 
 
