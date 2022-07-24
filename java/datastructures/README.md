@@ -119,7 +119,8 @@ this code searches for an element in array and returns the element index that ma
 - thus, the time complexity Big O is O(N*logn) and worst space complexity is O(N)
 ## Contributors
 
-# Hashtables Abstract Data Type
+
+# Challenge Summary - Hashtables Abstract Data Type <a name="challenge30"></a>
 - implementing the class Hashtable
 ###Features:
 - set
