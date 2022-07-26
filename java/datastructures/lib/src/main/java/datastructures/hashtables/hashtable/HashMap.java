@@ -31,7 +31,7 @@ public class HashMap<K, V> {
    */
 
   /**
-   * Constructor with argument that sets the size of the HashMap
+   * Constructor with argument that sets the size of the HashMap.java
    *
    * @param size
    * @throws IllegalAccessException

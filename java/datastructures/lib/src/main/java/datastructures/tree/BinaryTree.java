@@ -143,7 +143,7 @@ public class BinaryTree {
 
   /*
   List<List<Integer>> levels = new ArrayList<List<Integer>>();
-  HashMap<Integer, List<Integer>> hashMap = new HashMap<>();
+  HashMap.java<Integer, List<Integer>> hashMap = new HashMap.java<>();
   List<Integer> x ;
   public void helper(Tnode<Integer> node, int level) {
     // start the current level

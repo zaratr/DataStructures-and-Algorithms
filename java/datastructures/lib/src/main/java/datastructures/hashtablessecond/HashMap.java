@@ -3,13 +3,13 @@ package datastructures.hashtablessecond;
 import java.util.ArrayList;
 import java.util.List;
 
-class MyHashMap {
+class HashMap {
 
   private List<Bucket> hashTable;
   private int N;
 
 
-  public MyHashMap() {
+  public HashMap() {
     this.N = 2069 ;//arbitrary
     this.hashTable = new ArrayList();//cosntructor doesn't do anything - length = 0, no elements
     for(int i = 0; i < N; ++i)
@@ -17,7 +17,7 @@ class MyHashMap {
       hashTable.add(new Bucket());
     }
   }
-  public MyHashMap(int N)
+  public HashMap(int N)
   {
     this.N = N;
     this.hashTable = new ArrayList();
@@ -53,4 +53,5 @@ class MyHashMap {
 
 
 }
+
 
