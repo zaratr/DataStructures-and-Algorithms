@@ -46,7 +46,10 @@ class Bucket
     for(Pair<Integer, Integer> pair : list)
     {
       if(pair.getKey().equals(key))
+      {
         list.remove(pair);
+        break;
+      }
     }
 
   }
