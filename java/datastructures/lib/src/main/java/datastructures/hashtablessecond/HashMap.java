@@ -71,10 +71,10 @@ public class HashMap<K,V> {
 
 
   /*
-  public  final int hashing(K key)//public for testing
+  public  final int hashing(K key)//public for testing - this code works but different tests needed
   {
     int hashedKey = key.hashCode();
-    return (key == null) ? 0: hashedKey ^( hashedKey >>> 16);
+    return (key == null) ? 0: hashedKey ^ ( hashedKey >>> 16);
   }
 */
   public int hashing(K key)
