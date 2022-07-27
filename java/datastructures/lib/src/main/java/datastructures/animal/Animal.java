@@ -1,7 +1,6 @@
 package datastructures.animal;
 
 
-import datastructures.linkedlist.Node;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -15,8 +14,6 @@ public class Animal {
   public Animal(String type, String name) {
     this.type = type;
     this.name = name;
-
-
   }
 
 
