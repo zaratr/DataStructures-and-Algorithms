@@ -1,12 +1,17 @@
 package datastructures.hashtablessecond;
 
+import datastructures.hashtables.HashMapPair;
+
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
-class HashMap {
+public class HashMap<K,V> {
 
-  private List<Bucket> hashTable;
+  private List<Bucket<K,V>> hashTable;
   private int N;
+  private K key;
+  private V value;
 
 
   public HashMap() {
@@ -27,30 +32,58 @@ class HashMap {
     }
   }
 
+  public int size(){return N;}
 
-  public void put(int key, int value) {
-    int hashedKey = hashFunction(key);
+  public void put(K key, V value) {
+    int hashedKey = hashing(key);
     hashTable.get(hashedKey).update(key, value);
 
   }
 
-  public int get(int key) {
-    int hashedKey = hashFunction(key);
+
+  public V get(K key) {
+    int hashedKey = hashing(key);
     return hashTable.get(hashedKey).get(key);
   }
 
-  public void remove(int key) {
-    int hashedKey = hashFunction(key);
+  public void remove(K key) {
+    int hashedKey = hashing(key);
     hashTable.get(hashedKey).remove(key);
   }
-  private int hashFunction(int key)
+
+
+  public List<String> keys()
+  {
+    List<String> keysList = new ArrayList<>();
+    for(Bucket<K, V> list : hashTable)
+    {
+
+      keysList.addAll(list.getKeys());
+    }
+    return keysList;
+
+  }
+  public boolean contains(K key)
+  {
+    int index = hashing((K) key);
+    return hashTable.get(index).contains(key);
+  }
+
+
+  /*
+  public  final int hashing(K key)//public for testing
+  {
+    int hashedKey = key.hashCode();
+    return (key == null) ? 0: hashedKey ^( hashedKey >>> 16);
+  }
+*/
+  public int hashing(K key)
   {
     //multiplacation method.
-    int K = key;
+    int K = key.hashCode();
     double A = .618033;
     return (int)(N * (K * A % 1 ));
   }
-
 
 }
 

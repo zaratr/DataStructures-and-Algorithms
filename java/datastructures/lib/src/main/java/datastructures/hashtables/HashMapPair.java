@@ -1,4 +1,4 @@
-package datastructures.hashtables.hashtable;
+package datastructures.hashtables;
 
 /**
  * Funway to do this is using simpleentry

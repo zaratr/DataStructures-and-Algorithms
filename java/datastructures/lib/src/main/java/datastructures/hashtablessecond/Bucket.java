@@ -1,34 +1,37 @@
 package datastructures.hashtablessecond;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-class Bucket
+class Bucket<K, V>
 {
-  public List<Pair<Integer, Integer>> list;
+  public List<Pair<K, V>> list;
 
   public Bucket()
   {
-    list = new LinkedList<Pair<Integer, Integer>>();
+    list = new LinkedList<Pair<K,V>>();
   }
 
-  public int get(int key)
+  public V get(K key)
   {
-
-    for (Pair<Integer, Integer> pair : list)
+    if(key == null || list == null) return null;//quick check before traversing
+    V checkerV = null;
+    for (Pair<K,V> pair : list)
     {
       if (pair.getKey().equals(key))
       {
-        return pair.getValue();
+        checkerV =  pair.getValue();
+        break;
       }
     }
-    return -1;
+    return checkerV;
   }
-  public int update(int key, int value)
+  public int update(K key, V value)
   {
 
     boolean found = false;
-    for(Pair<Integer, Integer> pair : list)
+    for(Pair<K, V> pair : list)
     {
       if(pair.getKey().equals(key))
       {pair.setValue(value); found = true; break;}
@@ -36,14 +39,14 @@ class Bucket
     }
     if(!found)
     {
-      list.add(new Pair<Integer, Integer> (key, value));
+      list.add(new Pair<K, V> (key, value));
     }
     return 0;
   }
 
-  public void remove(int key)
+  public void remove(K key)
   {
-    for(Pair<Integer, Integer> pair : list)
+    for(Pair<K, V> pair : list)
     {
       if(pair.getKey().equals(key))
       {
@@ -52,6 +55,32 @@ class Bucket
       }
     }
 
+  }
+
+  public boolean contains(K key)
+  {
+    //list.contains(key);
+    for(Pair<K, V> pair : list)
+    {
+      if(pair.getKey().equals(key)){
+        return true;
+      }
+      else
+        break;
+    }
+    return false;
+  }
+
+  public ArrayList<String> getKeys()
+  {
+    String toDisplay = "";
+    ArrayList<String> keysList = new ArrayList<>();
+    for(Pair<K, V> pair : list)
+    {
+      toDisplay = "Data: " + pair.getKey().toString() + " - count: " + pair.getValue().toString();
+      keysList.add(toDisplay);
+    }
+    return keysList;
   }
 
 }
