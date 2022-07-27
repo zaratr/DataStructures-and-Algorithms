@@ -39,7 +39,7 @@ public class Search extends LinkedList{
   private boolean linearSearch(int toFind)
   {
     if(head == null) return false;
-    Node current = head;
+    Node<Integer> current = head;
 
     while(current != null)
     {
@@ -49,7 +49,7 @@ public class Search extends LinkedList{
     }
     return false;
   }
-  private boolean linearSearch(int toFind, Node head)//recursion
+  private boolean linearSearch(int toFind, Node<Integer> head)//recursion
   {
     if(head == null) return false;
     if(head.getData() == toFind) return true;

@@ -1,6 +1,6 @@
 package datastructures.linkedlist;
 
-public class LinkedList {
+public class LinkedList<T> {
   protected Node head;
   protected Node tail;
 
@@ -9,21 +9,21 @@ public class LinkedList {
   {
     this.head = null;
   }
-  public LinkedList(Node newHead)
+  public LinkedList(Node<T> newHead)
   {
     this.head = newHead;
   }
-  public LinkedList(int data)
+  public LinkedList(T data)
   {
     this.head = new Node(data);
   }
 
 
-  public Node getList(){
+  public Node<T> getList(){
     return head;
   }
   /*insert at head*/
-  public void insert(int data)
+  public void insert(T data)
   {
     if(head == null)
     {
@@ -39,12 +39,12 @@ public class LinkedList {
   }
 
 
-  public boolean includes(int toCmp)
+  public boolean includes(T toCmp)
   {
     Node current = head;
     while(current != null)
     {
-      if(toCmp == current.getData()){ return true;}
+      if(toCmp.equals(current.getData())){ return true;}
       current = current.getNext();
     }
     return false;
@@ -64,7 +64,7 @@ public class LinkedList {
   }
 
 /**********  LAB6 **********/
-  public void append(int data)
+  public void append(T data)
   {
     if(head == null)
     {
@@ -89,7 +89,7 @@ public class LinkedList {
     return;
   }
 
-  public void insertBefore(int data, int newData)
+  public void insertBefore(T data, T newData)
   {
     if(head == null)
     {
@@ -100,7 +100,7 @@ public class LinkedList {
     Node current = head;
     while(current != null)
     {
-      if(current.getData() == data)
+      if(current.getData().equals(data))
       {
         Node temp = new Node(newData);
         temp.setNext(prev.getNext());
@@ -113,7 +113,7 @@ public class LinkedList {
     return ;
   }
 
-  public void insertAfter(int data, int newData)
+  public void insertAfter(T data, T newData)
   {
     if(head == null)
     {
@@ -123,7 +123,7 @@ public class LinkedList {
     Node current = head;
     while(current != null)
     {
-      if(current.getData() == data)
+      if(current.getData().equals(data))
       {
         Node temp = new Node(newData);
         temp.setNext(current.getNext());
@@ -152,12 +152,12 @@ public class LinkedList {
     return num;
   }
 
-public int kthFromEnd(int k) {
-  if(head == null) return 0;
-  if(size() < k) return 0;
+public T kthFromEnd(int k) {
+  if(head == null) return null;
+  if(size() < k) return null;
   int stopCondition = size() - k;
-  int i = 1,output = 0;
-  Node current = head;
+  int i = 1; T output = null;
+  Node<T> current = head;
 
   while(current != null )
   {
@@ -175,7 +175,7 @@ public int kthFromEnd(int k) {
 /**********  LAB7 **********/
 
 /********* challenge 8 *******/
-public LinkedList zippylist(LinkedList list)
+public LinkedList<T> zippylist(LinkedList<T> list)
 {
     if(head == null)
     {
@@ -183,14 +183,14 @@ public LinkedList zippylist(LinkedList list)
       return this;
     }
     else if(list.head == null)
-      return new LinkedList(head);
+      return new LinkedList<T>(head);
 
-  Node current1 = head;
-  Node current2 = list.head;
+  Node<T> current1 = head;
+  Node<T> current2 = list.head;
   if(current1.getNext() == null)
   {
     current1.setNext(current2);//if this head is same memory location as list.head then it wont work due to java referencing
-    return new LinkedList(current1);
+    return new LinkedList<T>(current1);
   }
 
   while(current1!= null && current2 != null )
@@ -206,10 +206,10 @@ public LinkedList zippylist(LinkedList list)
       current1 = current1.getNext();
 
   }
-  return new LinkedList(current1);
+  return new LinkedList<T>(current1);
 }
 
-public LinkedList zippylist2(LinkedList list) //Greedy Algorithm
+public LinkedList<T> zippylist2(LinkedList<T> list) //Greedy Algorithm
 {
   //Base Case
   if(head == null)
@@ -221,19 +221,21 @@ public LinkedList zippylist2(LinkedList list) //Greedy Algorithm
   //else -> continue with code below.
 
   //local Declaration/Instantiation
-  Node newHead = new Node(),
+  Node<T> newHead = new Node<>(),
     newCurr = newHead;//instantiation of new list
-  Node cur1 = head,
+  Node<T> cur1 = head,
     cur2 = list.head;//using current for traversals on both lists
 
-  //iteration loop - (T and T -> T, T and F -> F, F and T -> F, F and F -> F;//
-  // SideNote, Negation !(T and F) -> !T or !F -> T) - DeMorgan Theorem(Boolean Algebra)//
+
+  /**
+   * iteration loop - (T and T -> T, T and F -> F, F and T -> F, F and F -> F;
+   * SideNote, Negation !(T and F) -> !T or !F -> T) - DeMorgan Theorem(Boolean Algebra)
+   */
   while(!(cur1 == null || cur2 == null)) //Stopping condition
-    //while(current1!= null && current2 != null )
   {
     //Temporary Nodes as placeholders to be added onto newHead Node
-    Node tempOne = new Node(cur1.getData()); //[x] -> NULL
-    Node tempTwo = new Node(cur2.getData()); //[x] -> NULL
+    Node<T> tempOne = new Node(cur1.getData()); //[x] -> NULL
+    Node<T> tempTwo = new Node(cur2.getData()); //[x] -> NULL
 
     //insert with no limitation to unsorted lists
     newCurr.setNext(tempOne);

@@ -21,14 +21,14 @@ class LinkedListTest {
 
   @Test
   public void testInsert() {
-    LinkedList sut = new LinkedList();
+    LinkedList<Integer> sut = new LinkedList();
     sut.insert(test1[0]);
     assert (sut.getList().getData() == 1);
   }
 
   @Test
   public void testHead() {
-    LinkedList sut = new LinkedList();
+    LinkedList<Integer> sut = new LinkedList();
     int i = 0;
 
     while (i < test2.length) {
@@ -41,7 +41,7 @@ class LinkedListTest {
 
   @Test
   public void testTail() {
-    LinkedList sut = new LinkedList();
+    LinkedList<Integer> sut = new LinkedList();
     int i = 0;
 
     while (i < test2.length) {
@@ -125,7 +125,7 @@ class LinkedListTest {
   @Test
   public void testKthFromEnd() {
     int k = 0;
-    LinkedList list = new LinkedList(1);
+    LinkedList<Integer> list = new LinkedList(1);
     list.append(3);
     list.append(8);
     list.append(2);

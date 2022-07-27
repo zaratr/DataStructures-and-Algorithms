@@ -4,7 +4,7 @@ import datastructures.linkedlist.LinkedList;
 import datastructures.linkedlist.Node;
 
 public class Stack {
-  public Node top, topRemove;
+  public Node<Integer> top, topRemove;
 
   public Stack()
   {
@@ -47,7 +47,7 @@ public class Stack {
   public int pop() throws NullPointerException
   {
     if(top == null) throw new NullPointerException("Stack is empty");
-    Node current = top;
+    Node<Integer> current = top;
     while(current != null)
     {
       if(current.getNext() == topRemove)

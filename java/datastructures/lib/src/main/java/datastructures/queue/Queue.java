@@ -4,7 +4,7 @@ import datastructures.linkedlist.Node;
 
 public class Queue {
 
-  private Node rear, front;
+  private Node<Integer> rear, front;
 
   //NOTE: head = rear, tail = front
   public Node getRear()

@@ -1,23 +1,19 @@
 package datastructures.linkedlist;
 
-public class Node {
-  private int data;
+public class Node<T> {
+  private T data;
   private Node next;
   //constructors
-  public Node()
-  {
-    this.data = 0;
-    this.next = null;
-  }
-  public Node(int data){
+  public Node(){}
+  public Node(T data){
     this.data = data;
     //this.next = null;
   }
-  public int getData()
+  public T getData()
   {
     return data;
   }
-  public void setData(int data)
+  public void setData(T data)
   {
     this.data = data;
     return;
@@ -27,7 +23,7 @@ public class Node {
     next = newNext;
   }
 
-  public Node getNext() {
+  public Node<T> getNext() {
     return next;
   }
 
