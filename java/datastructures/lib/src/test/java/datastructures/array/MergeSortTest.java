@@ -6,8 +6,8 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class MergeSortTest {
-  int[] arr = new int[]{8,4,23,42,16,15};
-  int[] assertArray = new int[]{4,8,15,16,23,42};
+  int[] arr = new int[]{8,4,42,23,16,15};
+  int[] assertArray = new int[]{4,8,15,16,42,23};
 
   @Test
   public void testMergeSort()

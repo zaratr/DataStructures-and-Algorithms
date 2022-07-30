@@ -3,6 +3,7 @@ package datastructures.hashtables;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.HashSet;
 
 
 /**
@@ -43,6 +44,8 @@ public class HashMap<K, V> {
     this.arr = new ArrayList<>(N);
     for(int i = 0; i<N; ++i)
     {
+      HashSet<Integer> set = new HashSet<>();
+      set.contains(2);
       arr.add(i, new LinkedList<>());
     }
   }
