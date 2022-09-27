@@ -43,7 +43,17 @@
 - [challenge 44](#challenge44)
 - [challenge 42](#challenge42)
 - [challenge 43](#challenge43)
+<dl>
+  <dt>Lower cost</dt>
+  <dd>The new version of this product costs significantly less than the previous one!</dd>
+  <dt>Easier to use</dt>
+  <dd>We've changed the product so that it's much easier to use!</dd>
+</dl>
 
+ID | Name | Rank
+-- | ---- | ----
+1 | Tom Preston-Werner | Awesome
+2 | Albert Einstein | Nearly as awesome
 
 <ol style="list-style-type:decimal; width: 600px;">
     <li style="float: left; width: 200px; padding: 2px 0px;">Test1</li>
