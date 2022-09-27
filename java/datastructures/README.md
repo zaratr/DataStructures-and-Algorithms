@@ -55,6 +55,18 @@ ID | Name | Rank
 1 | Tom Preston-Werner | Awesome
 2 | Albert Einstein | Nearly as awesome
 
+<table>
+  <tr>
+    <th>ID</th><th>Name</th><th>Rank</th>
+  </tr>
+  <tr>
+    <td>1</td><td>Tom Preston-Werner</td><td>Awesome</td>
+  </tr>
+  <tr>
+    <td>2</td><td>Albert Einstein</td><td>Nearly as awesome</td>
+  </tr>
+</table>
+
 <ol style="list-style-type:decimal; width: 600px;">
     <li style="float: left; width: 200px; padding: 2px 0px;">Test1</li>
     <li style="float: left; width: 200px; padding: 2px 0px;">Test2</li>
