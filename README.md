@@ -22,8 +22,8 @@ To run your tests
 
 ### Algorithms
 ### Java 
-- [Intervew Prep - Array WhiteBoarding ( * Reverse Array, * Insert Shift Array, * Binary Search Array, *Add Sum)](java/datastructures/README.md)
 <!-- - [Data Structure implementations and code challenges - lab 6 and 20](java/linked-list/README.md) -->
+- [Intervew Prep - Array WhiteBoarding ( * Reverse Array, * Insert Shift Array, * Binary Search Array, *Add Sum)](java/datastructures/README.md)
 - [Data Structure implementations and code challenges - lab 6 and 19](java/datastructures/README.md)
 - [Data Structure implementation and code challenges insertion sort, merge sort, - lab 26 and greater](java/datastructures/README.md)
 ### JavaScript
