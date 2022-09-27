@@ -10,17 +10,18 @@
     <th>ID</th><th>Name</th><th>Rank</th>
   </tr>
   <tr>
-    <td ><a href="#challenge01">challenge1</td><td>Tom Preston-Werner</td><td>Awesome</td>
+    <td ><a href="#challenge01">challenge1</a></td>
+    <td>Tom Preston-Werner</td>
+    <td>Awesome</td>
   </tr>
-  <tr>
 <tr>
-<td> [challenge 1](#challenge01)</td>
-<td> [challenge 2](#challenge02)</td>
-<td> [challenge 3](#challenge03)</td>
-<td> [challenge 4a](#challenge04a)</td>
-<td> [challenge 4b](#challenge04b)</td>
-<td> [challenge 5](#challenge05)</td>
-<td> [challenge 6](#challenge06)</td>
+<td> <a href="#challenge01">challenge 1</a></td>
+<td> <a href="#challenge02">challenge 2</a></td>
+<td> <a href="#challenge03">challenge 3</a></td>
+<td> <a href="#challenge04">challenge 4</a></td>
+<td> <a href="#challenge05">challenge 5</a></td>
+<td> <a href="#challenge06">challenge 6</a></td>
+<td> <a href="#challenge07">challenge 7</a></td>
 </tr>
 <tr>
 <td> [challenge 7](#challenge07)</td>
