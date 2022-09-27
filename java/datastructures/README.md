@@ -5,50 +5,52 @@
 ## Code Challenges
 
 ## Table of Contents
+- [challenge 1](#challenge01)
+- [challenge 2](#challenge02)
+- [challenge 3](#challenge03)
+- [challenge 4a](#challenge04a)
+- [challenge 4b](#challenge04b)
+- [challenge 5](#challenge05)
+- [challenge 6](#challenge06)
+- [challenge 7](#challenge07)
+- [challenge 8](#challenge08)
+- [challenge 9](#challenge09)
+- [challenge 10](#challenge10)
+- [challenge 11](#challenge11)
+- [challenge 12](#challenge12)
+- [challenge 13](#challenge13)
+- [challenge 14](#challenge14)
+- [challenge 15](#challenge15)
+- [challenge 16](#challenge16)
+- [challenge 17](#challenge17)
+- [challenge 18](#challenge18)
+- [challenge 19](#challenge19)
+- [Insertion Sort](#challenge26)
+- [Merge Sort](#challenge27)
+- [Quick Sort](#challenge28)
+- [Interview 29a](#challenge29a)
+- [Interview 29b](#challenge29b)
+- [challenge 30](#challenge30)
+- [challenge 31](#challenge31)
+- [challenge 32](#challenge32)
+- [challenge 33](#challenge33)
+- [challenge 34](#challenge34)
+- [challenge 35](#challenge35)
+- [challenge 36](#challenge36)
+- [challenge 37](#challenge37)
+- [challenge 39](#challenge39)
+- [challenge 41](#challenge41)
+- [challenge 44](#challenge44)
+- [challenge 42](#challenge42)
+- [challenge 43](#challenge43)
 
-<section>
-  <ol style="list-style-type:decimal; width: 600px;">
-    <li style="float: left; width: 200px; padding: 2px 0px;"> [challenge 1](#challenge01)</li>
-    <li style="float: left; width: 200px; padding: 2px 0px;"> [challenge 2](#challenge02)</li>
-    <li style="float: left; width: 200px; padding: 2px 0px;"> [challenge 3](#challenge03)</li>
-    <li style="float: left; width: 200px; padding: 2px 0px;"> [challenge 4a](#challenge04a)</li>
-    <li style="float: left; width: 200px; padding: 2px 0px;"> [challenge 4b](#challenge04b)</li>
-    <li style="float: left; width: 200px; padding: 2px 0px;"> [challenge 5](#challenge05)</li>
-    <li style="float: left; width: 200px; padding: 2px 0px;"> [challenge 6](#challenge06)</li>
-    <li style="float: left; width: 200px; padding: 2px 0px;"> [challenge 7](#challenge07)</li>
-    <li style="float: left; width: 200px; padding: 2px 0px;"> [challenge 8](#challenge08)</li>
-    <li style="float: left; width: 200px; padding: 2px 0px;"> [challenge 9](#challenge09)</li>
-    <li style="float: left; width: 200px; padding: 2px 0px;"> [challenge 10](#challenge10)</li>
-    <li style="float: left; width: 200px; padding: 2px 0px;"> [challenge 11](#challenge11)</li>
-    <li style="float: left; width: 200px; padding: 2px 0px;"> [challenge 12](#challenge12)</li>
-    <li style="float: left; width: 200px; padding: 2px 0px;"> [challenge 13](#challenge13)</li>
-    <li style="float: left; width: 200px; padding: 2px 0px;"> [challenge 14](#challenge14)</li>
-    <li style="float: left; width: 200px; padding: 2px 0px;"> [challenge 15](#challenge15)</li>
-    <li style="float: left; width: 200px; padding: 2px 0px;"> [challenge 16](#challenge16)</li>
-    <li style="float: left; width: 200px; padding: 2px 0px;"> [challenge 17](#challenge17)</li>
-    <li style="float: left; width: 200px; padding: 2px 0px;"> [challenge 18](#challenge18)</li>
-    <li style="float: left; width: 200px; padding: 2px 0px;"> [challenge 19](#challenge19)</li>
-    <li style="float: left; width: 200px; padding: 2px 0px;"> [Insertion Sort](#challenge26)</li>
-    <li style="float: left; width: 200px; padding: 2px 0px;"> [Merge Sort](#challenge27)</li>
-    <li style="float: left; width: 200px; padding: 2px 0px;"> [Quick Sort](#challenge28)</li>
-    <li style="float: left; width: 200px; padding: 2px 0px;"> [Interview 29a](#challenge29a)</li>
-    <li style="float: left; width: 200px; padding: 2px 0px;"> [Interview 29b](#challenge29b)</li>
-    <li style="float: left; width: 200px; padding: 2px 0px;"> [challenge 30](#challenge30)</li>
-    <li style="float: left; width: 200px; padding: 2px 0px;"> [challenge 31](#challenge31)</li>
-    <li style="float: left; width: 200px; padding: 2px 0px;"> [challenge 32](#challenge32)</li>
-    <li style="float: left; width: 200px; padding: 2px 0px;"> [challenge 33](#challenge33)</li>
-    <li style="float: left; width: 200px; padding: 2px 0px;"> [challenge 34](#challenge34)</li>
-    <li style="float: left; width: 200px; padding: 2px 0px;"> [challenge 35](#challenge35)</li>
-    <li style="float: left; width: 200px; padding: 2px 0px;"> [challenge 36](#challenge36)</li>
-    <li style="float: left; width: 200px; padding: 2px 0px;"> [challenge 37](#challenge37)</li>
-    <li style="float: left; width: 200px; padding: 2px 0px;"> [challenge 39](#challenge39)</li>
-    <li style="float: left; width: 200px; padding: 2px 0px;"> [challenge 41](#challenge41)</li>
-    <li style="float: left; width: 200px; padding: 2px 0px;"> [challenge 42](#challenge42)</li>
-    <li style="float: left; width: 200px; padding: 2px 0px;"> [challenge 43](#challenge43)</li>
-    <li style="float: left; width: 200px; padding: 2px 0px;"> [challenge 44](#challenge44)</li>
-  </ol>
-</section>
-</br>
+
+<ol style="list-style-type:decimal; width: 600px;">
+    <li style="float: left; width: 200px; padding: 2px 0px;">Test1</li>
+    <li style="float: left; width: 200px; padding: 2px 0px;">Test2</li>
+    <li style="float: left; width: 200px; padding: 2px 0px;">Test3</li>
+</ol>
+
 ## Challenge 01 <a name="challenge01"></a>
 
 ### Reverse an Array
