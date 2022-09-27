@@ -5,46 +5,57 @@
 ## Code Challenges
 
 ## Table of Contents
-|||||| 
-| - | - | - | - | - |
-| [challenge 1](#challenge01)| [challenge 2](#challenge02) | dsfdf | adfs | asdf |
-- [challenge 2](#challenge02)
-- [challenge 3](#challenge03)
-- [challenge 4a](#challenge04a)
-- [challenge 4b](#challenge04b)
-- [challenge 5](#challenge05)
-- [challenge 6](#challenge06)
-- [challenge 7](#challenge07)
-- [challenge 8](#challenge08)
-- [challenge 9](#challenge09)
-- [challenge 10](#challenge10)
-- [challenge 11](#challenge11)
-- [challenge 12](#challenge12)
-- [challenge 13](#challenge13)
-- [challenge 14](#challenge14)
-- [challenge 15](#challenge15)
-- [challenge 16](#challenge16)
-- [challenge 17](#challenge17)
-- [challenge 18](#challenge18)
-- [challenge 19](#challenge19)
-- [Insertion Sort](#challenge26)
-- [Merge Sort](#challenge27)
-- [Quick Sort](#challenge28)
-- [Interview 29a](#challenge29a)
-- [Interview 29b](#challenge29b)
-- [challenge 30](#challenge30)
-- [challenge 31](#challenge31)
-- [challenge 32](#challenge32)
-- [challenge 33](#challenge33)
-- [challenge 34](#challenge34)
-- [challenge 35](#challenge35)
-- [challenge 36](#challenge36)
-- [challenge 37](#challenge37)
-- [challenge 39](#challenge39)
-- [challenge 41](#challenge41)
-- [challenge 44](#challenge44)
-- [challenge 42](#challenge42)
-- [challenge 43](#challenge43)
+<table>
+  <tr>
+    <th>ID</th><th>Name</th><th>Rank</th>
+  </tr>
+  <tr>
+    <td ><a href="#challenge01">challenge1</td><td>Tom Preston-Werner</td><td>Awesome</td>
+  </tr>
+  <tr>
+
+<td> [challenge 1](#challenge01)</td>
+<td> [challenge 2](#challenge02)</td>
+<td> [challenge 3](#challenge03)</td>
+<td> [challenge 4a](#challenge04a)</td>
+<td> [challenge 4b](#challenge04b)</td>
+<td> [challenge 5](#challenge05)</td>
+<td> [challenge 6](#challenge06)</td>
+<td> [challenge 7](#challenge07)</td>
+<td> [challenge 8](#challenge08)</td>
+<td> [challenge 9](#challenge09)</td>
+<td> [challenge 10](#challenge10)</td>
+<td> [challenge 11](#challenge11)</td>
+<td> [challenge 12](#challenge12)</td>
+<td> [challenge 13](#challenge13)</td>
+<td> [challenge 14](#challenge14)</td>
+<td> [challenge 15](#challenge15)</td>
+<td> [challenge 16](#challenge16)</td>
+<td> [challenge 17](#challenge17)</td>
+<td> [challenge 18](#challenge18)</td>
+<td> [challenge 19](#challenge19)</td>
+<td> [Insertion Sort](#challenge26</td>)
+<td> [Merge Sort](#challenge27)</td>
+<td> [Quick Sort](#challenge28)</td>
+<td> [Interview 29a](#challenge29a</td>)
+<td> [Interview 29b](#challenge29b</td>)
+<td> [challenge 30](#challenge30)</td>
+<td> [challenge 31](#challenge31)</td>
+<td> [challenge 32](#challenge32)</td>
+<td> [challenge 33](#challenge33)</td>
+<td> [challenge 34](#challenge34)</td>
+<td> [challenge 35](#challenge35)</td>
+<td> [challenge 36](#challenge36)</td>
+<td> [challenge 37](#challenge37)</td>
+<td> [challenge 39](#challenge39)</td>
+<td> [challenge 41](#challenge41)</td>
+<td> [challenge 44](#challenge44)</td>
+<td> [challenge 42](#challenge42)</td>
+<td> [challenge 43](#challenge43)</td>
+
+  </tr>
+</table
+
 <dl>
   <dt>Lower cost</dt>
   <dd>The new version of this product costs significantly less than the previous one!</dd>
