@@ -5,12 +5,9 @@
 ## Code Challenges
 
 ## Table of Contents
-|  |  |  |
-| ------ | ------ | ------ |
-|  
-
- [challenge 1](#challenge01)
-| stuff | dsfdf |
+|||||| 
+| - | - | - | - | - |
+| [challenge 1](#challenge01)| [challenge 2](#challenge02) | dsfdf | adfs | asdf |
 - [challenge 2](#challenge02)
 - [challenge 3](#challenge03)
 - [challenge 4a](#challenge04a)
