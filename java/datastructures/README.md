@@ -13,7 +13,7 @@
     <td ><a href="#challenge01">challenge1</td><td>Tom Preston-Werner</td><td>Awesome</td>
   </tr>
   <tr>
-
+<tr>
 <td> [challenge 1](#challenge01)</td>
 <td> [challenge 2](#challenge02)</td>
 <td> [challenge 3](#challenge03)</td>
@@ -21,6 +21,8 @@
 <td> [challenge 4b](#challenge04b)</td>
 <td> [challenge 5](#challenge05)</td>
 <td> [challenge 6](#challenge06)</td>
+</tr>
+<tr>
 <td> [challenge 7](#challenge07)</td>
 <td> [challenge 8](#challenge08)</td>
 <td> [challenge 9](#challenge09)</td>
@@ -28,6 +30,8 @@
 <td> [challenge 11](#challenge11)</td>
 <td> [challenge 12](#challenge12)</td>
 <td> [challenge 13](#challenge13)</td>
+</tr>
+<tr>
 <td> [challenge 14](#challenge14)</td>
 <td> [challenge 15](#challenge15)</td>
 <td> [challenge 16](#challenge16)</td>
@@ -35,6 +39,7 @@
 <td> [challenge 18](#challenge18)</td>
 <td> [challenge 19](#challenge19)</td>
 <td> [Insertion Sort](#challenge26</td>)
+</tr>
 <td> [Merge Sort](#challenge27)</td>
 <td> [Quick Sort](#challenge28)</td>
 <td> [Interview 29a](#challenge29a</td>)
@@ -42,16 +47,21 @@
 <td> [challenge 30](#challenge30)</td>
 <td> [challenge 31](#challenge31)</td>
 <td> [challenge 32](#challenge32)</td>
+</tr>
+<tr>
 <td> [challenge 33](#challenge33)</td>
 <td> [challenge 34](#challenge34)</td>
 <td> [challenge 35](#challenge35)</td>
 <td> [challenge 36](#challenge36)</td>
 <td> [challenge 37](#challenge37)</td>
 <td> [challenge 39](#challenge39)</td>
+</tr>
+<tr>
 <td> [challenge 41](#challenge41)</td>
 <td> [challenge 44](#challenge44)</td>
 <td> [challenge 42](#challenge42)</td>
 <td> [challenge 43](#challenge43)</td>
+</tr>
 
   </tr>
 </table
