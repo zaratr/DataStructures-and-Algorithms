@@ -23,4 +23,5 @@ To run your tests
 ### Algorithms
 - [Array WhiteBoarding - reverse array, insert shift array, binary search array, add sum](java/datastructures/README.md)
 - [Data Structure implementations and code challenges - lab 6 and 20](java/linked-list/README.md)
+- [Data Structure implementations and code challenges - lab 6 and 19](java/datastructures/README.md)
 - [Data Structure implementation and code challenges insertion sort, merge sort, - lab 26 and greater](java/datastructures/README.md)
