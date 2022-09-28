@@ -18,11 +18,11 @@ Clone Project
 
  Review scripts such as json, makefile to test code.
 
-### Intermediate Code Challenges
+## Intermediate Code Challenges
 
-Under the `javascript` folder, at the top level, is a sub-folder called `code-challenges`. Further explanain [here](javascript/README.md).
+Under the `javascript` folder, at the top level, is a sub-folder called `code-challenges`. Further explanation [here](javascript/README.md).
 
-As an intermediate introduction to code Algorithms, there will be code challenges such as regex, and sorting using array objects.
+As an intermediate introduction to code Algorithms, there will be code challenges such as regex, and array sorting.
 
 Here is a simple way to get code running.
 If you have not already done so, run `npm install` from within this folder to set up your system to be able to run tests using `Jest`
@@ -33,7 +33,7 @@ To run your tests
 - run `npm test` to run all the tests
 - run `npm test ##` to only run tests for challenge ## (i.e. 01)
 
-### Advanced Data Structures and Code Challenges
+## Advanced Data Structures and Code Challenges
 Below are my overall understanding of five languages in Data Structures and Algorithms. Further, I've used junit, npm, and more.
 ### Algorithms
 ### Java
