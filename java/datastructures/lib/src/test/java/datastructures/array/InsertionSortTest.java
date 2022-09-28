@@ -2,7 +2,6 @@ package datastructures.array;
 
 import datastructures.array.insertionsort.InsertionSort;
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 public class InsertionSortTest {

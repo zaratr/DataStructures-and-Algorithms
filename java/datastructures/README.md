@@ -55,16 +55,18 @@
     <td> <a href="#challenge42">challenge 42</a></td>
     <td> <a href="#challenge43">challenge 43</a></td>
   </tr>
-</table
+</table>
 
 ## Challenge 01 <a name="challenge01"></a>
 
 ### Reverse an Array
 - Write a function called reverseArray which takes an array as an argument. Without utilizing any of the built-in methods available to your language, return an array with elements in reversed order.
-
+- Input: An Integer Array
+- Output: Same Reversed Integer Array
+- [Full Code Description Markdown](Public/Doc/code01.md)
 
 ### Whiteboard Process
-[reverse-array Whiteboarding](Public/reverse-array.pdf)
+- [reverse-array Whiteboarding PDF](Public/Code-Challenge-01.pdf)
 
 
 ### Approach & Efficiency
@@ -78,10 +80,15 @@ end and increment front pointers by one. since we only use one loop and n elemen
 is being traversed
 - Time: O(n) because we iterate through full array is worse case and Space: O(1) no extra memory is added per each
 iteration
-- Location: 'codechallenges/Reverse-Array/reverse-array'
-- Method: reverse-array(int []);
+- Location: [ReverseArray](../ReverseArray/ReverseArray.java)
+- Method: reverse-array(int [])
 
-### Challenge 02<a name="challenge02"></a>
+## Challenge 02<a name="challenge02"></a>
+### Insert and Shift Array
+- Write a function called insertShiftArray which takes in an array and a value to be added. Without utilizing any of the built-in methods available to your language, return an array with the new value added at the middle index.
+- Input: An Integer Array
+- Output: Same Integer Array
+- [Full Code Description Markdown](Public/Doc/code02.md)
 ### Whiteboard Process
 [insert-Shift-Array Whiteboarding](Public/codechallenge2.pdf)
 
@@ -95,38 +102,44 @@ just be a new array at the end of day) or just return new array (without the usa
 time usage is O(n) because it depends on how long the length of array is and Space is O(1) because we dont iterate through
 and add more memory
 
-- Location: 'codechallenges/insertShift/insertShiftArray'
-- Method: insertShiftArray(int []x);
+- Location: [InsertShiftArray](lib/src/main/java/datastructures/array/insertShiftArray/insertShiftArray.java)
+- Method: insertShiftArray(ArrayList<Integer> x, int toAdd)
+- Test : [InsertShiftArrayTest()](lib/src/test/java/datastructures/array/InsertShiftArrayTest.java)
 
 ### Challenge 03<a name="challenge03"></a>
+### Binary Search
+- this code searches for an element in array and returns the element index that matches the key.
+- input: Integer array and Integer to find
+- output an Integer
+- [Full Code Description Markdown](Public/Doc/code03.md)
 ### Whiteboard Process
 [Binary-Search Whiteboarding](Public/binary-search.jpg)
 
 
-## Approach & Efficiency
-this code searches for an element in array and returns the element index that matches the key.
+### Approach & Efficiency
+- By searching bisection method, I was able to avoid usage of creating new objects. So, Space Complexity is O(1). Further, a single iteration is needed to traverse the elements in the array from beginning to N/2 length of array. Thus, the time complexity is O(log(N)).
 - worked with Jason Wilson
 - Location: 'codechallenges/binary-search/binary-search.jpg'
 - Method: binary-search(int []x, int target);
 
 
 ### Challenge 04<a name="challenge04"></a>
+- the code adds the sum of each row in the matrix. Then the sum is returned into a new array.
+- [Full Description First](Public/Doc/code04a.md)
+- Ask the candidate to write a function to accepts an integer, and returns the nth number in the Fibonacci sequence.
+- [Full Description Second](Public/Doc/code04b.md)
 ### Whiteboard Process
-[Binary-Search Whiteboarding](Public/binary-search.jpg)
-
+- [Sum Matrix Whiteboarding](Public/summatrix.jpg)
+- [Fibonacci Whiteboarding](Public/fibonacci.jpg)
 
 ## Approach & Efficiency
-this code searches for an element in array and returns the element index that matches the key.
-- worked with Jason Wilson
-- Location: 'codechallenges/binary-search/binary-search.jpg'
-- Method: binary-search(int []x, int target);
+- the Time complexity is O(n) and space is O(1);
 
 ### Challenge 05 <a name="challenge05"></a>
+- [Full Description](Public/Doc/code05.md)
 ### Whiteboard Process
 [AddSum WhiteBoarding](Public/AddSum.jpg)
 ## Approach & Efficiency
-- the code adds the sum of each row in the matrix. Then the sum is returned into a new array.
-- the Time complexity is O(n) and space is O(1);
 
 # Singly Linked List - Insert, toString, includes
 - Created a singly linked list that inserts, Overrides toString, includes
