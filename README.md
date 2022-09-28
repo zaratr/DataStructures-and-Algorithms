@@ -20,9 +20,9 @@ Clone Project
 
 ### Intermediate Code Challenges
 
-Under the `javascript` folder, at the top level, is a sub-folder called `code-challenges`
+Under the `javascript` folder, at the top level, is a sub-folder called `code-challenges`. Further explanain [here](javascript/README.md).
 
-As an intermediate introduction to code Algorithms, I focused my learning into JavaScript and Full stack Development.
+As an intermediate introduction to code Algorithms, there will be code challenges such as regex, and sorting using array objects.
 
 Here is a simple way to get code running.
 If you have not already done so, run `npm install` from within this folder to set up your system to be able to run tests using `Jest`
