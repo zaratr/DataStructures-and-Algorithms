@@ -17,7 +17,7 @@
   </tr>
   <tr>
     <td><a href="#challenge08"> challenge 8 </a></td>
-    <td><a href="#challenge09"> Interview 9a </a></td>
+    <td><a href="#challenge09"> Interview 9 </a></td>
     <td><a href="#challenge10"> challenge 10 </a></td>
     <td><a href="#challenge11"> challenge 11 </a></td>
     <td><a href="#challenge12"> challenge 12 </a></td>
@@ -202,7 +202,7 @@ running libraryTest will run tests. or create a static main and call the functio
 - [code challenge test](lib/src/test/java/datastructures/linkedlist/LinkedListTest.java)
 
 
-## Challenge 09 <a name="codechallenge09">
+## Challenge 09 <a name="challenge09">
 ### Challenge Summary
 - 9a reverse a linked list and return the reversed list
 - 9b check if linked list is a palindrome
@@ -215,7 +215,7 @@ running libraryTest will run tests. or create a static main and call the functio
 - 9a time O(N) space O(1)
 - 9b time O(N) and space O(1)
 
-## Challenge 10 <a name="codechallenge10"></a>
+## Challenge 10 <a name="challenge10"></a>
 ### Stacks and Queues - 10
 - adds a stack using lifo to pop and push, and a queue using enqueue and dequeue method
 - [Full Description](Public/Doc/code10.md)
@@ -228,7 +228,7 @@ running libraryTest will run tests. or create a static main and call the functio
 ## API
 - no api used
 
-## Challenge Summary - 11 <a name="codechallenge11"></a>
+## Challenge Summary - 11 <a name="challenge11"></a>
 - Pseudo Queue using Stacks to implement
 - [Full Description](Public/Doc/code11.md)
 ## WhiteBoard Process
@@ -240,7 +240,7 @@ running libraryTest will run tests. or create a static main and call the functio
 - [Code Challenge 11 - PseudoMerge](lib/src/main/java/datastructures/queue/PseudoQueue.java)
 
 
-## Challenge 12 <a name="codechallenge12"></a>
+## Challenge 12 <a name="challenge12"></a>
 ### Challenge Summary - 12
 - Pseudo Queue using Stacks to implement the Animal Class
 - Code Challenge 12
@@ -255,7 +255,7 @@ running libraryTest will run tests. or create a static main and call the functio
 - [Code Challenge 12 - AnimalShelter](datastructures/lib/src/main/java/datastructures/animal/AnimalShelter.java)
 
 
-## Code Challenge 13 <a name="codechallenge13"></a>
+## Code Challenge 13 <a name="challenge13"></a>
 ### Challenge Summary
 - Write a function called validate brackets
 - [Full Description](Public/Doc/code13.md)
@@ -274,7 +274,7 @@ running libraryTest will run tests. or create a static main and call the functio
 - [Code Challenge 13(2) - ValidateParenthesis](datastructures/lib/src/main/java/datastructures/validatebrackets/ValidateParenthesis.java)
 - [Code Challenge 13(3) - ValidateParenthesis](datastructures/lib/src/main/java/datastructures/validatebrackets/ValidParenth3.java)
 
-## Code Challenge 14 <a name="codechallenge14"></a>
+## Code Challenge 14 <a name="challenge14"></a>
 # Challenge Summary
 - Find the max value in node of the Queue
 - [Full Description](Public/Doc/code14.md)
@@ -286,7 +286,7 @@ running libraryTest will run tests. or create a static main and call the functio
 - do O(1) operations
 - therefore, it is O(N) and recreating new nodes is O(N) space
 
-## Code Challenge 15 <a name="codechallenge15"></a>
+## Code Challenge 15 <a name="challenge15"></a>
 ### Challenge Summary - 15
 - Create a Node and BinaryTree and Binary Search tree that adds and displays preorder, post order, and inorder.
 - [Full Description](Public/Doc/code15.md)
@@ -301,7 +301,7 @@ running libraryTest will run tests. or create a static main and call the functio
 - [Code Challenge 15 - BinaryTree](lib/src/main/java/datastructures/tree/BinaryTree.java)
 - [Code Challenge 15 - BinarySearchTree](lib/src/main/java/datastructures/tree/BinarySearchTree.java)
 
-## Code Challenge 16 <a name="codechallenge16"></a>
+## Code Challenge 16 <a name="challenge16"></a>
 ### Challenge Summary
 - Find the maximum value stored in the tree. You can assume that the values stored in the Binary Tree will be numeric
 - [Full Description](Public/Doc/code16.md)
@@ -314,7 +314,7 @@ running libraryTest will run tests. or create a static main and call the functio
 - therefore, it is O(N) and recreating new nodes is O(N) space
 - [Code Challenge 16 - maxValue()](lib/src/main/java/datastructures/tree/BinaryTree.java)
 
-## Code Challenge 17 <a name="codechallenge17"></a>
+## Code Challenge 17 <a name="challenge17"></a>
 ### Challenge Summary
 - add to a list by using BreadthFist traversal
 - [Full Description](Public/Doc/code17.md)
@@ -331,7 +331,7 @@ running libraryTest will run tests. or create a static main and call the functio
 ## Contributors
 - Jason Wilson
 
-## Code Challenge 18 <a name="codechallenge18"></a>
+## Code Challenge 18 <a name="challenge18"></a>
 ### Challenge Summary
 - Write a function called fizz buzz tree
 - [Full Description](Public/Doc/code18.md)
@@ -350,7 +350,7 @@ running libraryTest will run tests. or create a static main and call the functio
 ## Contributors
 - Jason Wilson
 
-## Code Challenge 19 <a name="codechallenge19"></a>
+## Code Challenge 19 <a name="challenge19"></a>
 ### Challenge Summary
 - Find the sum of all the odd numbers in a binary search tree.
 - [Full Description](Public/Doc/code19.md)
