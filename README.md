@@ -38,10 +38,13 @@ Below are my overall understanding of five languages in Data Structures and Algo
 ### Algorithms
 ### Java
 <!-- - [Data Structure implementations and code challenges - lab 6 and 20](java/linked-list/README.md) -->
+- [Instruction guide](java/README.md)
 - [Intervew Prep - Array WhiteBoarding ( * Reverse Array, * Insert Shift Array, * Binary Search Array, *Add Sum)](java/datastructures/README.md)
 - [Data Structure implementations and code challenges - lab 6 and 19](java/datastructures/README.md)
 - [Data Structure implementation and code challenges insertion sort, merge sort, - lab 26 and greater](java/datastructures/README.md)
 ### JavaScript
+- [Instruction guide](javascript/README.md)
 ### Python
+- [Instruction guid](python/README.md)
 ### C++
 ### C

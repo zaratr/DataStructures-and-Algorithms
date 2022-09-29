@@ -16,25 +16,24 @@
     <td> <a href="#challenge07">challenge 7</a></td>
   </tr>
   <tr>
-    <td><a href="#challenge07"> challenge 7 </a></td>
     <td><a href="#challenge08"> challenge 8 </a></td>
-    <td><a href="#challenge09"> challenge 9 </a></td>
+    <td><a href="#challenge09"> Interview 9a </a></td>
     <td><a href="#challenge10"> challenge 10 </a></td>
     <td><a href="#challenge11"> challenge 11 </a></td>
     <td><a href="#challenge12"> challenge 12 </a></td>
     <td><a href="#challenge13"> challenge 13 </a></td>
+    <td> <a href="#challenge14">challenge 14</a> </td>
   </tr>
   <tr>
-    <td> <a href="#challenge14">challenge 14</a> </td>
     <td> <a href="#challenge15">challenge 15</a> </td>
     <td>  <a href="#challenge16">challenge 16</a>  </td>
     <td>  <a href="#challenge17">challenge 17</a>  </td>
     <td>  <a href="#challenge18">challenge 18</a>  </td>
     <td>  <a href="#challenge19">challenge 19</a>  </td>
-    <td>  <a href="#challenge2">Insertion Sort</a>  </td>
+    <td>  <a href="#challenge26">challenge 26</a>  </td>
+    <td> <a href="#challenge27">challenge 27</a></td>
   </tr>
-    <td> <a href="#challenge27">Merge Sort</a></td>
-    <td> <a href="#challenge28">Quick Sort</a></td>
+    <td> <a href="#challenge28">challenge 28</a></td>
     <td> <a href="#challenge29">Interview 29a</a></td>
     <td> <a href="#challenge29">Interview 29b</a></td>
     <td> <a href="#challenge30">challenge 30</a></td>
@@ -66,7 +65,7 @@
 - [Full Code Description Markdown](Public/Doc/code01.md)
 
 ### Whiteboard Process
-- [reverse-array Whiteboarding PDF](Public/Code-Challenge-01.pdf)
+- [reverse-array Whiteboarding PDF](Public/codechallenge-01.pdf)
 
 
 ### Approach & Efficiency
@@ -90,7 +89,7 @@ iteration
 - Output: Same Integer Array
 - [Full Code Description Markdown](Public/Doc/code02.md)
 ### Whiteboard Process
-[insert-Shift-Array Whiteboarding](Public/codechallenge2.pdf)
+[insert-Shift-Array Whiteboarding](Public/codechallenge-02.jpg)
 
 
 
@@ -102,9 +101,9 @@ just be a new array at the end of day) or just return new array (without the usa
 time usage is O(n) because it depends on how long the length of array is and Space is O(1) because we dont iterate through
 and add more memory
 
-- Location: [InsertShiftArray](lib/src/main/java/datastructures/array/insertShiftArray/insertShiftArray.java)
-- Method: insertShiftArray(ArrayList<Integer> x, int toAdd)
+- Location: [InsertShiftArray](lib/src/main/java/datastructures/array/insertShiftArray/InsertShiftArray.java)
 - Test : [InsertShiftArrayTest()](lib/src/test/java/datastructures/array/InsertShiftArrayTest.java)
+- Method: insertShiftArray(ArrayList<Integer> x, int toAdd)
 
 ### Challenge 03<a name="challenge03"></a>
 ### Binary Search
@@ -113,13 +112,11 @@ and add more memory
 - output an Integer
 - [Full Code Description Markdown](Public/Doc/code03.md)
 ### Whiteboard Process
-[Binary-Search Whiteboarding](Public/binary-search.jpg)
+[Binary-Search Whiteboarding](Public/codechallenge-03.jpg)
 
 
 ### Approach & Efficiency
 - By searching bisection method, I was able to avoid usage of creating new objects. So, Space Complexity is O(1). Further, a single iteration is needed to traverse the elements in the array from beginning to N/2 length of array. Thus, the time complexity is O(log(N)).
-- worked with Jason Wilson
-- Location: 'codechallenges/binary-search/binary-search.jpg'
 - Method: binary-search(int []x, int target);
 
 
@@ -129,51 +126,53 @@ and add more memory
 - Ask the candidate to write a function to accepts an integer, and returns the nth number in the Fibonacci sequence.
 - [Full Description Second](Public/Doc/code04b.md)
 ### Whiteboard Process
-- [Sum Matrix Whiteboarding](Public/summatrix.jpg)
-- [Fibonacci Whiteboarding](Public/fibonacci.jpg)
+- [Sum Matrix Whiteboarding](Public/codechallenge-4a.jpg)
+- [Fibonacci Whiteboarding](Public/codechallenge-4b.jpg)
 
 ## Approach & Efficiency
-- the Time complexity is O(n) and space is O(1);
+- add total sum in matrix : 
+  - the Time complexity is O(n) and space is O(1);
+- fibononacci sequence :
+  - Time Complexity is O(N) and Space Complexity O(1)
 
 ### Challenge 05 <a name="challenge05"></a>
+- Create a linked list and implement Insert, includes, toString
 - [Full Description](Public/Doc/code05.md)
 ### Whiteboard Process
-[AddSum WhiteBoarding](Public/AddSum.jpg)
-## Approach & Efficiency
-
-# Singly Linked List - Insert, toString, includes
-- Created a singly linked list that inserts, Overrides toString, includes
-
-## Challenge
-- Code challenge 5 is intended to focus on implementation of Node class, and lInked list
+No white board for creating a linked list.
+Feature Task 1: Node class that has data type and pointer to itself.
+Feature Task 2: Implement Linked list that includes, inserts, and modify a toString method.
 
 ## Approach & Efficiency
-- I focused on using linked list for these implementations. especially insertion of a initial list.
-- recursion wasn't as efficient. since insertion at the beginning is relatively fast, then O(n) was used
-- space was O(1)
+this insert adds to the beginning of the list: Time O(1), Space O(1).
+
+Includes method checks the list : Time O(N), Space O(1)
+
+- Location: [linkedlist()](lib/src/main/java/datastructures/linkedlist/LinkedList.java)
+- Test : [linklistTest()](lib/src/test/java/datastructures/linkedlist/LinkedListTest.java)
 
 ## API
 - no api was used for this.
 
-- [code challenge 5 location](app/src/main/java/linked/list)
-# Singly Linked List - appends, insertBefore, insertAfter
+## Challenge 6 <a name="challenge06"></a>
+### Singly Linked List - appends, insertBefore, insertAfter
 - Created a singly linked list that appends, insertBefore, insertAfter.
-
-## Challenge
-- Code challenge 6 is intended to focus on implementation of insertion when traversing a list. the difficulty was to insert at beginning, middle, and end.
-- recursion could have been used here but not needed.
+- [Full Description](Public/Doc/code06.md)
 
 ## Approach & Efficiency
-- I focused on using linked list for these implementations. especially insertion of a initial list.
-- recursion wasn't as efficient. since insertion at the beginning is relatively fast, then O(n) was used
-- space was O(1)
+- appends adds to the last. I use tail pointer so time here is O(1), 
+- insert before time complexity is O(N).
+- insert after is O(N)
+- space is O(N) for all methods to create a temp node with new data.
 
 ## API
 - no api was used for this.
 
-- [code challenge 6 location](app/src/main/java/linked/list)
+- [code challenge 6 location](lib/src/main/java/datastructures/linkedlist/LinkedList.java)
+- [code challenge 6 test](lib/src/test/java/datastructures/linkedlist/LinkedListTest.java)
 
-# Challenge Summary
+# Challenge 7 <a name="challenge07"></a>
+## Challenge Summary
 - Linked list return the value of the node  length - k in linkedlist.
 
 ## Whiteboard Process
@@ -181,67 +180,78 @@ No white board needed for process on today's lab. it seemed straight forward. es
 
 ## Approach & Efficiency
 I solved it just subtracting the length - k and the time complexity is O(n) space O(1)
+
+[Full Description](Public/Doc/code07.md)
 ## Solution
 running libraryTest will run tests. or create a static main and call the function in main.
 
-- [code location](app/src/main/java/linked/list)
+- [code location](lib/src/main/java/datastructures/linkedlist/LinkedList.java)
+- [code challenge test](lib/src/test/java/datastructures/linkedlist/LinkedListTest.java)
 
-# Challenge Summary - 08
+# Challenge Summary - 08 <a name="challenge08"></a>
 - merges unsorted linked lists and uses iteration.
+- [Full Description](Public/Doc/code08.md)
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
 
 ## Approach & Efficiency
 - O(n + m) for time complexity since we are iterating two arrays and space complexity of O(1)
 ## Solution
-- run test cases in case 1 and many
- ![](../datastructures/Public/Code-Challenge-08.png)
-- [code challenge 08 location](app/src/main/java/linked/list)
+ ![](Public/Code-Challenge-08.png)
+- [code location](lib/src/main/java/datastructures/linkedlist/LinkedList.java)
+- [code challenge test](lib/src/test/java/datastructures/linkedlist/LinkedListTest.java)
+## Challenge 09 <a name="codechallenge09">
+- [Full Description](Public/Doc/code09.md)
+### Challenge Summary
+## Approach & Efficiency
 
-# Stacks and Queues - 10
+## Challenge 10 <a name="codechallenge10"></a>
+### Stacks and Queues - 10
 - adds a stack using lifo to pop and push, and a queue using enqueue and dequeue method
-## Challenge
-- [code challenge 10 - stack](../datastructures/lib/src/main/java/datastructures/stack/Stack.java)
-- [code challenge 10 - queue](../datastructures/lib/src/main/java/datastructures/queue/Queue.java)
+- [Full Description](Public/Doc/code10.md)
+- [code challenge 10 - stack](lib/src/main/java/datastructures/stack/Stack.java)
+- [code challenge 10 - queue](lib/src/main/java/datastructures/queue/Queue.java)
 ## Approach & Efficiency
 - Time is O(n^2) since we use two loops for each data structure implementing a pop, push, enqueue, dequeue.
 - Space is O(1) because we use memory to create nodes
 ## API
 - no api used
 
-#Challenge Summary - 11
+## Challenge Summary - 11 <a name="codechallenge11"></a>
 - Pseudo Queue using Stacks to implement
-- Code Challenge 11
+- [Full Description](Public/Doc/code11.md)
 ## WhiteBoard Process
 -
 ## Approach & Efficiency
 - O(2N^2) using iteration and using pre implemented code, traversing to the end of the stack to remove an item takes N time. However, adding on T1 will have to use two loops
 - the first loop will call on another function using pop() and Push() to t2, then inversely add popped items back to t1 from t2.
 - time is still O(N) by creation of new memory
-- [Code Challenge 11 - PseudoMerge](../datastructures/lib/src/main/java/datastructures/queue/PseudoQueue.java)
+- [Code Challenge 11 - PseudoMerge](lib/src/main/java/datastructures/queue/PseudoQueue.java)
 
 
-
-#Challenge Summary - 12
+## Challenge 12 <a name="codechallenge12"></a>
+### Challenge Summary - 12
 - Pseudo Queue using Stacks to implement the Animal Class
 - Code Challenge 12
+- [Full Description](Public/Doc/code12.md)
 ## WhiteBoard Process
-  ![](../datastructures/Public/Code-Challenge-12.jpg)
+  ![](Public/Code-Challenge-12.jpg)
 ## Approach & Efficiency
 - O(2N^2) using iteration and using pre implemented code, traversing to the end of the stack to remove an item takes N time. However, adding on T1 will have to use two loops
 - the first loop will call on another function using pop() and Push() to t2, then inversely add popped items back to t1 from t2.
 - time is still O(N) by creation of new memory
-- [Code Challenge 12 - Animal](../datastructures/lib/src/main/java/datastructures/animal/Animal.java)
-- [Code Challenge 12 - AnimalShelter](../datastructures/lib/src/main/java/datastructures/animal/AnimalShelter.java)
+- [Code Challenge 12 - Animal](lib/src/main/java/datastructures/animal/Animal.java)
+- [Code Challenge 12 - AnimalShelter](datastructures/lib/src/main/java/datastructures/animal/AnimalShelter.java)
 
 
-
-#Challenge Summary - 13
+## Code Challenge 13 <a name="codechallenge13"></a>
+### Challenge Summary
 - Write a function called validate brackets
+- [Full Description](Public/Doc/code13.md)
 - Arguments: string
 - Return: boolean representing whether or not the brackets in the string are balanced
 ## WhiteBoard Process
-![](../datastructures/Public/Code-Challenge-13.jpg)
+![](Public/Code-Challenge-13.jpg)
 -
 ## Approach & Efficiency
 - I created three different algorithms. a bit more effiecient than the other.
@@ -249,95 +259,106 @@ running libraryTest will run tests. or create a static main and call the functio
 - using a search algorithm is always traversing to N (length N is dependant on our String passed in thus {1+2+...+N-1})
 - since I use only iteration, then O(N) because loop breaks out if N < N-1. thus, O(N) + cO(1) .
 
-- [Code Challenge 13(1) - ValidateParenthesis](../datastructures/lib/src/main/java/datastructures/validatebrackets/ValidateParenth.java)
-- [Code Challenge 13(2) - ValidateParenthesis](../datastructures/lib/src/main/java/datastructures/validatebrackets/ValidateParenthesis.java)
-- [Code Challenge 13(3) - ValidateParenthesis](../datastructures/lib/src/main/java/datastructures/validatebrackets/ValidParenth3.java)
+- [Code Challenge 13(1) - ValidateParenthesis](lib/src/main/java/datastructures/validatebrackets/ValidateParenth.java)
+- [Code Challenge 13(2) - ValidateParenthesis](datastructures/lib/src/main/java/datastructures/validatebrackets/ValidateParenthesis.java)
+- [Code Challenge 13(3) - ValidateParenthesis](datastructures/lib/src/main/java/datastructures/validatebrackets/ValidParenth3.java)
 
-
-#Challenge Summary -15
-- Create a Node and BinaryTree and Binary Search tree that adds and displays preorder, post order, and inorder
+## Code Challenge 14 <a name="codechallenge14"></a>
+# Challenge Summary 
+- Find the max value in node of the Queue
+- [Full Description](Public/Doc/code14.md)
 ## WhiteBoard Process
-![](../datastructures/Public/Code-Challenge-15.jpg)
+![](Public/Code-Challenge-14.jpg)
+-
+## Approach & Efficiency
+- data structure only uses one iteration implemented by another function O(N). However, the wrapper function to push will
+- do O(1) operations
+- therefore, it is O(N) and recreating new nodes is O(N) space
+
+## Code Challenge 15 <a name="codechallenge15"></a>
+### Challenge Summary - 15
+- Create a Node and BinaryTree and Binary Search tree that adds and displays preorder, post order, and inorder. 
+- [Full Description](Public/Doc/code15.md)
+## WhiteBoard Process
+![](Public/Code-Challenge-15.jpg)
 -
 ## Approach & Efficiency
 - data structure only uses one recursive call which O(N). However, some implelmentation using finding and searching takes two recursive calls.
 - therefor, it is O(2N) which is O(N)
 
-- [Code Challenge 15 - Tnode](../datastructures/lib/src/main/java/datastructures/tree/Node.java)
-- [Code Challenge 15 - BinaryTree](../datastructures/lib/src/main/java/datastructures/tree/BinaryTree.java)
-- [Code Challenge 15 - BinarySearchTree](../datastructures/lib/src/main/java/datastructures/tree/BinarySearchTree.java)
+- [Code Challenge 15 - Tnode](lib/src/main/java/datastructures/tree/Node.java)
+- [Code Challenge 15 - BinaryTree](lib/src/main/java/datastructures/tree/BinaryTree.java)
+- [Code Challenge 15 - BinarySearchTree](lib/src/main/java/datastructures/tree/BinarySearchTree.java)
 
-#Challenge Summary - 14
-- Find the max value in node of the Queue
-## WhiteBoard Process
-![](../datastructures/Public/Code-Challenge-14.jpg)
--
-## Approach & Efficiency
-- data structure only uses one iteration implemented by another function O(N). However, the wrapper function to push will
-- do O(1) operations
-- therefore, it is O(N) and recreating new nodes is O(N) space
-
-#Challenge Summary - 16
+## Code Challenge 16 <a name="codechallenge16"></a>
+### Challenge Summary
 - Find the maximum value stored in the tree. You can assume that the values stored in the Binary Tree will be numeric
+- [Full Description](Public/Doc/code16.md)
 ## WhiteBoard Process
-![](../datastructures/Public/Code-Challenge-16.jpg)
+![](Public/Code-Challenge-16.jpg)
 
 ## Approach & Efficiency
 - data structure only uses one iteration implemented by another function O(N). However, the wrapper function to push will
 - do O(1) operations
 - therefore, it is O(N) and recreating new nodes is O(N) space
-- [Code Challenge 16 - maxValue()](../datastructures/lib/src/main/java/datastructures/tree/BinaryTree.java)
+- [Code Challenge 16 - maxValue()](lib/src/main/java/datastructures/tree/BinaryTree.java)
 
-
-#Challenge Summary - 17
+## Code Challenge 17 <a name="codechallenge17"></a>
+### Challenge Summary
 - add to a list by using BreadthFist traversal
+- [Full Description](Public/Doc/code17.md)
 ## WhiteBoard Process
-![](../datastructures/Public/Code-Challenge-17.jpg)
+![](Public/Code-Challenge-17.jpg)
+- [Full Description](Public/Doc/code17.md)
 
 ## Approach & Efficiency
 - data structure only uses one iteration implemented by another function by dequeue we getO(N).
 - The traversal by going through the tree to place on the queue is also O(n) since we go throught the entire tree.
 - therefore, it time O(N^2) and recreating new nodes is O(N) space
-- [Code Challenge 17 - BreadFirst()](../datastructures/lib/src/main/java/datastructures/tree/BinaryTree.java)
+- [Code Challenge 17 - BreadFirst()](lib/src/main/java/datastructures/tree/BinaryTree.java)
 
 ## Contributors
 - Jason Wilson
 
-#Challenge Summary - 18
+## Code Challenge 18 <a name="codechallenge18"></a>
+### Challenge Summary
 - Write a function called fizz buzz tree
-  Arguments: k-ary tree
-  Return: new k-ary tree
+- [Full Description](Public/Doc/code18.md)
+- Arguments: k-ary tree
+- Return: new k-ary tree
 ## WhiteBoard Process
-![](../datastructures/Public/Code-Challenge-18.jpg)
+![](Public/Code-Challenge-18.jpg)
 
 ## Approach & Efficiency
 - data structure only uses one iteration implemented by another function by dequeue we getO(N).
 - The traversal by going through the tree to place on the queue is also O(n) since we go throught the entire tree.
 - therefore, it time O(N^2) and recreating new nodes is O(N) space
-- [Code Challenge 18 - FizzBuzz()](../datastructures/lib/src/main/java/datastructures/fizzbuzztree/FizzBuzzTree.java)
-- [Code Challenge 18 - KaryTree](../datastructures/lib/src/main/java/datastructures/karytree/KaryTree.java)
-- [Code Challenge 18 - KaryTree](../datastructures/lib/src/main/java/datastructures/karytree/Tnode.java)
+- [Code Challenge 18 - FizzBuzz()](lib/src/main/java/datastructures/fizzbuzztree/FizzBuzzTree.java)
+- [Code Challenge 18 - KaryTree](lib/src/main/java/datastructures/karytree/KaryTree.java)
+- [Code Challenge 18 - KaryTree](lib/src/main/java/datastructures/karytree/Tnode.java)
 ## Contributors
 - Jason Wilson
 
-
-#Challenge Summary - 19
+## Code Challenge 19 <a name="codechallenge19"></a>
+### Challenge Summary
 - Find the sum of all the odd numbers in a binary search tree.
+- [Full Description](Public/Doc/code19.md)
 - Any of the traversals (depth or breadth) will work for this
 ## WhiteBoard Process
-![](../datastructures/Public/Code-Challenge-19.jpg)
+![](Public/Code-Challenge-19.jpg)
 
 ## Approach & Efficiency
 - data structure only uses recursion implemented to get through the worst all children. we get O(N).
 - no new nodes are created.
 - therefore, it time O(N) and recreating new nodes is O(1) space
-- [Code Challenge 19 - SumAll](../datastructures/lib/src/main/java/datastructures/tree/SumAll.java)
-- [Code Challenge 19 - SumAllTest](../datastructures/lib/src/test/java/datastructures/tree/SumAllTest.java)
+- [Code Challenge 19 - SumAll](lib/src/main/java/datastructures/tree/SumAll.java)
+- [Code Challenge 19 - SumAllTest](lib/src/test/java/datastructures/tree/SumAllTest.java)
 ## Contributors
 
-
-# Challenge Summary - Insertion Sort <a name="challenge26"></a>
+## Code Challenge 26 - Insertion Sort <a name="challenge26"></a>
+### Challenge Summary 
 - sort an unsorted array using insertion sort algorithm
+- [Full Description](Public/Doc/code26.md)
 ## WhiteBoard Process
  - ![Whiteboarding](Public/Code-Challenge-26.jpg)
  - [Coded Algorthm](lib/src/main/java/datastructures/array/insertionsort/InsertionSort.java)
@@ -352,11 +373,10 @@ running libraryTest will run tests. or create a static main and call the functio
 - ![Math Logic Big O](Public/BigOMath.jpg)
 ## Contributors
 
-
-
-
-# Challenge Summary - Merge Sort <a name="challenge27"></a>
+## Code Challenge 27 - Merge Sort <a name="challenge27"></a>
+### Challenge Summary
 - sort an unsorted array using merge sort algorithm
+- [Full Description](Public/Doc/code27.md)
 ## WhiteBoard Process
 - ![Whiteboarding](Public/Code-Challenge-27.jpg)
 - [Coded Algorthm](lib/src/main/java/datastructures/array/mergesort/MergeSort.java)
@@ -371,9 +391,11 @@ running libraryTest will run tests. or create a static main and call the functio
 ## Contributors
 
 
-# Challenge Summary - Hashtables Abstract Data Type <a name="challenge30"></a>
+## Challenge Challenge 30 - Hashtables Abstract Data Type <a name="challenge30"></a>
+### Challenge Summary
+- [Full Description](Public/Doc/code30.md)
 - implementing the class Hashtable
-###Features:
+### Features:
 - set
   - Arguments: key, value
   - Returns: nothing
@@ -395,9 +417,11 @@ running libraryTest will run tests. or create a static main and call the functio
 - this code focuses on the data structure HashTable from scratch. it is useful to know
 - how this code is implemented.
 
-###Whiteboarding
+### Whiteboarding
 ![Whiteboarding](Public/Code-Challenge-30.jpg)
 
+[Coded Algorthm](lib/src/main/java/datastructures/hashtablessecond/HashMap.java)
+[Test Algorthm](lib/src/test/java/datastructures/hashtable/HashMapSecondTest.java)
 ## Approach & Efficiency
 - one to many
 - using linked list seems to be the best case for a generic case. to store in bucket.
@@ -408,7 +432,6 @@ running libraryTest will run tests. or create a static main and call the functio
 - Worst case space complexity is only O(N) when adding a new value into linked list.
 - universal hashing for hasing(key) - hashing(key) = a*k+b mod prime mod m where prime > Universe
   - this is best because worst case key1 != key2 is that will collide probability is 1/N which is good.
--
 
 ## API
 <!-- Description of each method publicly available in each of your hashtable -->
