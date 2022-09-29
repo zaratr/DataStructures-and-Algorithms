@@ -401,6 +401,30 @@ running libraryTest will run tests. or create a static main and call the functio
 - thus, the time complexity Big O is O(N*logn) and worst space complexity is O(N)
 ## Contributors
 
+## Code Challenge 28 - Quick Sort <a name="challenge28"></a>
+### Challenge Summary
+- sort an unsorted array using Quick sort algorithm
+- [Full Description](Public/Doc/code28.md)
+## WhiteBoard Process
+- ![Whiteboarding](Public/codechallenge-28.jpg)
+## Approach & Efficiency
+Time O(N^2) Space O(1)
+
+## Code Challenge 29 <a name="challenge29"></a>
+### Challenge Summary
+- sort an unsorted array using merge sort algorithm
+- [Full Description 29a](Public/Doc/code29a.md)
+- sort an unsorted array using quicksort algorithm
+- [Full Description 29b](Public/Doc/code29b.md)
+## WhiteBoard Process
+- ![Whiteboarding 29a](Public/Code-Challenge-29a.jpg)
+- ![Whiteboarding 29b](Public/codechallenge-28.jpg)
+- [Coded Algorthm 29a](lib/src/main/java/datastructures/array/mergesort/MergeSort.java)
+- [Test Algorthm 29a](lib/src/test/java/datastructures/array/MergeSortTest.java)
+## Approach & Efficiency
+## Contributors
+
+
 
 ## Challenge Challenge 30 - Hashtables Abstract Data Type <a name="challenge30"></a>
 ### Challenge Summary
@@ -452,3 +476,137 @@ running libraryTest will run tests. or create a static main and call the functio
 - [Coded Algorthm](lib/src/main/java/datastructures/hashtables/hashtable/HashMap.java)
 - [Coded Algorthm 2](lib/src/main/java/datastructures/hashtables/hashtable/HashMapPair.java)
 - [Test Algorthm](lib/src/test/java/datastructures/hashtables/hashtable/HashMapTest.java)
+
+
+## Code Challenge 31 <a name="challenge31"></a>
+### Challenge Summary
+- sort an unsorted array using merge sort algorithm
+- [Full Description 29a](Public/Doc/code31.md)
+## WhiteBoard Process
+- ![Whiteboarding 31](Public/Code-Challenge-29a.jpg)
+- [Coded Algorthm](lib/src/main/java/datastructures)
+- [Test Algorthm](lib/src/test/java/datastructures/array)
+## Approach & Efficiency
+## Contributors
+
+## Code Challenge 32 <a name="challenge32"></a>
+### Challenge Summary
+- sort an unsorted array using merge sort algorithm
+- [Full Description 29a](Public/Doc/code32.md)
+## WhiteBoard Process
+- ![Whiteboarding 31](Public/Code-Challenge-29a.jpg)
+- [Coded Algorthm](lib/src/main/java/datastructures)
+- [Test Algorthm](lib/src/test/java/datastructures/array)
+## Approach & Efficiency
+## Contributors
+
+## Code Challenge 33 <a name="challenge33"></a>
+### Challenge Summary
+- sort an unsorted array using merge sort algorithm
+- [Full Description 29a](Public/Doc/code33.md)
+## WhiteBoard Process
+- ![Whiteboarding 31](Public/Code-Challenge-29a.jpg)
+- [Coded Algorthm](lib/src/main/java/datastructures)
+- [Test Algorthm](lib/src/test/java/datastructures/array)
+## Approach & Efficiency
+## Contributors
+
+## Code Challenge 34 <a name="challenge34"></a>
+### Challenge Summary
+- sort an unsorted array using merge sort algorithm
+- [Full Description 29a](Public/Doc/code34.md)
+## WhiteBoard Process
+- ![Whiteboarding 31](Public/Code-Challenge-29a.jpg)
+- [Coded Algorthm](lib/src/main/java/datastructures)
+- [Test Algorthm](lib/src/test/java/datastructures/array)
+## Approach & Efficiency
+## Contributors
+
+## Code Challenge 35 <a name="challenge35"></a>
+### Challenge Summary
+- sort an unsorted array using merge sort algorithm
+- [Full Description 29a](Public/Doc/code35.md)
+## WhiteBoard Process
+- ![Whiteboarding 31](Public/Code-Challenge-29a.jpg)
+- [Coded Algorthm](lib/src/main/java/datastructures)
+- [Test Algorthm](lib/src/test/java/datastructures/array)
+## Approach & Efficiency
+## Contributors
+
+## Code Challenge 36 <a name="challenge36"></a>
+### Challenge Summary
+- sort an unsorted array using merge sort algorithm
+- [Full Description 29a](Public/Doc/code36.md)
+## WhiteBoard Process
+- ![Whiteboarding 31](Public/Code-Challenge-29a.jpg)
+- [Coded Algorthm](lib/src/main/java/datastructures)
+- [Test Algorthm](lib/src/test/java/datastructures/array)
+## Approach & Efficiency
+## Contributors
+
+## Code Challenge 37 <a name="challenge37"></a>
+### Challenge Summary
+- sort an unsorted array using merge sort algorithm
+- [Full Description 29a](Public/Doc/code37.md)
+## WhiteBoard Process
+- ![Whiteboarding 31](Public/Code-Challenge-29a.jpg)
+- [Coded Algorthm](lib/src/main/java/datastructures)
+- [Test Algorthm](lib/src/test/java/datastructures/array)
+## Approach & Efficiency
+## Contributors
+
+## Code Challenge 39 <a name="challenge39"></a>
+### Challenge Summary
+- sort an unsorted array using merge sort algorithm
+- [Full Description 29a](Public/Doc/code39.md)
+## WhiteBoard Process
+- ![Whiteboarding 31](Public/Code-Challenge-29a.jpg)
+- [Coded Algorthm](lib/src/main/java/datastructures)
+- [Test Algorthm](lib/src/test/java/datastructures/array)
+## Approach & Efficiency
+## Contributors
+
+## Code Challenge 41 <a name="challenge41"></a>
+### Challenge Summary
+- sort an unsorted array using merge sort algorithm
+- [Full Description 29a](Public/Doc/code41.md)
+## WhiteBoard Process
+- ![Whiteboarding 31](Public/Code-Challenge-29a.jpg)
+- [Coded Algorthm](lib/src/main/java/datastructures)
+- [Test Algorthm](lib/src/test/java/datastructures/array)
+## Approach & Efficiency
+## Contributors
+
+## Code Challenge 42 <a name="challenge42"></a>
+### Challenge Summary
+- sort an unsorted array using merge sort algorithm
+- [Full Description 29a](Public/Doc/code42.md)
+## WhiteBoard Process
+- ![Whiteboarding 31](Public/Code-Challenge-29a.jpg)
+- [Coded Algorthm](lib/src/main/java/datastructures)
+- [Test Algorthm](lib/src/test/java/datastructures/array)
+## Approach & Efficiency
+## Contributors
+
+## Code Challenge 43 <a name="challenge43"></a>
+### Challenge Summary
+- sort an unsorted array using merge sort algorithm
+- [Full Description 29a](Public/Doc/code43.md)
+## WhiteBoard Process
+- ![Whiteboarding 31](Public/Code-Challenge-29a.jpg)
+- [Coded Algorthm](lib/src/main/java/datastructures)
+- [Test Algorthm](lib/src/test/java/datastructures/array)
+## Approach & Efficiency
+## Contributors
+
+## Code Challenge 44 <a name="challenge44"></a>
+### Challenge Summary
+- sort an unsorted array using merge sort algorithm
+- [Full Description 29a](Public/Doc/code44.md)
+## WhiteBoard Process
+- ![Whiteboarding 31](Public/Code-Challenge-29a.jpg)
+- [Coded Algorthm](lib/src/main/java/datastructures)
+- [Test Algorthm](lib/src/test/java/datastructures/array)
+## Approach & Efficiency
+## Contributors
+
