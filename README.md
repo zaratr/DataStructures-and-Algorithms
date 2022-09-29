@@ -7,6 +7,7 @@
 - [JavaScript - Data Structures and Algorithms](#javascript)
 - [C++ - Data Structures and Algorithms](#c++)
 - [C - Data Structures and Algorithms](#c)
+- [Leet Code Code Challenges](#leet)
 
 ## Repository Quick Tour and Usage <a name="repository"></a>
 Setup Instructions:
@@ -56,3 +57,4 @@ Below are my overall understanding of five languages in Data Structures and Algo
 - [Instruction guid](python/README.md)
 ### C++ <a name="c++"></a>
 ### C <a name="c"></a>
+### [LeetCode Code Challenges](leetcode/README.md) <a name="leet"></a>
