@@ -1,5 +1,5 @@
 # Data Structures
-Code Challenges are taken out of order in CodeFellows. 
+Code Challenges are taken out of order in CodeFellows. First five have no code, and Implementation of Data Structures don't aren't required a whiteboard.
 
 Each Challenge will have full description. The Data Structure order is Arrays, Linked List, Hashmap, Binary tree, Binary Search Tree, K-ary tree, Stacks, Queues.
 #### **Table of Contents**
