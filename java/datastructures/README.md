@@ -93,7 +93,7 @@ iteration
 
 
 
-### Approach & Efficiency<a name="challenge01"></a>
+### Approach & Efficiency
 After reviewing the barriers of nonrecursive problems and language limitation, I figured the best solution
 is to iteratively create a new array with old array contents with target element at the middle of array. once newArray is configured,
 I may use the assignment operator(dangerously) to replace old array and return old array (although it would still
@@ -130,7 +130,7 @@ and add more memory
 - [Fibonacci Whiteboarding](Public/codechallenge-4b.jpg)
 
 ## Approach & Efficiency
-- add total sum in matrix : 
+- add total sum in matrix :
   - the Time complexity is O(n) and space is O(1);
 - fibononacci sequence :
   - Time Complexity is O(N) and Space Complexity O(1)
@@ -160,7 +160,7 @@ Includes method checks the list : Time O(N), Space O(1)
 - [Full Description](Public/Doc/code06.md)
 
 ## Approach & Efficiency
-- appends adds to the last. I use tail pointer so time here is O(1), 
+- appends adds to the last. I use tail pointer so time here is O(1),
 - insert before time complexity is O(N).
 - insert after is O(N)
 - space is O(N) for all methods to create a temp node with new data.
@@ -200,10 +200,20 @@ running libraryTest will run tests. or create a static main and call the functio
  ![](Public/Code-Challenge-08.png)
 - [code location](lib/src/main/java/datastructures/linkedlist/LinkedList.java)
 - [code challenge test](lib/src/test/java/datastructures/linkedlist/LinkedListTest.java)
+
+
 ## Challenge 09 <a name="codechallenge09">
-- [Full Description](Public/Doc/code09.md)
 ### Challenge Summary
+- 9a reverse a linked list and return the reversed list
+- 9b check if linked list is a palindrome
+- [Full Description 9a](Public/Doc/code09a.md)
+- [Full Description 9b](Public/Doc/code09b.md)
+## Whiteboard Process
+- [Whiteboard 09a reverse list](Public/codechallenge-9a.jpg)
+- [Whiteboard 09a reverse list](Public/codechallenge-9b.jpg)
 ## Approach & Efficiency
+- 9a time O(N) space O(1)
+- 9b time O(N) and space O(1)
 
 ## Challenge 10 <a name="codechallenge10"></a>
 ### Stacks and Queues - 10
@@ -211,6 +221,7 @@ running libraryTest will run tests. or create a static main and call the functio
 - [Full Description](Public/Doc/code10.md)
 - [code challenge 10 - stack](lib/src/main/java/datastructures/stack/Stack.java)
 - [code challenge 10 - queue](lib/src/main/java/datastructures/queue/Queue.java)
+
 ## Approach & Efficiency
 - Time is O(n^2) since we use two loops for each data structure implementing a pop, push, enqueue, dequeue.
 - Space is O(1) because we use memory to create nodes
@@ -264,7 +275,7 @@ running libraryTest will run tests. or create a static main and call the functio
 - [Code Challenge 13(3) - ValidateParenthesis](datastructures/lib/src/main/java/datastructures/validatebrackets/ValidParenth3.java)
 
 ## Code Challenge 14 <a name="codechallenge14"></a>
-# Challenge Summary 
+# Challenge Summary
 - Find the max value in node of the Queue
 - [Full Description](Public/Doc/code14.md)
 ## WhiteBoard Process
@@ -277,7 +288,7 @@ running libraryTest will run tests. or create a static main and call the functio
 
 ## Code Challenge 15 <a name="codechallenge15"></a>
 ### Challenge Summary - 15
-- Create a Node and BinaryTree and Binary Search tree that adds and displays preorder, post order, and inorder. 
+- Create a Node and BinaryTree and Binary Search tree that adds and displays preorder, post order, and inorder.
 - [Full Description](Public/Doc/code15.md)
 ## WhiteBoard Process
 ![](Public/Code-Challenge-15.jpg)
@@ -356,7 +367,7 @@ running libraryTest will run tests. or create a static main and call the functio
 ## Contributors
 
 ## Code Challenge 26 - Insertion Sort <a name="challenge26"></a>
-### Challenge Summary 
+### Challenge Summary
 - sort an unsorted array using insertion sort algorithm
 - [Full Description](Public/Doc/code26.md)
 ## WhiteBoard Process
