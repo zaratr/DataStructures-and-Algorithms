@@ -12,16 +12,17 @@ Clone Project
  Navigate into subfolder. For example, javascript directory will have *.json for a script to test.
 
  for starting new projects follow, See [setup instructions](https://codefellows.github.io/setup-guide/code-301/3-code-challenges), in the Code 301 Setup Guide.
+- For ***Java***, navigate into datastructures subfolder and start there as the gradle script will be used. More, [setup instructions](java/README.md)
 
- For Java, navigate into datastructures subfolder and start there as the gradle script will be used. More, [setup instructions](java/README.md)
+ - For ***JavaScript***, follow [setup instructions](javascript/README.md)
 
- For Python, follow this [setup instructions](python/README.md)
+ - For ***Python***, follow this [setup instructions](python/README.md)
 
- For C++, make sure to follow [setup instructions](c++/README.md)
+ - For ***C++***, make sure to follow [setup instructions](c++/README.md)
 
- For C, make sure to follow [setup instructions](c/README.md)
+ - For ***C***, make sure to follow [setup instructions](c/README.md)
 
- Review scripts such as json, makefile to test code.
+ *Review scripts such as json, makefile to test code.*
 
 ## Intermediate Code Challenges <a name="inter"></a>
 
