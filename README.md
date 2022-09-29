@@ -1,6 +1,14 @@
 # Data Structures and Algorithms
+##### Table Of Contents
+- [Reposityory Tour](#repository)
+- [Code Challenges with JavaScript](#inter)
+- [Java - Data Structures and Algorithms](#java)
+- [Python - Data Structures and Algorithms](#python)
+- [JavaScript - Data Structures and Algorithms](#javascript)
+- [C++ - Data Structures and Algorithms](#c++)
+- [C - Data Structures and Algorithms](#c)
 
-## Repository Quick Tour and Usage
+## Repository Quick Tour and Usage <a name="repository"></a>
 Setup Instructions:
 
 Clone Project
@@ -18,7 +26,7 @@ Clone Project
 
  Review scripts such as json, makefile to test code.
 
-## Intermediate Code Challenges
+## Intermediate Code Challenges <a name="inter"></a>
 
 Under the `javascript` folder, at the top level, is a sub-folder called `code-challenges`. Further explanation [here](javascript/README.md).
 
@@ -35,16 +43,16 @@ To run your tests
 
 ## Advanced Data Structures and Code Challenges
 Below are my overall understanding of five languages in Data Structures and Algorithms. Further, I've used junit, npm, and more.
-### Algorithms
-### Java
+### Algorithms <a name = "Algorithms"></a>
+### Java <a name="java"></a>
 <!-- - [Data Structure implementations and code challenges - lab 6 and 20](java/linked-list/README.md) -->
 - [Instruction guide](java/README.md)
 - [Intervew Prep - Array WhiteBoarding ( * Reverse Array, * Insert Shift Array, * Binary Search Array, *Add Sum)](java/datastructures/README.md)
 - [Data Structure implementations and code challenges - lab 6 and 19](java/datastructures/README.md)
 - [Data Structure implementation and code challenges insertion sort, merge sort, - lab 26 and greater](java/datastructures/README.md)
-### JavaScript
+### JavaScript <a name="javascript></a>
 - [Instruction guide](javascript/README.md)
-### Python
+### Python <a name="python"></a>
 - [Instruction guid](python/README.md)
-### C++
-### C
+### C++ <a name="c++"></a>
+### C <a name="c"></a>

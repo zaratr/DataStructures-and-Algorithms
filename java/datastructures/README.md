@@ -1,10 +1,9 @@
 # Data Structures
+Code Challenges are taken out of order in CodeFellows. 
 
-## Implementation Notes
-
-## Code Challenges
-
-## Table of Contents
+Each Challenge will have full description. The Data Structure order is Arrays, Linked List, Hashmap, Binary tree, Binary Search Tree, K-ary tree, Stacks, Queues.
+#### **Table of Contents**
+----
 <table>
   <tr>
     <td> <a href="#challenge01">challenge 1</a></td>
@@ -14,47 +13,48 @@
     <td> <a href="#challenge05">challenge 5</a></td>
     <td> <a href="#challenge06">challenge 6</a></td>
     <td> <a href="#challenge07">challenge 7</a></td>
+    <td><a href="#challenge08"> challenge 8 </a></td>
   </tr>
   <tr>
-    <td><a href="#challenge08"> challenge 8 </a></td>
     <td><a href="#challenge09"> Interview 9 </a></td>
     <td><a href="#challenge10"> challenge 10 </a></td>
     <td><a href="#challenge11"> challenge 11 </a></td>
     <td><a href="#challenge12"> challenge 12 </a></td>
     <td><a href="#challenge13"> challenge 13 </a></td>
     <td> <a href="#challenge14">challenge 14</a> </td>
-  </tr>
-  <tr>
     <td> <a href="#challenge15">challenge 15</a> </td>
     <td>  <a href="#challenge16">challenge 16</a>  </td>
+  </tr>
+  <tr>
     <td>  <a href="#challenge17">challenge 17</a>  </td>
     <td>  <a href="#challenge18">challenge 18</a>  </td>
     <td>  <a href="#challenge19">challenge 19</a>  </td>
     <td>  <a href="#challenge26">challenge 26</a>  </td>
     <td> <a href="#challenge27">challenge 27</a></td>
-  </tr>
     <td> <a href="#challenge28">challenge 28</a></td>
     <td> <a href="#challenge29">Interview 29a</a></td>
     <td> <a href="#challenge29">Interview 29b</a></td>
+  </tr>
     <td> <a href="#challenge30">challenge 30</a></td>
     <td> <a href="#challenge31">challenge 31</a></td>
     <td> <a href="#challenge32">challenge 32</a></td>
-  </tr>
-  <tr>
     <td> <a href="#challenge33">challenge 33</a></td>
     <td> <a href="#challenge34">challenge 34</a></td>
     <td> <a href="#challenge35">challenge 35</a></td>
     <td> <a href="#challenge36">challenge 36</a></td>
     <td> <a href="#challenge37">challenge 37</a></td>
-    <td> <a href="#challenge39">challenge 39</a></td>
   </tr>
   <tr>
+    <td> <a href="#challenge39">challenge 39</a></td>
     <td> <a href="#challenge41">challenge 41</a></td>
     <td> <a href="#challenge44">challenge 44</a></td>
     <td> <a href="#challenge42">challenge 42</a></td>
     <td> <a href="#challenge43">challenge 43</a></td>
   </tr>
 </table>
+
+Code Challenges
+======
 
 ## Challenge 01 <a name="challenge01"></a>
 
