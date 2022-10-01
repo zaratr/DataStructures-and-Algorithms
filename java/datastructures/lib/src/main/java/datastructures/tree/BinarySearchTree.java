@@ -1,11 +1,11 @@
 package datastructures.tree;
 
-public class BinarySearchTree extends BinaryTree{
+public class BinarySearchTree<T> extends BinaryTree{
   public BinarySearchTree(){
     super();
   }
   //wrapper
-  public boolean contains(int x)
+  public boolean contains(T x)
   {
     return contains(root, x);
   }
@@ -13,12 +13,12 @@ public class BinarySearchTree extends BinaryTree{
 
 
   //recursion
-  private boolean contains(Tnode<Integer> root, int target)
+  private boolean contains(Tnode<T> root, T target)
   {
     if(root == null) return false;
     if(root.getData() == target) return true;
 
-    return root.getData() > target?
+    return (int)root.getData() > (int)target?
       contains(root.getLeftNode(), target):
       contains(root.getRightNode(), target);
 

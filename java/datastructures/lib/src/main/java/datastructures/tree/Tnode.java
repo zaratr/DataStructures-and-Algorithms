@@ -11,18 +11,18 @@ public class Tnode<T>{
   }
 
   private T data;
-  private Tnode leftNode;
-  private Tnode rightNode;
+  private Tnode<T> leftNode;
+  private Tnode<T> rightNode;
 
   public T getData() {
     return data;
   }
 
-  public Tnode getLeftNode() {
+  public Tnode<T> getLeftNode() {
     return leftNode;
   }
 
-  public Tnode getRightNode() {
+  public Tnode<T> getRightNode() {
     return rightNode;
   }
 

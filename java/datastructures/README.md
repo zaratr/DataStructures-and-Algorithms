@@ -480,24 +480,28 @@ Time O(N^2) Space O(1)
 
 ## Code Challenge 31 <a name="challenge31"></a>
 ### Challenge Summary
-- sort an unsorted array using merge sort algorithm
-- [Full Description 29a](Public/Doc/code31.md)
+- Finds the first word to occur more than onece in a  string
+- input : String
+- output : String
+- [Full Description 31](Public/Doc/code31.md)
 ## WhiteBoard Process
-- ![Whiteboarding 31](Public/Code-Challenge-29a.jpg)
-- [Coded Algorthm](lib/src/main/java/datastructures)
-- [Test Algorthm](lib/src/test/java/datastructures/array)
+- ![Whiteboarding 31](Public/Code-Challenge-31.JPG)
+- [Coded Algorthm](lib/src/main/java/datastructures/hashtables/RepeatedWord.java)
 ## Approach & Efficiency
+- Time O(n) space O(N^2)
 ## Contributors
 
 ## Code Challenge 32 <a name="challenge32"></a>
 ### Challenge Summary
 - sort an unsorted array using merge sort algorithm
-- [Full Description 29a](Public/Doc/code32.md)
+- [Full Description 32](Public/Doc/code32.md)
 ## WhiteBoard Process
-- ![Whiteboarding 31](Public/Code-Challenge-29a.jpg)
-- [Coded Algorthm](lib/src/main/java/datastructures)
-- [Test Algorthm](lib/src/test/java/datastructures/array)
+- ![Whiteboarding 32](Public/codechallenge-32.jpg)
+- [Coded Algorthm](lib/src/main/java/datastructures/tree_intersection/TreeIntersection.java)
+- [Test Algorthm](lib/src/test/java/datastructures/tree/BinaryTreeTest.java)
 ## Approach & Efficiency
+- Time O(N ^ 2 ) with recursion approach but O(N)
+- Space O(N)
 ## Contributors
 
 ## Code Challenge 33 <a name="challenge33"></a>
@@ -505,7 +509,7 @@ Time O(N^2) Space O(1)
 - sort an unsorted array using merge sort algorithm
 - [Full Description 29a](Public/Doc/code33.md)
 ## WhiteBoard Process
-- ![Whiteboarding 31](Public/Code-Challenge-29a.jpg)
+- ![Whiteboarding 33](Public/codechallenge-33.jpg)
 - [Coded Algorthm](lib/src/main/java/datastructures)
 - [Test Algorthm](lib/src/test/java/datastructures/array)
 ## Approach & Efficiency
@@ -514,9 +518,9 @@ Time O(N^2) Space O(1)
 ## Code Challenge 34 <a name="challenge34"></a>
 ### Challenge Summary
 - sort an unsorted array using merge sort algorithm
-- [Full Description 29a](Public/Doc/code34.md)
+- [Full Description 34](Public/Doc/code34.md)
 ## WhiteBoard Process
-- ![Whiteboarding 31](Public/Code-Challenge-29a.jpg)
+- ![Whiteboarding 34](Public/codechallenge-34.jpg)
 - [Coded Algorthm](lib/src/main/java/datastructures)
 - [Test Algorthm](lib/src/test/java/datastructures/array)
 ## Approach & Efficiency
@@ -525,9 +529,9 @@ Time O(N^2) Space O(1)
 ## Code Challenge 35 <a name="challenge35"></a>
 ### Challenge Summary
 - sort an unsorted array using merge sort algorithm
-- [Full Description 29a](Public/Doc/code35.md)
+- [Full Description 35](Public/Doc/code35.md)
 ## WhiteBoard Process
-- ![Whiteboarding 31](Public/Code-Challenge-29a.jpg)
+- ![Whiteboarding 35](Public/codechallenge-35.jpg)
 - [Coded Algorthm](lib/src/main/java/datastructures)
 - [Test Algorthm](lib/src/test/java/datastructures/array)
 ## Approach & Efficiency
@@ -536,9 +540,9 @@ Time O(N^2) Space O(1)
 ## Code Challenge 36 <a name="challenge36"></a>
 ### Challenge Summary
 - sort an unsorted array using merge sort algorithm
-- [Full Description 29a](Public/Doc/code36.md)
+- [Full Description 36](Public/Doc/code36.md)
 ## WhiteBoard Process
-- ![Whiteboarding 31](Public/Code-Challenge-29a.jpg)
+- ![Whiteboarding 36](Public/codechallenge-36.jpg)
 - [Coded Algorthm](lib/src/main/java/datastructures)
 - [Test Algorthm](lib/src/test/java/datastructures/array)
 ## Approach & Efficiency
@@ -547,9 +551,9 @@ Time O(N^2) Space O(1)
 ## Code Challenge 37 <a name="challenge37"></a>
 ### Challenge Summary
 - sort an unsorted array using merge sort algorithm
-- [Full Description 29a](Public/Doc/code37.md)
+- [Full Description 37](Public/Doc/code37.md)
 ## WhiteBoard Process
-- ![Whiteboarding 31](Public/Code-Challenge-29a.jpg)
+- ![Whiteboarding 37](Public/codechallenge-37.jpg)
 - [Coded Algorthm](lib/src/main/java/datastructures)
 - [Test Algorthm](lib/src/test/java/datastructures/array)
 ## Approach & Efficiency
@@ -558,9 +562,9 @@ Time O(N^2) Space O(1)
 ## Code Challenge 39 <a name="challenge39"></a>
 ### Challenge Summary
 - sort an unsorted array using merge sort algorithm
-- [Full Description 29a](Public/Doc/code39.md)
+- [Full Description 39](Public/Doc/code39.md)
 ## WhiteBoard Process
-- ![Whiteboarding 31](Public/Code-Challenge-29a.jpg)
+- ![Whiteboarding 39](Public/codechallenge-39.jpg)
 - [Coded Algorthm](lib/src/main/java/datastructures)
 - [Test Algorthm](lib/src/test/java/datastructures/array)
 ## Approach & Efficiency
@@ -569,9 +573,9 @@ Time O(N^2) Space O(1)
 ## Code Challenge 41 <a name="challenge41"></a>
 ### Challenge Summary
 - sort an unsorted array using merge sort algorithm
-- [Full Description 29a](Public/Doc/code41.md)
+- [Full Description 41](Public/Doc/code41.md)
 ## WhiteBoard Process
-- ![Whiteboarding 31](Public/Code-Challenge-29a.jpg)
+- ![Whiteboarding 41](Public/codechallenge-41.jpg)
 - [Coded Algorthm](lib/src/main/java/datastructures)
 - [Test Algorthm](lib/src/test/java/datastructures/array)
 ## Approach & Efficiency
@@ -580,9 +584,9 @@ Time O(N^2) Space O(1)
 ## Code Challenge 42 <a name="challenge42"></a>
 ### Challenge Summary
 - sort an unsorted array using merge sort algorithm
-- [Full Description 29a](Public/Doc/code42.md)
+- [Full Description 42](Public/Doc/code42.md)
 ## WhiteBoard Process
-- ![Whiteboarding 31](Public/Code-Challenge-29a.jpg)
+- ![Whiteboarding 42](Public/codechallenge-42.jpg)
 - [Coded Algorthm](lib/src/main/java/datastructures)
 - [Test Algorthm](lib/src/test/java/datastructures/array)
 ## Approach & Efficiency
@@ -591,9 +595,9 @@ Time O(N^2) Space O(1)
 ## Code Challenge 43 <a name="challenge43"></a>
 ### Challenge Summary
 - sort an unsorted array using merge sort algorithm
-- [Full Description 29a](Public/Doc/code43.md)
+- [Full Description 43](Public/Doc/code43.md)
 ## WhiteBoard Process
-- ![Whiteboarding 31](Public/Code-Challenge-29a.jpg)
+- ![Whiteboarding 43](Public/codechallenge-43.jpg)
 - [Coded Algorthm](lib/src/main/java/datastructures)
 - [Test Algorthm](lib/src/test/java/datastructures/array)
 ## Approach & Efficiency
@@ -602,9 +606,9 @@ Time O(N^2) Space O(1)
 ## Code Challenge 44 <a name="challenge44"></a>
 ### Challenge Summary
 - sort an unsorted array using merge sort algorithm
-- [Full Description 29a](Public/Doc/code44.md)
+- [Full Description 44](Public/Doc/code44.md)
 ## WhiteBoard Process
-- ![Whiteboarding 31](Public/Code-Challenge-29a.jpg)
+- ![Whiteboarding 44](Public/codechallenge-44.jpg)
 - [Coded Algorthm](lib/src/main/java/datastructures)
 - [Test Algorthm](lib/src/test/java/datastructures/array)
 ## Approach & Efficiency

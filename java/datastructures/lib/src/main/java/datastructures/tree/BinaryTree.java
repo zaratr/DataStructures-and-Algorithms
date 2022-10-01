@@ -5,16 +5,17 @@ package datastructures.tree;
 import java.util.*;
 //import com.google.common.collect.*;
 
-
-public class BinaryTree {
-  Tnode<Integer> root;
-  int max = 0;
-  enum TYPE {PREORDER, INORDER, POSTORDER};
-  TYPE displayType;
-  public ArrayList<Integer> xList;
-  ArrayList<Integer> results = new ArrayList<>();
-  Queue<Tnode<Integer>> queue = new Queue();
-  BinaryTree()
+public class BinaryTree <T>{
+  public Tnode<T> root;//accidently used this public. without refactoring, I kept as public
+  public ArrayList<T> xList;
+  private int max;
+  private enum TYPE {PREORDER, INORDER, POSTORDER};
+  private TYPE displayType;
+  private ArrayList<T> results;
+  //= new ArrayList<>();
+  private Queue<Tnode<T>> queue;
+  //= new Queue();
+  public BinaryTree()
   {
     displayType = TYPE.PREORDER;
     xList = new ArrayList<>();
@@ -49,7 +50,7 @@ public class BinaryTree {
 
 
   //recursion
-  private void preOrder(Tnode<Integer> root)
+  private void preOrder(Tnode<T> root)
   {
     xList.add(root.getData());
     if(root.getLeftNode() != null) preOrder(root.getLeftNode());
@@ -58,7 +59,7 @@ public class BinaryTree {
 
 
   //recursion
-  private void inOrder(Tnode<Integer> root)
+  private void inOrder(Tnode<T> root)
   {
     if(root.getLeftNode() != null) inOrder(root.getLeftNode());
     xList.add(root.getData());
@@ -67,13 +68,25 @@ public class BinaryTree {
   }
 
   //recursion
-  private void postOrder(Tnode<Integer> root)
+  private void postOrder(Tnode<T> root)
   {
     if(root.getLeftNode() != null) postOrder(root.getLeftNode());
     if(root.getRightNode() != null) postOrder(root.getRightNode());
     xList.add(root.getData());
   }
 
+  public boolean search(T target)
+  {
+    return search(root, target);
+  }
+  private boolean search(Tnode<T> root, T toFind)
+  {
+    if(root == null) return false;
+
+    if(root.getData().equals(toFind)) return true;
+    return search(root.getLeftNode(), toFind) ||
+    search(root.getRightNode(), toFind);
+  }
 
   @Override
   public String toString()
@@ -94,7 +107,7 @@ public class BinaryTree {
   }
 
 
-  private String toStringPRE(Tnode<Integer> root)
+  private String toStringPRE(Tnode<T> root)
   {
     if(root == null) return "";
     String toDisplay = "";
@@ -105,7 +118,7 @@ public class BinaryTree {
 
   }
 
-  private String toStringIN(Tnode<Integer> root)
+  private String toStringIN(Tnode<T> root)
   {
     if(root == null) return "";
     String toDisplay = "";
@@ -116,7 +129,7 @@ public class BinaryTree {
 
   }
 
-  private String toStringPOST(Tnode<Integer> root)
+  private String toStringPOST(Tnode<T> root)
   {
     if(root == null) return "";
     String toDisplay = "";
@@ -129,13 +142,15 @@ public class BinaryTree {
 
   public int maxValue()
   {
+    max = 0;
     maxValue(root);
     return this.max;
   }
-  private void maxValue(Tnode<Integer> root) {
+  private void maxValue(Tnode<T> root) {
     if(root == null) return ;
-    if(root.getData() >= max)
-      this.max = root.getData();
+    max= 0;
+    if((int)root.getData() >= max)
+      this.max = (int)root.getData();
     maxValue(root.getLeftNode());
     maxValue(root.getRightNode());
 
@@ -166,23 +181,26 @@ public class BinaryTree {
 
    */
 
-  public List<Integer> levelOrder(Tnode<Integer> root) {
+  public List<T> levelOrder(Tnode<T> root) {
     if (root == null) return null;
 //    for(List<Integer> i: levels)
 //    {
 //      for(Integer j: i)
 //      xList.add(j);
 //    }
+    queue = new Queue<>();
     queue.enqueue(root);
     //breadFirst();
     //helper(root, 0);
-    breadFirstRecursion(new Tnode<Integer>(), false, new ArrayList<>());
+    breadFirstRecursion(new Tnode<T>(), false, new ArrayList<>());
     return xList;
   }
 
-  public ArrayList<Integer> breadFirst() {
+  public ArrayList<T> breadFirst() {
 
-    Tnode<Integer> first;
+    queue = new Queue<>();
+    results = new ArrayList<>();
+    Tnode<T> first;
     while (!queue.isEmpty()) {
       first = queue.dequeue();
       results.add(first.getData());
@@ -196,10 +214,10 @@ public class BinaryTree {
     return results;
   }
 
-  public void breadFirstRecursion(Tnode<Integer> first, boolean endCase, List<Tnode> level)
+  public void breadFirstRecursion(Tnode<T> first, boolean endCase, List<Tnode> level)
   {
 
-    if(endCase == true) return;
+    if(endCase) return;
     first = queue.dequeue();
     xList.add(first.getData());
     if(first.getLeftNode() != null){

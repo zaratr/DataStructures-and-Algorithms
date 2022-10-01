@@ -1,7 +1,9 @@
 package datastructures.tree;
 
+import datastructures.tree_intersection.TreeIntersection;
 import org.junit.jupiter.api.Test;
 
+import java.awt.color.ICC_ColorSpace;
 import java.util.List;
 import java.util.Random;
 
@@ -93,6 +95,7 @@ public class BinaryTreeTest {
     root.setLeftNode(new Tnode<>(2));
     root.setRightNode(new Tnode<>(3));
     boolean x = sut.contains(4);
+    assertTrue(!x);
     return;
   }
 
@@ -167,6 +170,41 @@ public class BinaryTreeTest {
     List<Integer> test = sut.levelOrder(sut.root);
     assertEquals("[2, 7, 5, 2, 6, 9, 5, 11, 4]", test.toString() );
     return;
+  }
+
+  @Test
+  public void testSearch()
+  {
+    BinaryTree sut = new BinaryTree();
+    build(sut);
+    boolean result = sut.search(11);
+    boolean resultfalse = sut.search(3);
+    assertEquals(true, result);
+    assertEquals(false, resultfalse);
+
+    return;
+
+  }
+
+  @Test
+  public void testIntersection()
+  {
+    BinaryTree<Integer> A = new BinaryTree();
+    BinaryTree<Integer> B = new BinaryTree();
+    BinaryTree<Integer> falseTest = new BinaryTree();
+
+    build(A);
+    //treeBuilder(B,1);
+    B.root = new Tnode<>(4);
+    B.root.setLeftNode(new Tnode(9));
+    B.root.setRightNode(new Tnode(2));
+    falseTest.root = new Tnode<>(0);
+
+    List<Integer> result = new TreeIntersection().treeIntersection(A, B);
+    List<Integer> resultFalse = new TreeIntersection().treeIntersection(A, falseTest);
+
+    assertEquals("[4, 9, 2]", result.toString());
+    assertEquals("[]", resultFalse.toString());
   }
 
 
