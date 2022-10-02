@@ -507,7 +507,7 @@ Time O(N^2) Space O(1)
 ## Code Challenge 33 <a name="challenge33"></a>
 ### Challenge Summary
 - sort an unsorted array using merge sort algorithm
-- [Full Description 29a](Public/Doc/code33.md)
+- [Full Description 33](Public/Doc/code33.md)
 ## WhiteBoard Process
 - ![Whiteboarding 33](Public/codechallenge-33.jpg)
 - [Coded Algorthm](lib/src/main/java/datastructures)

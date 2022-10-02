@@ -1,12 +1,8 @@
 package datastructures.hashtablessecond;
 
-import datastructures.hashtables.HashMapPair;
+import java.util.*;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-
-public class HashMap<K,V> {
+public class HashMap<K,V>{
 
   private List<Bucket<K,V>> hashTable;
   private int N;
@@ -15,7 +11,7 @@ public class HashMap<K,V> {
 
 
   public HashMap() {
-    this.N = 2069 ;//arbitrary
+    this.N = 2069 ;//arbitrary default
     this.hashTable = new ArrayList();//cosntructor doesn't do anything - length = 0, no elements
     for(int i = 0; i < N; ++i)
     {
@@ -24,6 +20,7 @@ public class HashMap<K,V> {
   }
   public HashMap(int N)
   {
+    if(N < 0) throw new IllegalArgumentException("Illegal initial capacity");
     this.N = N;
     this.hashTable = new ArrayList();
     for(int i = 0; i < N; ++i)
@@ -34,21 +31,24 @@ public class HashMap<K,V> {
 
   public int size(){return N;}
 
-  public void put(K key, V value) {
+  public V put(K key, V value) {
     int hashedKey = hashing(key);
     hashTable.get(hashedKey).update(key, value);
 
+    return value;
   }
 
 
-  public V get(K key) {
-    int hashedKey = hashing(key);
-    return hashTable.get(hashedKey).get(key);
+  public V get(Object key) {
+    int hashedKey = hashing((K) key);
+    return hashTable.get(hashedKey).get((K) key);
   }
 
-  public void remove(K key) {
-    int hashedKey = hashing(key);
-    hashTable.get(hashedKey).remove(key);
+  public V remove(Object key) {
+    int hashedKey = hashing((K) key);
+    V value = hashTable.get(hashedKey).get((K) key);
+    hashTable.get(hashedKey).remove((K) key);
+    return value;
   }
 
 
@@ -67,6 +67,11 @@ public class HashMap<K,V> {
   {
     int index = hashing((K) key);
     return hashTable.get(index).contains(key);
+  }
+
+  public boolean isEmpty()
+  {
+    return key.equals(null) ? true : false;
   }
 
 
