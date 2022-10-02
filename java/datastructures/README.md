@@ -520,7 +520,6 @@ Time O(N) Space O(N)
 ### Challenge Summary
 - Interveiw Prep 34a and 34b 
 - [Full Description 34](Public/Doc/code34.md)
-- []
 ## WhiteBoard Process
 ## Approach & Efficiency
 ## Contributors
