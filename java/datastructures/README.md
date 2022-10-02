@@ -510,9 +510,10 @@ Time O(N^2) Space O(1)
 - [Full Description 33](Public/Doc/code33.md)
 ## WhiteBoard Process
 - ![Whiteboarding 33](Public/codechallenge-33.jpg)
-- [Coded Algorthm](lib/src/main/java/datastructures)
-- [Test Algorthm](lib/src/test/java/datastructures/array)
+- [Coded Algorthm](lib/src/main/java/datastructures/leftjoin/LeftJoin.java)
+- [Test Algorthm](lib/src/test/java/datastructures/hashtable/LeftJoinTest.java)
 ## Approach & Efficiency
+Time O(N) Space O(N)
 ## Contributors
 
 ## Code Challenge 34 <a name="challenge34"></a>
