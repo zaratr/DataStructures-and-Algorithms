@@ -493,7 +493,7 @@ Time O(N^2) Space O(1)
 
 ## Code Challenge 32 <a name="challenge32"></a>
 ### Challenge Summary
-- sort an unsorted array using merge sort algorithm
+- Find common values in 2 binary trees.
 - [Full Description 32](Public/Doc/code32.md)
 ## WhiteBoard Process
 - ![Whiteboarding 32](Public/codechallenge-32.jpg)
@@ -506,7 +506,7 @@ Time O(N^2) Space O(1)
 
 ## Code Challenge 33 <a name="challenge33"></a>
 ### Challenge Summary
-- sort an unsorted array using merge sort algorithm
+- Implement a simplified LEFT JOIN for 2 Hashmaps.
 - [Full Description 33](Public/Doc/code33.md)
 ## WhiteBoard Process
 - ![Whiteboarding 33](Public/codechallenge-33.jpg)
@@ -518,18 +518,15 @@ Time O(N) Space O(N)
 
 ## Code Challenge 34 <a name="challenge34"></a>
 ### Challenge Summary
-- sort an unsorted array using merge sort algorithm
+- Interveiw Prep 34a and 34b 
 - [Full Description 34](Public/Doc/code34.md)
+- []
 ## WhiteBoard Process
-- ![Whiteboarding 34](Public/codechallenge-34.jpg)
-- [Coded Algorthm](lib/src/main/java/datastructures)
-- [Test Algorthm](lib/src/test/java/datastructures/array)
 ## Approach & Efficiency
 ## Contributors
 
 ## Code Challenge 35 <a name="challenge35"></a>
 ### Challenge Summary
-- sort an unsorted array using merge sort algorithm
 - [Full Description 35](Public/Doc/code35.md)
 ## WhiteBoard Process
 - ![Whiteboarding 35](Public/codechallenge-35.jpg)

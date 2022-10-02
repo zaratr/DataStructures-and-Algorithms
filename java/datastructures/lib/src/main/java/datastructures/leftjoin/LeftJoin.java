@@ -16,7 +16,6 @@ public class LeftJoin<K, V> {
   {
     if(amap.isEmpty() || bMap.isEmpty()) return null;
     this.twoDlist = new ArrayList<>();
-    if(amap.isEmpty()) return null;
     amap.forEach((k,v) -> {
       if(bMap.containsKey(k)){
           list = new ArrayList<>();
