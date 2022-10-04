@@ -518,10 +518,20 @@ Time O(N) Space O(N)
 
 ## Code Challenge 34 <a name="challenge34"></a>
 ### Challenge Summary
-- Interveiw Prep 34a and 34b 
-- [Full Description 34](Public/Doc/code34.md)
+- [Full Description 34a](Public/Doc/code34a.md)
+  - Determine the most common word in a book.
+- [Full Description 34b](Public/Doc/code34b.md)
+  - Determine if a string is full of unique characters
+  - Stretch goal is included in code
 ## WhiteBoard Process
+- ![WhiteBoard 34a](codechallenge-34a.jpg)
+- ![WhiteBoard 34b](codechallenge-34b.jpg)
+- [Coded Algorithm 34a](lib/src/main/java/datastructures/commonword/CommonWord.java)
+- [Test Algorthm 34a](lib/src/test/java/datastructures/hashtable/CommonWordTest.java)
+- [Coded Algorithm 34b](lib/src/main/java/datastructures/uniquecharacters/UniqueCharacters.java)
+- [Test Algorthm 34b](lib/src/test/java/datastructures/hashtable/UniqueCharactersTest.java)
 ## Approach & Efficiency
+- Both: Time O(N) Space O(N)
 ## Contributors
 
 ## Code Challenge 35 <a name="challenge35"></a>
