@@ -524,8 +524,8 @@ Time O(N) Space O(N)
   - Determine if a string is full of unique characters
   - Stretch goal is included in code
 ## WhiteBoard Process
-- ![WhiteBoard 34a](codechallenge-34a.jpg)
-- ![WhiteBoard 34b](codechallenge-34b.jpg)
+- ![WhiteBoard 34a](Public/codechallenge-34a.jpg)
+- ![WhiteBoard 34b](Public/codechallenge-34b.jpg)
 - [Coded Algorithm 34a](lib/src/main/java/datastructures/commonword/CommonWord.java)
 - [Test Algorthm 34a](lib/src/test/java/datastructures/hashtable/CommonWordTest.java)
 - [Coded Algorithm 34b](lib/src/main/java/datastructures/uniquecharacters/UniqueCharacters.java)
@@ -536,22 +536,27 @@ Time O(N) Space O(N)
 
 ## Code Challenge 35 <a name="challenge35"></a>
 ### Challenge Summary
+- Implement a graph
+  - add node
+  - add edge
+  - get nodes
+  - get neighbors
+  - size 
 - [Full Description 35](Public/Doc/code35.md)
 ## WhiteBoard Process
-- ![Whiteboarding 35](Public/codechallenge-35.jpg)
-- [Coded Algorthm](lib/src/main/java/datastructures)
-- [Test Algorthm](lib/src/test/java/datastructures/array)
+- [Coded Algorthm](lib/src/main/java/datastructures/graphs/Graphs.java)
+- [Test Algorthm](lib/src/test/java/datastructures/graphs/GraphTest.java)
 ## Approach & Efficiency
+- 
 ## Contributors
 
 ## Code Challenge 36 <a name="challenge36"></a>
 ### Challenge Summary
-- sort an unsorted array using merge sort algorithm
+- implement breadth first graph
 - [Full Description 36](Public/Doc/code36.md)
+- [Coded Algorthm](lib/src/main/java/datastructures/graphs/Graphs.java)
+- [Test Algorthm](lib/src/test/java/datastructures/graphs/GraphTest.java)
 ## WhiteBoard Process
-- ![Whiteboarding 36](Public/codechallenge-36.jpg)
-- [Coded Algorthm](lib/src/main/java/datastructures)
-- [Test Algorthm](lib/src/test/java/datastructures/array)
 ## Approach & Efficiency
 ## Contributors
 
