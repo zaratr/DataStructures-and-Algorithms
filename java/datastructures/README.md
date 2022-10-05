@@ -566,30 +566,22 @@ Time O(N) Space O(N)
 - [Full Description 37](Public/Doc/code37.md)
 ## WhiteBoard Process
 - ![Whiteboarding 37](Public/codechallenge-37.jpg)
-- [Coded Algorthm](lib/src/main/java/datastructures)
-- [Test Algorthm](lib/src/test/java/datastructures/array)
+- [Coded Algorthm](lib/src/main/java/datastructures/graphs/Graphs.java)
+- [Test Algorthm](lib/src/test/java/datastructures/graph/GraphTest.java)
 ## Approach & Efficiency
 ## Contributors
 
 ## Code Challenge 39 <a name="challenge39"></a>
 ### Challenge Summary
-- sort an unsorted array using merge sort algorithm
 - [Full Description 39](Public/Doc/code39.md)
 ## WhiteBoard Process
-- ![Whiteboarding 39](Public/codechallenge-39.jpg)
-- [Coded Algorthm](lib/src/main/java/datastructures)
-- [Test Algorthm](lib/src/test/java/datastructures/array)
 ## Approach & Efficiency
 ## Contributors
 
 ## Code Challenge 41 <a name="challenge41"></a>
 ### Challenge Summary
-- sort an unsorted array using merge sort algorithm
 - [Full Description 41](Public/Doc/code41.md)
 ## WhiteBoard Process
-- ![Whiteboarding 41](Public/codechallenge-41.jpg)
-- [Coded Algorthm](lib/src/main/java/datastructures)
-- [Test Algorthm](lib/src/test/java/datastructures/array)
 ## Approach & Efficiency
 ## Contributors
 
@@ -598,31 +590,20 @@ Time O(N) Space O(N)
 - sort an unsorted array using merge sort algorithm
 - [Full Description 42](Public/Doc/code42.md)
 ## WhiteBoard Process
-- ![Whiteboarding 42](Public/codechallenge-42.jpg)
-- [Coded Algorthm](lib/src/main/java/datastructures)
-- [Test Algorthm](lib/src/test/java/datastructures/array)
 ## Approach & Efficiency
 ## Contributors
 
 ## Code Challenge 43 <a name="challenge43"></a>
 ### Challenge Summary
-- sort an unsorted array using merge sort algorithm
 - [Full Description 43](Public/Doc/code43.md)
 ## WhiteBoard Process
-- ![Whiteboarding 43](Public/codechallenge-43.jpg)
-- [Coded Algorthm](lib/src/main/java/datastructures)
-- [Test Algorthm](lib/src/test/java/datastructures/array)
 ## Approach & Efficiency
 ## Contributors
 
 ## Code Challenge 44 <a name="challenge44"></a>
 ### Challenge Summary
-- sort an unsorted array using merge sort algorithm
 - [Full Description 44](Public/Doc/code44.md)
 ## WhiteBoard Process
-- ![Whiteboarding 44](Public/codechallenge-44.jpg)
-- [Coded Algorthm](lib/src/main/java/datastructures)
-- [Test Algorthm](lib/src/test/java/datastructures/array)
 ## Approach & Efficiency
 ## Contributors
 

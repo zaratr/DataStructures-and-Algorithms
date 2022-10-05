@@ -1,4 +1,4 @@
-package datastructures;
+package datastructures.graph;
 
 import datastructures.graphs.*;
 import org.junit.jupiter.api.Test;
