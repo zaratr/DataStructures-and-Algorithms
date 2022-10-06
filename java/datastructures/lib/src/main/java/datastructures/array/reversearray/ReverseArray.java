@@ -1,4 +1,6 @@
-public class ReverseArray{
+package datastructures.array.reversearray;
+
+public class ReverseArray {
   public static void main(String [] args)
   {
     new Main().reverseArray(new int[]{1,2,3});
