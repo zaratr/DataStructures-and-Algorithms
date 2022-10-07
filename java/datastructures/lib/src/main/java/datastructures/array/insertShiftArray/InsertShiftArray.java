@@ -13,7 +13,6 @@ public class InsertShiftArray {
           if(i == middleIndex)
           {
             element = i;
-
             newArr[middleIndex] = toAdd;
             ++i;//just inserted at middle. now shift everything
           }
