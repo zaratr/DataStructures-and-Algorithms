@@ -240,3 +240,5 @@ $RECYCLE.BIN/
 java/datastructures/gradlew
 java/datastructures/gradlew
 /.idea/
+/leetcode-questions/.idea/
+/leetcode/.idea/
