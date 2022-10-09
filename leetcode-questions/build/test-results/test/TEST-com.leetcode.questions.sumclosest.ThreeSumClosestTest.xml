@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.leetcode.questions.sumclosest.ThreeSumClosestTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-10-08T04:58:19" hostname="AORUS15PXD" time="4.563">
-  <properties/>
-  <testcase name="testThreeSumClosest()" classname="com.leetcode.questions.sumclosest.ThreeSumClosestTest" time="4.563"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

@@ -1,4 +1,4 @@
-package com.leetcode.questions;
+package main;
 
 public class Main {
     public static String main(String[] args) {

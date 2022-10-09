@@ -1,8 +1,8 @@
 package com.leetcode.questions.main;
 
-import com.leetcode.questions.Main;
 import org.junit.jupiter.api.Test;
 
+import main.Main;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class MainTest {
