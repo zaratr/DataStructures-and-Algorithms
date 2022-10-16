@@ -56,4 +56,4 @@ Below are my overall understanding of five languages in Data Structures and Algo
 ### C - Data Structures and Algorithms <a name="c"></a>
 - [Instruction guide](c/README.md)
 ### LeetCode Code Challenges <a name="leet"></a>
-- [Instruction guide](leetcode/README.md)
+- [Instruction guide](leetcode-questions/README.md)
