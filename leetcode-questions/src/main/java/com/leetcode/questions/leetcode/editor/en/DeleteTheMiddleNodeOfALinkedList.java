@@ -9,13 +9,13 @@ public class DeleteTheMiddleNodeOfALinkedList{
    * @see DeleteTheMiddleNodeOfALinkedList#getResult
    * @see Solution#deleteMiddle(ListNode)
    */
-  public DeleteTheMiddleNodeOfALinkedList(ListNode head){this.head = head;}
+  public DeleteTheMiddleNodeOfALinkedList(ListNode head){this.head = head; this.getResult = head;}
   public ListNode head;
   public ListNode getResult;
   public void main(){
     var solution = new Solution().
       deleteMiddle(head);
-    getResult = solution;
+    this.getResult = solution;
   }
 
 
@@ -24,26 +24,48 @@ public class DeleteTheMiddleNodeOfALinkedList{
 class Solution {
     /**
    * deletes middle node from a chain of nodes. middle node is floor(n/2) | n = size of total listnodes
+     * recursion makes this algo Time Complecity run O(N**2) and Space Complexity O(1).
+     * to fix this scenerio, using For loop traversal with fast ListNode pointer will make this Time Complexity O(N) and space complexity O(1).
+     * Further, by traversing first and finding the size to find floor(midddle) will also be O(2N) = O(N) an space complexity O(1)
    * @param head
    * @return {@code ListNode}
    */
   public ListNode deleteMiddle(ListNode head) {
         if(head == null) return null;
         if(head.next == null) return null; //floor(head) if only one node is the the one node. thus, delete the whole list.
-        var result = deleteMiddle(null, head, head, head);
-        return result;
+        //var result = deleteMiddle(null, head, head, head);
+        _deleteMiddle(head, head, head);
+        return head;
     }
 
-    public ListNode deleteMiddle(ListNode prev, ListNode slow, ListNode fast, ListNode head)
+
+  /**
+   * RECURSION Method: this will by default become O(N) multiplied by any traversal. thus, Worst Time Complexity is O(N**2).
+   * @param slow {@code ListNode} traversal is dependant on second reference argument: {@code head}
+   * @param head {@code ListNode} head pointer that serves as "middle" pointer between fast and slow.
+   * @param fast {@code ListNode} traverses list n/2 where n is the length of the linked list
+   * @return slow is returned, however, head is updated by reference for this assignment.
+   */
+    public ListNode _deleteMiddle(ListNode slow, ListNode head, ListNode fast)
     {
       if(fast == null || fast.next == null) {
-        prev.next = prev.next.next;
-        return head;
+        slow.next = slow.next.next;
+        return slow;
       }
-      return deleteMiddle(slow, slow.next, fast.next.next, head);
+      return _deleteMiddle(head, head.next, fast.next.next);
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
+
+  @Override
+  public String toString(){
+    if(head == null ) return null;
+    return toStr(head, "");
+  }
+  public String toStr(ListNode head, String toDisplay){
+    if(head == null) return toDisplay;
+    return toStr(head.next, toDisplay + head.toString()) ;
+  }
 
 }
 
