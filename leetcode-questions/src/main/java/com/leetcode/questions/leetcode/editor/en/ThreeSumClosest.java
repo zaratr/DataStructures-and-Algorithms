@@ -90,11 +90,5 @@ Explanation: The sum that is closest to the target is 0. (0 + 0 + 0 = 0).
  Constraints:
 
 
-* 3 <= nums.length <= 1000
-* -1000 <= nums[i] <= 1000
-* -10⁴ <= target <= 10⁴
-
-
- Related Topics Array Two Pointers Sorting 👍 7072 👎 385
 
 */
