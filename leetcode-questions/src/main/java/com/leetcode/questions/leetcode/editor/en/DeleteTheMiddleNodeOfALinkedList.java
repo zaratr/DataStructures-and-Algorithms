@@ -29,18 +29,18 @@ class Solution {
    */
   public ListNode deleteMiddle(ListNode head) {
         if(head == null) return null;
-        if(head.next == null) return head = null; //floor(head) if only one node is the the one node. thus, delete the whole list.
-        var result = deleteMiddle(null, head, head);
+        if(head.next == null) return null; //floor(head) if only one node is the the one node. thus, delete the whole list.
+        var result = deleteMiddle(null, head, head, head);
         return result;
     }
 
-    public ListNode deleteMiddle(ListNode prev, ListNode slow, ListNode fast)
+    public ListNode deleteMiddle(ListNode prev, ListNode slow, ListNode fast, ListNode head)
     {
       if(fast == null || fast.next == null) {
         prev.next = prev.next.next;
         return head;
       }
-      return deleteMiddle(slow, slow.next, fast.next.next);
+      return deleteMiddle(slow, slow.next, fast.next.next, head);
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
