@@ -9,7 +9,7 @@ public class BinaryTree <T>{
   public Tnode<T> root;//accidently used this public. without refactoring, I kept as public
   public ArrayList<T> xList;
   private int max;
-  private enum TYPE {PREORDER, INORDER, POSTORDER};
+  private enum TYPE {PREORDER, INORDER, POSTORDER, LEVELORDER};
   private TYPE displayType;
   private ArrayList<T> results;
   //= new ArrayList<>();
@@ -100,8 +100,11 @@ public class BinaryTree <T>{
     else if(displayType.equals(TYPE.INORDER))
         toDisplay = toStringIN(root);
 
-    else //displayType.equals(TYPE.POSTORDER)
-        toDisplay = toStringPOST(root);
+    else if(displayType.equals(TYPE.POSTORDER))
+      toDisplay = toStringPOST(root);
+
+    else
+      toDisplay = results.toString();
 
     return toDisplay + "NULL";
   }
@@ -181,24 +184,24 @@ public class BinaryTree <T>{
 
    */
 
-  public List<T> levelOrder(Tnode<T> root) {
+  public List<T> levelOrder() {
     if (root == null) return null;
+    displayType = TYPE.LEVELORDER;
 //    for(List<Integer> i: levels)
 //    {
 //      for(Integer j: i)
 //      xList.add(j);
 //    }
-    queue = new Queue<>();
-    queue.enqueue(root);
-    //breadFirst();
-    //helper(root, 0);
-    breadFirstRecursion(new Tnode<T>(), false, new ArrayList<>());
+    this.queue = new Queue<>();
+    this.queue.enqueue(root);
+    this.xList = breadFirst();
+    //breadFirstRecursion(new Tnode<T>(), false, new ArrayList<>());
     return xList;
   }
 
   public ArrayList<T> breadFirst() {
 
-    queue = new Queue<>();
+    //queue = new Queue<>();
     results = new ArrayList<>();
     Tnode<T> first;
     while (!queue.isEmpty()) {
@@ -229,7 +232,7 @@ public class BinaryTree <T>{
       level.add(first.getLeftNode());
     }
     breadFirstRecursion(first, queue.isEmpty(), level);
-    breadFirstRecursion(first, queue.isEmpty(), level);
+    //breadFirstRecursion(first, queue.isEmpty(), level);
   }
 
 

@@ -13,7 +13,8 @@ public class BinaryTreeTest {
 
   public Tnode<Integer> treeBuilder(BinaryTree BinaryTree, int length)
   {
-    Tnode main = BinaryTree.root = new Tnode<>(new Random().nextInt(10 - 0 + 1) + 0);
+    //Tnode main = BinaryTree.root = new Tnode<>(new Random().nextInt(10 - 0 + 1) + 0);
+    Tnode main = BinaryTree.root = new Tnode(0);
     switch (length) {
       case 1:
         main.setLeftNode(new Tnode<>(new Random().nextInt(10 - 0 + 1) + 0));
@@ -28,6 +29,15 @@ public class BinaryTreeTest {
         main.setRightNode(new Tnode<>(new Random().nextInt(10 - 0 + 1) + 0));
         break;
       default:
+
+        Tnode<Integer> left1 = new Tnode<>(1);
+        Tnode<Integer> right1 = new Tnode<>(2);
+        Tnode<Integer> left2a = new Tnode<>(3);
+        Tnode<Integer> left2b = new Tnode<>(4);
+        left1.setLeftNode(left2a);
+        left1.setRightNode(left2b);
+        main.setLeftNode(left1);
+        main.setRightNode(right1);
         break;
     }
     return main;
@@ -40,7 +50,8 @@ public class BinaryTreeTest {
   {
     BinaryTree sut = new BinaryTree(),
       test = new BinaryTree();
-    test.root = treeBuilder(sut, 1);//both children are nodes
+    test.root = treeBuilder(sut, 10);//both children are nodes
+
 
     assertEquals(sut.preOrder().xList.toString(),test.preOrder().xList.toString());
     assertEquals(sut.inOrder().xList.toString(),test.inOrder().xList.toString());
@@ -167,7 +178,7 @@ public class BinaryTreeTest {
   public void testBfs() {
     BinaryTree sut = new BinaryTree();
     build(sut);
-    List<Integer> test = sut.levelOrder(sut.root);
+    List<Integer> test = sut.levelOrder();
     assertEquals("[2, 7, 5, 2, 6, 9, 5, 11, 4]", test.toString() );
     return;
   }
