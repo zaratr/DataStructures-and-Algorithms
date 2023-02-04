@@ -1,0 +1,2 @@
+exclude:
+  - "c++/Google_tests/lib/docs/assets/css/style.scss"
