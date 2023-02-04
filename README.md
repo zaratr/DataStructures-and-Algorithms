@@ -18,7 +18,7 @@ Clone Project
 
  - For ***Python***, follow this [setup instructions](python/README.md)
 
- - For ***C++***, make sure to follow [setup instructions](c++/README.md)
+ - For ***C++***, make sure to follow [setup instructions](cplusplus/README.md)
 
  - For ***C***, make sure to follow [setup instructions](c/README.md)
 
@@ -52,7 +52,7 @@ Below are my overall understanding of five languages in Data Structures and Algo
 ### Python - Data Structures and Algorithms <a name="python"></a>
 - [Instruction guid](python/README.md)
 ### C++ - Data Structures and Algorithms <a name="c++"></a>
-- [Instruction guide](c++/README.md)
+- [Instruction guide](cplusplus/README.md)
 ### C - Data Structures and Algorithms <a name="c"></a>
 - [Instruction guide](c/README.md)
 ### LeetCode Code Challenges <a name="leet"></a>
