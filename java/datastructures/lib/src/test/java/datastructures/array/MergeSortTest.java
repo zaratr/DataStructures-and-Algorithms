@@ -3,17 +3,20 @@ package datastructures.array;
 import datastructures.array.mergesort.MergeSort;
 import org.junit.jupiter.api.Test;
 
+import java.util.Arrays;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class MergeSortTest {
   int[] arr = new int[]{8,4,42,23,16,15};
-  int[] assertArray = new int[]{4,8,15,16,42,23};
+  int[] assertArray = new int[]{4,8,15,16,23, 42};
 
   @Test
   public void testMergeSort()
   {
     MergeSort sut = new MergeSort(arr);
-    assertArrayEquals(sut.mergeSort(), assertArray);
+    int[] toCompare = sut.mergeSort();
+    assertArrayEquals(toCompare, assertArray);
   }
   @Test
   public void testEmpty()
