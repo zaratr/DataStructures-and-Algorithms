@@ -6,19 +6,19 @@
 #include <iostream>
 using namespace std;
 
-Encapsulation :: Encapsulation(): num(0)
+Encapsulation :: Encapsulation(): data(0)
 {}
 
 Encapsulation :: ~Encapsulation() {
 
 }
 
-int Encapsulation::getNum() {
-    return this->num;
+int Encapsulation::getData() {
+    return this->data;
 }
 
-int Encapsulation :: setNum(int num){
-    this->num = num;
+int Encapsulation :: setData(int data){
+    this->data = data;
 }
 
 Child1 ::Child1()

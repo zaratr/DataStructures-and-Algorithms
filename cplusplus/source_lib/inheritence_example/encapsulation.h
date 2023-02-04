@@ -10,10 +10,10 @@ class Encapsulation {
 public:
     Encapsulation();
     ~Encapsulation();
-    int getNum();
-    int setNum(int );
+    int getData();
+    int setData(int );
 private:
-    int num;
+    int data;
 };
 
 class Child1 : public Encapsulation{
