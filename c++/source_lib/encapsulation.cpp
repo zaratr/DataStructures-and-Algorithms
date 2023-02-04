@@ -6,8 +6,14 @@
 #include <iostream>
 using namespace std;
 
+Encapsulation :: Encapsulation(): num(0)
+{}
 
 int Encapsulation::getNum() {
-    return num;
+    return this->num;
+}
+
+int Encapsulation :: setNum(int num){
+    this->num = num;
 }
 

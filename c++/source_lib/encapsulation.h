@@ -8,7 +8,9 @@
 
 class Encapsulation {
 public:
+    Encapsulation();
     int getNum();
+    int setNum(int );
 private:
     int num;
 };
