@@ -9,6 +9,10 @@ using namespace std;
 Encapsulation :: Encapsulation(): num(0)
 {}
 
+Encapsulation :: ~Encapsulation() {
+
+}
+
 int Encapsulation::getNum() {
     return this->num;
 }
@@ -16,4 +20,7 @@ int Encapsulation::getNum() {
 int Encapsulation :: setNum(int num){
     this->num = num;
 }
+
+Child1 ::Child1()
+{}
 

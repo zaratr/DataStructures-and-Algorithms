@@ -1,11 +1,11 @@
 project(source)
 
 set(HEADER_FILES
-        encapsulation.h
+        inheritence_example/encapsulation.h
         )
 
 set(SOURCE_FILES
-        encapsulation.cpp
+        inheritence_example/encapsulation.cpp
         )
 
 add_library(source_lib STATIC ${SOURCE_FILES} ${HEADER_FILES})

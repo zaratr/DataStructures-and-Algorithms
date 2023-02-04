@@ -9,10 +9,24 @@
 class Encapsulation {
 public:
     Encapsulation();
+    ~Encapsulation();
     int getNum();
     int setNum(int );
 private:
     int num;
+};
+
+class Child1 : public Encapsulation{
+public:
+    Child1();
+    ~Child1();
+
+};
+
+class Child2 : public Encapsulation{
+public:
+    Child2();
+    ~Child2();
 };
 
 
