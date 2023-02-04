@@ -1,0 +1,26 @@
+name: C/C++ CI
+
+on:
+  push:
+    branches: [ "main" ]
+    paths:
+    - 'cplusplus/**'
+  pull_request:
+    branches: [ "main" ]
+    paths:
+    - 'cplusplus/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: recursive
+
+      - name: configure
+        run: cmake -S . -B build
+
+      - name: build and test
+        run: cmake --build build
