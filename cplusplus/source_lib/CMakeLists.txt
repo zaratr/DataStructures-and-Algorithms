@@ -6,6 +6,6 @@ set(HEADER_FILES
 
 set(SOURCE_FILES
         inheritence_example/encapsulation.cpp
-        )
+        ArrayShift/ArrayShift.cpp ArrayShift/ArrayShift.h)
 
 add_library(source_lib STATIC ${SOURCE_FILES} ${HEADER_FILES})
