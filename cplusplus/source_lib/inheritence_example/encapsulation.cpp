@@ -6,21 +6,39 @@
 #include <iostream>
 using namespace std;
 
-Encapsulation :: Encapsulation(): data(0)
-{}
+Encapsulation :: Encapsulation(): value(0){}
 
-Encapsulation :: ~Encapsulation() {
+Encapsulation :: Encapsulation(int value): value(value){}
 
-}
+Encapsulation :: ~Encapsulation(){}
 
-int Encapsulation::getData() {
-    return this->data;
-}
+int Encapsulation::getValue() {return this->value;}
 
-int Encapsulation :: setData(int data){
-    this->data = data;
-}
+int Encapsulation :: setValue(int value){this->value = value;}
 
-Child1 ::Child1()
-{}
+string Encapsulation:: getName(){}
+double Encapsulation:: getId(){}
 
+//CHILD1
+//CONSTRUCTORS
+Child1 ::Child1(){}
+Child1 :: Child1(int value): Encapsulation(value){}
+Child1 ::Child1(int value, string name) : Encapsulation(value), name(name){}
+
+//DESTRUCTOR
+Child1 :: ~Child1(){}
+
+//MEMBER FUNCTIONS
+string Child1 :: getName(){return this->name;}
+
+//CHILD2
+//CONSTRUCTORS
+Child2 ::Child2(){}
+Child2 ::Child2(int value) : Encapsulation(value){}
+Child2 ::Child2(int value, double userId) : Encapsulation(value), id(userId){}
+
+//DESTRUCTOR
+Child2 ::~Child2() {}
+
+//MEMBER FUNCTIONS
+double Child2 ::getId() {return this->id;}
