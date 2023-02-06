@@ -62,25 +62,16 @@ Code Challenges
 - Write a function called reverseArray which takes an array as an argument. Without utilizing any of the built-in methods available to your language, return an array with elements in reversed order.
 - Input: An Integer Array
 - Output: Same Reversed Integer Array
-- [Full Code Description Markdown](Public/Doc/code01.md)
 
 ### Whiteboard Process
 - [reverse-array Whiteboarding PDF](Public/codechallenge-01.pdf)
 
 
 ### Approach & Efficiency
-I knew that going through an array can be done recursively or iteratively.
-Further, I knew that no changes to memory since we don't add or remove any element.
-Thus, the simplest way to approach this problem was to
-implement iteratively by using a while loop and having a temporary
-variable to hold a value of either the front or the end of the array.
-After I have swapped first and end elements in the array, I would need to then decrement
-end and increment front pointers by one. since we only use one loop and n elements of the array
-is being traversed
-- Time: O(n) because we iterate through full array is worse case and Space: O(1) no extra memory is added per each
-iteration
-- Location: [ReverseArray](../ReverseArray/ReverseArray.java)
-- Method: reverse-array(int [])
+- Time: O(n) because the worst case is that iteration will be through full array and Space: O(1) no extra memory is added per each to auxillary space.
+- [Full Code Description Markdown](Public/Doc/code01.md)
+- Location: [ReverseArray](lib/src/main/java/datastructures/array/reversearray/ReverseArray.java)
+- Test : [ReverseArrayTest](lib/src/test/java/datastructures/array/ReverseArrayTest.java)
 
 ## Challenge 02<a name="challenge02"></a>
 ### Insert and Shift Array
@@ -94,12 +85,9 @@ iteration
 
 
 ### Approach & Efficiency
-After reviewing the barriers of nonrecursive problems and language limitation, I figured the best solution
-is to iteratively create a new array with old array contents with target element at the middle of array. once newArray is configured,
-I may use the assignment operator(dangerously) to replace old array and return old array (although it would still
-just be a new array at the end of day) or just return new array (without the usage of Arraylist - as instructed).
-time usage is O(n) because it depends on how long the length of array is and Space is O(1) because we dont iterate through
-and add more memory
+- Time usage is O(N) because the time taken to complete insertion of a element with existing elements involves an iteration to the end of array which is length of array + 1.  Thus, O(len + 1) or O(N+1) and simplified to O(N) over time.
+- Space is O(N) because I create a new array to add memory of N + 1.
+and add more memory.
 
 - Location: [InsertShiftArray](lib/src/main/java/datastructures/array/insertShiftArray/InsertShiftArray.java)
 - Test : [InsertShiftArrayTest()](lib/src/test/java/datastructures/array/InsertShiftArrayTest.java)
@@ -107,7 +95,7 @@ and add more memory
 
 ### Challenge 03<a name="challenge03"></a>
 ### Binary Search
-- this code searches for an element in array and returns the element index that matches the key.
+- this code searches for an element in array and returns the element index that matches the key. By searching using binary search, we never need to creat new memory and decreases search operations per each check.
 - input: Integer array and Integer to find
 - output an Integer
 - [Full Code Description Markdown](Public/Doc/code03.md)
@@ -116,7 +104,10 @@ and add more memory
 
 
 ### Approach & Efficiency
-- By searching bisection method, I was able to avoid usage of creating new objects. So, Space Complexity is O(1). Further, a single iteration is needed to traverse the elements in the array from beginning to N/2 length of array. Thus, the time complexity is O(log(N)).
+- Space Complexity is O(1) because no new space is created due to searching features.
+- Time complexity is O(log(N)). this is because the bisection method has a pattern that searches left half or right half. To further explain, suppose N is size of array and each search operation depends on the full size of array in worst case (traverse all elements in array - 1 from i < arr.length which results in N - 1 operations). Then, **traversing half of the array** => **N/2/2/2/2** again and again results to logorithmic properties in where time spent depends operations done to find target.
+- A mathematical explaination is better explained with an example. if N (length of array) is 16 then searching until the end will be 4 - 1 times by going to half of half of half of array. thus exponent represents 2^x where x represents steps taken and 2 for cutting operation in half for the sequence {2, 4, 8, 16, ..., 2^x}. 2^x = size of array, but for time complexity we want to know how many operations it took to reach target. thus using inverse of exponenets (logs)  result in properties log base 2 (size of array) = x (x is operations made) $$ \log_{2} N = x $$
+  . which simplifies to look log(N/2 - 1) = operations taken to find target.finally, this looks can now be represented in O(Log(N)) by simplifying after change overtime.
 - Method: binary-search(int []x, int target);
 
 
@@ -541,13 +532,13 @@ Time O(N) Space O(N)
   - add edge
   - get nodes
   - get neighbors
-  - size 
+  - size
 - [Full Description 35](Public/Doc/code35.md)
 ## WhiteBoard Process
 - [Coded Algorthm](lib/src/main/java/datastructures/graphs/Graphs.java)
 - [Test Algorthm](lib/src/test/java/datastructures/graphs/GraphTest.java)
 ## Approach & Efficiency
-- 
+-
 ## Contributors
 
 ## Code Challenge 36 <a name="challenge36"></a>
