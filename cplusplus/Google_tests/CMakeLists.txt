@@ -8,3 +8,6 @@ add_executable(Google_Tests_run basic_tests/TestEncapsulation.cpp basic_tests/Ar
 target_link_libraries(Google_Tests_run source_lib)
 
 target_link_libraries(Google_Tests_run gtest gtest_main)
+
+#add test to the project
+add_test(NAME Google_Tests_run COMMAND Google_Tests_run --verbose)
