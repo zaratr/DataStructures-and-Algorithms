@@ -33,4 +33,4 @@ jobs:
         ls -a ../build/
         cd ${{github.workspace}}/cplusplus/build
         ctest -V
-      working-directory: ./cplusplus/Google_tests
+      working-directory: ./cplusplus
