@@ -26,8 +26,7 @@ jobs:
       working-directory: ./cplusplus
 
     - name: Verify Build directory
-      run:
-      ls -l cplusplus
+      run: ls -l cplusplus
 
     - name: Run tests
       run: |
