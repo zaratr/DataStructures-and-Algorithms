@@ -14,10 +14,10 @@ Encapsulation :: ~Encapsulation(){}
 
 int Encapsulation::getValue() {return this->value;}
 
-int Encapsulation :: setValue(int value){this->value = value;}
+int Encapsulation :: setValue(int value){return this->value = value;}
 
-string Encapsulation:: getName(){}
-double Encapsulation:: getId(){}
+string Encapsulation:: getName(){return "default-user";}
+double Encapsulation:: getId(){return 0;}
 
 //CHILD1
 //CONSTRUCTORS
