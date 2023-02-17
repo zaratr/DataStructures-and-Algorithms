@@ -25,6 +25,9 @@ jobs:
         cmake --build build
       working-directory: ./cplusplus
 
+    - name: Verify Build directory
+      run: ls -l cplusplus
+
     - name: Run tests
       run: |
         cd cplusplus/build
