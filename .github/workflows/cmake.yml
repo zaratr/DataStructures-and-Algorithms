@@ -31,6 +31,6 @@ jobs:
     - name: Run tests
       run: |
         ls -a
-        cd cplusplus/build
+        cd ${{github.workspace}}/cplusplus/build
         ctest -V
       working-directory: ./cplusplus/Google_tests
