@@ -26,10 +26,10 @@ jobs:
       working-directory: ./cplusplus
 
     - name: Verify Build directory
-      run: ls -l cplusplus
+      run: ls -l cplusplus/build
 
     - name: Run tests
       run: |
         cd ${{github.workspace}}/cplusplus/build
-        ctest -V
+        ctest --verbose
       working-directory: ./cplusplus
