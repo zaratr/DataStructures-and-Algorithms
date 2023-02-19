@@ -8,7 +8,7 @@ using namespace std;
 TEST(caseOne, arrayShiftTestNull){
     ArrayShift sut;
     int test[] = {1,2,3,4,5};
-    int len = sizeof (test)/sizeof (test[0]);
+    const int len = sizeof (test)/sizeof (test[0]);
     int returnedArr[len+1];
     vector<int> expected = {1,2,10,3,4,5};
 
