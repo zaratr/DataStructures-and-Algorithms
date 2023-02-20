@@ -266,6 +266,7 @@ if (gtest_build_tests)
                         PROPERTIES
                         COMPILE_DEFINITIONS "GTEST_LINKED_AS_SHARED_LIBRARY=1")
 
+
   ############################################################
   # Python Google_tests.
 
