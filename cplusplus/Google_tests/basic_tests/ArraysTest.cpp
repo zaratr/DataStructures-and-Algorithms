@@ -50,6 +50,6 @@ TEST(insertShiftArray_addfour, insertShiftArray_addfour__Test){
     sut.insertionShiftArray();
     bool truthy = true;
     int expected[]{3,2,4,1,12,13};
-    for(int i = 0; i < )
-    ASSERT_TRUE();
+    //for(int i = 0; i < i++){}
+    //ASSERT_TRUE();
 }
