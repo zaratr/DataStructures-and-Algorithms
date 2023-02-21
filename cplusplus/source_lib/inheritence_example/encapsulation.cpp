@@ -22,7 +22,9 @@ Child1 :: Child1(int value): Encapsulation(value){}
 Child1 ::Child1(int value, string name) : Encapsulation(value), name(name){}
 
 //DESTRUCTOR
-Child1 :: ~Child1(){}
+Child1 :: ~Child1(){
+
+}
 
 //MEMBER FUNCTIONS
 string Child1 :: getName(){return this->name;}
