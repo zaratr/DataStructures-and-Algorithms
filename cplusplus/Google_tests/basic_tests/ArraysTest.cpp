@@ -1,6 +1,8 @@
 #include <gtest/gtest.h>
 #include "Arrays/ArrayShift/ArrayShift.h"
 #include "Arrays/BinarySearch/BinarySearch.h"
+#include "Arrays/InsertionSort/InsertionSort.h"
+#include "Arrays/InsertionShiftArray/InsertionShiftArray.h"
 #include <vector>
 #include <algorithm>
 using namespace std;
@@ -28,4 +30,26 @@ TEST(binarySearchFindTwo, binarySearchFindTwoTest){
     int actual = sut.binarySearch(test, 2, len);
     const int expected = 1;
     ASSERT_EQ(expected, actual);
+}
+
+TEST(insertionSort_sortFive, insertionSort_sortFive_Test){
+    int actual[]{3,2,1,12,13};
+    int expected[]{1,2,3,12,13};
+    InsertionSort sut(actual, 5);
+    sut.insertionSort();
+    bool truthy = true;//used with and logic
+    for(int i = 0 ; i < 5 ; ++i){
+        if(actual[i] == expected[i]) truthy *= true;
+        else truthy *= false;
+    }
+    ASSERT_TRUE(truthy);
+}
+
+TEST(insertShiftArray_addfour, insertShiftArray_addfour__Test){
+    InsertionShiftArray sut(*new vector<int>{3,2,1,12,13}, 4);
+    sut.insertionShiftArray();
+    bool truthy = true;
+    int expected[]{3,2,4,1,12,13};
+    for(int i = 0; i < )
+    ASSERT_TRUE();
 }
