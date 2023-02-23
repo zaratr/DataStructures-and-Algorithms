@@ -15,12 +15,15 @@ TEST(testParent, proofLife){
     Encapsulation* encapsulation2 = new Child2(1);
     ASSERT_EQ(encapsulation1->getValue(), 1);
     ASSERT_EQ(encapsulation2->getValue(), 1);
+    delete encapsulation1;
+    delete encapsulation2;
 }
 
 TEST(testChild1, testParentToChild1){
     Encapsulation* encapsulation = new Child1(20, "pepe");
     ASSERT_EQ(encapsulation->getValue(), 20);
     ASSERT_EQ(encapsulation->getName(), "pepe");
+    delete encapsulation;
 }
 
 TEST(testChild2, testParenttoChild2){
@@ -28,4 +31,5 @@ TEST(testChild2, testParenttoChild2){
     Encapsulation* encapsulation = new Child2(20, 1.12);
     double actual = encapsulation->getId();
     ASSERT_NEAR(1.12, actual, tolerance);
+    delete encapsulation;
 }
