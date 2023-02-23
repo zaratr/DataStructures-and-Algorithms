@@ -8,12 +8,16 @@
 
 class InsertionShiftArray {
 public:
-    InsertionShiftArray(std::vector<int>, int);
-    void insertionShiftArray();
+    InsertionShiftArray(int[], int, int);
+    ~InsertionShiftArray();
+    int* insertionShiftArray();
+    void freeDynamicArray(int*&);
+    int* getActual();
 private:
     int len;
     int target;
-    std::vector<int> vec;
+    int* array;
+    int* insertedArr;
 };
 
 

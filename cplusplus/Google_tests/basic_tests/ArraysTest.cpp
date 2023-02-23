@@ -46,10 +46,16 @@ TEST(insertionSort_sortFive, insertionSort_sortFive_Test){
 }
 
 TEST(insertShiftArray_addfour, insertShiftArray_addfour__Test){
-    InsertionShiftArray sut(*new vector<int>{3,2,1,12,13}, 4);
+    int testArray[]{3,2,1,12,13};
+    InsertionShiftArray sut(testArray, 4, 5);
     sut.insertionShiftArray();
+    //int* num = sut.getActual();
+    vector<int> actual = {sut.getActual(), sut.getActual() + 6};
+    vector<int> expected = {3,2,4,1,12,13};
     bool truthy = true;
-    int expected[]{3,2,4,1,12,13};
-    //for(int i = 0; i < i++){}
-    //ASSERT_TRUE();
+    for(int i = 0 ; i < 5 ; ++i){
+        if(actual[i] == expected[i]) truthy *= true;
+        else truthy *= false;
+    }
+    ASSERT_TRUE(truthy);
 }
