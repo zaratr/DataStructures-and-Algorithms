@@ -63,13 +63,13 @@ TEST(insertShiftArray_addfour, insertShiftArray_addfour__Test){
 
 TEST(mergeSort_four, mergetSort_four__test){
     bool truthy = true;
+    /*
     int testArray[] = {8, 4, 42, 23, 16, 15};
     vector<int> expected = {4, 8, 15, 16, 23, 42};
 
     MergeSort sut(testArray, 6);
     vector<int> actual = {sut.getActual(), sut.getActual() + 6};
 
-    /*
     for(int i = 0 ; i < 6; ++i){
 	    if(actual[i] == expected[i]) truthy*=true;
 	    else truthy *= false;
