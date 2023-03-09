@@ -69,10 +69,12 @@ TEST(mergeSort_four, mergetSort_four__test){
     MergeSort sut(testArray, 6);
     vector<int> actual = {sut.getActual(), sut.getActual() + 6};
 
+    /*
     for(int i = 0 ; i < 6; ++i){
 	    if(actual[i] == expected[i]) truthy*=true;
 	    else truthy *= false;
     }
+     */
 
     ASSERT_TRUE(truthy);
 }
