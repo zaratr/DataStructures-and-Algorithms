@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.leetcode.questions.kangaroos.NumberLineJumpsTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-04-16T21:49:51" hostname="AORUS15PXD" time="0.014">
+  <properties/>
+  <testcase name="testNumberLine1()" classname="com.leetcode.questions.kangaroos.NumberLineJumpsTest" time="0.012"/>
+  <testcase name="testNumberLine2()" classname="com.leetcode.questions.kangaroos.NumberLineJumpsTest" time="0.0"/>
+  <testcase name="testNumberLine3()" classname="com.leetcode.questions.kangaroos.NumberLineJumpsTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

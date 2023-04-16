@@ -1,15 +1,16 @@
 /**
  * Merge sort by using Recursion. three members will be used to make this happen
  * */
+#include <vector>
 class MergeSort{
 	public:
-		MergeSort(int [], int);
-		int* getActual();
-		int* mergeSort();
+		MergeSort(std::vector<int>, int);
+		std::vector<int> mergeSort();
+        std::vector<int> getActual();
 	private:
-		int* mergeSort(int[]);
-		int* merge(int[], int[], int[]);
+		std::vector<int> mergeSort(vector<int>);
+		std::vector<int> merge(vector<int>, vector<int>, vector<int>);
 
-		int* arr;
+		vector<int> arr;
 		int size;
 };

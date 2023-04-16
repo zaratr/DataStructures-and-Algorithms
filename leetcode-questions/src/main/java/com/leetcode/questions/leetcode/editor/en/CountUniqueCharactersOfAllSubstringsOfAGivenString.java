@@ -5,18 +5,18 @@ package com.leetcode.questions.leetcode.editor.en;
  * @see Solution#countUniqueCharactersOfAllSubstringsOfAGivenString
  * @link <a href="https://github.com/zaratr/leetcode-qustions/src/main/java/com/leetcode/questions/leetcode/editor/en/doc/content">CountUniqueCharactersOfAllSubstringsOfAGivenString markdown</a>
  **/
- 
+
  public class CountUniqueCharactersOfAllSubstringsOfAGivenString{
     public void main(){
     var solution = new Solution().
-    countUniqueCharactersOfAllSubstringsOfAGivenString();
+      uniqueLetterString(null);
     }
 
-        
+
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int uniqueLetterString(String s) {
-        
+      return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
@@ -24,56 +24,55 @@ class Solution {
 }
 
 /**
-Let's define a function countUniqueChars(s) that returns the number of unique 
-characters on s. 
+Let's define a function countUniqueChars(s) that returns the number of unique
+characters on s.
 
- 
- For example, calling countUniqueChars(s) if s = "LEETCODE" then "L", "T", "C", 
-"O", "D" are the unique characters since they appear only once in s, therefore 
-countUniqueChars(s) = 5. 
- 
 
- Given a string s, return the sum of countUniqueChars(t) where t is a substring 
-of s. The test cases are generated such that the answer fits in a 32-bit 
-integer. 
+ For example, calling countUniqueChars(s) if s = "LEETCODE" then "L", "T", "C",
+"O", "D" are the unique characters since they appear only once in s, therefore
+countUniqueChars(s) = 5.
 
- Notice that some substrings can be repeated so in this case you have to count 
-the repeated ones too. 
 
- 
- Example 1: 
+ Given a string s, return the sum of countUniqueChars(t) where t is a substring
+of s. The test cases are generated such that the answer fits in a 32-bit
+integer.
 
- 
+ Notice that some substrings can be repeated so in this case you have to count
+the repeated ones too.
+
+
+ Example 1:
+
+
 Input: s = "ABC"
 Output: 10
 Explanation: All possible substrings are: "A","B","C","AB","BC" and "ABC".
 Every substring is composed with only unique letters.
 Sum of lengths of all substring is 1 + 1 + 1 + 2 + 2 + 3 = 10
- 
 
- Example 2: 
 
- 
+ Example 2:
+
+
 Input: s = "ABA"
 Output: 8
 Explanation: The same as example 1, except countUniqueChars("ABA") = 1.
- 
 
- Example 3: 
 
- 
+ Example 3:
+
+
 Input: s = "LEETCODE"
 Output: 92
- 
 
- 
- Constraints: 
 
- 
- 1 <= s.length <= 10⁵ 
- s consists of uppercase English letters only. 
- 
 
- Related Topics Hash Table String Dynamic Programming 👍 1770 👎 233
+ Constraints:
+
+
+ 1 <= s.length <= 10^5
+ s consists of uppercase English letters only.
+
+
 
 */
