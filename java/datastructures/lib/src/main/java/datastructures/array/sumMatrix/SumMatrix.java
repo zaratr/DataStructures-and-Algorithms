@@ -2,7 +2,20 @@ package datastructures.array.sumMatrix;
 
 public class SumMatrix {
 
-  //matrix has equal length of rows
+  //matrix of different row lengths
+  public int[] sumRows(int[][] arr){
+    if(arr.length == 0) return null;
+    int[] sumMatrix = new int[arr.length];
+
+    for(int i = 0 ; i < arr.length ; ++i){
+      for(int element : arr[i]){
+        sumMatrix[i]+= element;
+      }
+    }
+    return sumMatrix;
+  }
+
+  //matrix has equal length of rows - returns the total of all integers in 2d array
   public int sumMatrix(int[][] arr)
   {
     int summation = 0;
@@ -25,4 +38,33 @@ public class SumMatrix {
     return summation;
     //+ arr[arr.length -1][arr[0].length -1];
   }
+
+
+  /**
+   * wrapper method for recursive call.
+   * @param arr
+   * @return
+   */
+  public int[] _sumRows(int[][] arr){
+    if(arr.length == 0) return null;
+    return _sumRows(arr, new int[arr.length], 0, 0);
+  }
+
+  /**
+   * recursive function that traverses a two demensional array. Base case happens when i > then the columns and only happens once due to recursive call
+   * @param mArr - input : two demensional array
+   * @param arr - one demonsional array
+   * @param i - column counter
+   * @param j - row counter
+   * @return int[]
+   */
+  private int[] _sumRows(int[][] mArr, int[] arr, int i, int j){
+    if(i >= mArr.length) return arr;
+    arr[i] += mArr[i][j];
+    return mArr[i].length -1 == j ?
+      _sumRows(mArr, arr, ++i, 0):
+      _sumRows(mArr, arr, i, ++j);
+  }
+
+
 }

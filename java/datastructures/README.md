@@ -121,6 +121,8 @@ and add more memory.
 - [Fibonacci Whiteboarding](Public/codechallenge-4b.jpg)
 - [Sum Matrix Source Code](lib/src/main/java/datastructures/array/sumMatrix/SumMatrix.java)
 - [Sum Matrix Test](lib/src/test/java/datastructures/array/SumMatrixTest.java)
+- [Fibonacci Sequence Code](lib/src/main/java/datastructures/array/fibonacci/Fibonacci.java)
+- [Fibonacci Sequence Test](lib/src/test/java/datastructures/array/FibonacciTest.java)
 
 ## Approach & Efficiency
 - add total sum in matrix :
