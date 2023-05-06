@@ -25,6 +25,12 @@ class LinkedListTest {
     sut.insert(test1[0]);
     assert (sut.getList().getData() == 1);
   }
+  @Test
+  public void testInsert2() {
+    LinkedList<Integer> sut = new LinkedList();
+    sut.insert2(test1[0]);
+    assert (sut.getList().getData() == 1);
+  }
 
   @Test
   public void testHead() {

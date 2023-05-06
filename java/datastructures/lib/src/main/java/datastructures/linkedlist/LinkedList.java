@@ -38,6 +38,11 @@ public class LinkedList<T> {
     return ;
   }
 
+  public void insert2(T data){
+      if(tail == null) tail = head;
+      head = new Node(data, head);
+  }
+
 
   public boolean includes(T toCmp)
   {
@@ -112,7 +117,34 @@ public class LinkedList<T> {
     }
     return ;
   }
+  public void insertBefore2(T value, T target) throws Exception {
+    if (head != null && head.getData().equals(target)) {
+      insert(value);
+      return;
+    }
+    //insertBefore2(head, value, target);
+    _insertBefore(head, value, target);
+    throw new Exception("target value not in list");
+  }
 
+  public void insertBefore2(Node<T> head, T value, T target) {
+    Node<T> current = head;
+    while (current != null) {
+      if (current.getNext().getData().equals(target)) {
+        current.setNext(new Node(value, current.getNext()));
+        return;
+      }
+      current = current.getNext();
+    }
+  }
+
+  private void _insertBefore(Node<T> head, T value, T target) {
+    if (head == null) return;
+    if (head.getNext().getData().equals(target)) {
+      head.setNext( new Node<>(value, head.getNext()));
+      _insertBefore(head.getNext(), value, target);
+    }
+  }
   public void insertAfter(T data, T newData)
   {
     if(head == null)
@@ -134,6 +166,16 @@ public class LinkedList<T> {
       current = current.getNext();
     }
     return ;
+  }
+  public void _insertAfter(T value, T target){
+    if(head == null) return;
+    _insertAfter(head, value, target);
+  }
+  private void _insertAfter(Node<T> head, T value, T target){
+    if(head == null) return;
+    if(head.getData() == target)
+      head.setNext(new Node<T>(value, head.getNext()));
+    _insertAfter(head.getNext(), value, target);
   }
 
 /**********  LAB6 **********/
