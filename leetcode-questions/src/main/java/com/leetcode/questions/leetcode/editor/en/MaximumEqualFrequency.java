@@ -2,6 +2,7 @@ package com.leetcode.questions.leetcode.editor.en;
 
 import java.util.*;
 
+//TODO: Not complete? will need to create the algorithm.
 public class MaximumEqualFrequency{
     public static void main(String[] args){
         Solution solution = new MaximumEqualFrequency ().new Solution();

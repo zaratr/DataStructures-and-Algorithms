@@ -29,6 +29,8 @@ import java.util.*;
 
 
   class Solution {
+
+      /* if array is sorted*/
     public int[] twoSum(int[] nums, int target) {
       int[] tuple = new int[2];
       int size = nums.length;
@@ -44,6 +46,20 @@ import java.util.*;
       }
       return null;
     }
+
+    /* best answer*/
+    public int[] twoSum2(int[] nums,int target){
+
+      HashMap<Integer, Integer> map = new HashMap<>();
+      for(int i = 0; i< nums.length; ++i){
+        map.put(nums[i], i);
+        if(map.containsKey(target - nums[i])){
+          return new int[]{i, map.get(target - nums[i])};
+        }
+      }
+      return null;
+    }
+
   }
 
 /*
