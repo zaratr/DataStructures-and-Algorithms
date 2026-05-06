@@ -247,3 +247,7 @@ java/datastructures/gradlew
 /leetcode-questions/.idea/
 /leetcode/.idea/
 #/cplusplus/.idea/
+/python/venv/
+/python/.venv/
+/leetcode-questions/python/venv/
+/leetcode-questions/python/.venv/

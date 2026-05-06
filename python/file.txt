@@ -1,0 +1,417 @@
+.
+├── .idea
+│   └── inspectionProfiles
+├── .pytest_cache
+│   └── v
+│       └── cache
+├── __pycache__
+├── code_challenges
+│   └── __pycache__
+├── data_structures
+│   ├── .pytest_cache
+│   │   └── v
+│   │       └── cache
+│   ├── __pycache__
+│   └── abstract_base_classes
+│       └── __pycache__
+├── docs
+│   ├── graph_breadth_first
+│   ├── graph_business_trip
+│   ├── graph_depth_first
+│   ├── hashtable
+│   ├── hashtable_left_join
+│   ├── hashtable_repeated_word
+│   ├── linked_list_insertions
+│   ├── linked_list_kth
+│   ├── linked_list_zip
+│   ├── stack_and_queue
+│   ├── stack_queue_animal_shelter
+│   ├── stack_queue_brackets
+│   ├── stack_queue_pseudo
+│   ├── tree_breadth_first
+│   ├── tree_fizz_buzz
+│   ├── tree_intersection
+│   ├── tree_max
+│   └── trees
+├── tests
+│   ├── __pycache__
+│   ├── code_challenges
+│   │   └── __pycache__
+│   └── data_structures
+│       ├── .pytest_cache
+│       │   └── v
+│       │       └── cache
+│       └── __pycache__
+└── venv
+    ├── Include
+    ├── Lib
+    │   └── site-packages
+    │       ├── __pycache__
+    │       ├── _distutils_hack
+    │       │   └── __pycache__
+    │       ├── _pytest
+    │       │   ├── __pycache__
+    │       │   ├── _code
+    │       │   │   └── __pycache__
+    │       │   ├── _io
+    │       │   │   └── __pycache__
+    │       │   ├── _py
+    │       │   │   └── __pycache__
+    │       │   ├── assertion
+    │       │   │   └── __pycache__
+    │       │   ├── config
+    │       │   │   └── __pycache__
+    │       │   └── mark
+    │       │       └── __pycache__
+    │       ├── attr
+    │       │   └── __pycache__
+    │       ├── attrs
+    │       │   └── __pycache__
+    │       ├── attrs-26.1.0.dist-info
+    │       │   └── licenses
+    │       ├── black
+    │       │   ├── __pycache__
+    │       │   └── resources
+    │       │       └── __pycache__
+    │       ├── black-26.3.1.dist-info
+    │       │   └── licenses
+    │       ├── blackd
+    │       │   └── __pycache__
+    │       ├── blib2to3
+    │       │   ├── __pycache__
+    │       │   └── pgen2
+    │       │       └── __pycache__
+    │       ├── click
+    │       │   └── __pycache__
+    │       ├── click-8.3.2.dist-info
+    │       │   └── licenses
+    │       ├── colorama
+    │       │   ├── __pycache__
+    │       │   └── tests
+    │       │       └── __pycache__
+    │       ├── colorama-0.4.6.dist-info
+    │       │   └── licenses
+    │       ├── docopt-0.6.2.dist-info
+    │       │   └── licenses
+    │       ├── exceptiongroup
+    │       │   └── __pycache__
+    │       ├── exceptiongroup-1.3.1.dist-info
+    │       │   └── licenses
+    │       ├── flake8
+    │       │   ├── __pycache__
+    │       │   ├── api
+    │       │   │   └── __pycache__
+    │       │   ├── formatting
+    │       │   │   └── __pycache__
+    │       │   ├── main
+    │       │   │   └── __pycache__
+    │       │   ├── options
+    │       │   │   └── __pycache__
+    │       │   └── plugins
+    │       │       └── __pycache__
+    │       ├── flake8-7.3.0.dist-info
+    │       ├── iniconfig
+    │       │   └── __pycache__
+    │       ├── iniconfig-2.3.0.dist-info
+    │       │   └── licenses
+    │       ├── mccabe-0.7.0.dist-info
+    │       ├── mypy_extensions-1.1.0.dist-info
+    │       │   └── licenses
+    │       ├── packaging
+    │       │   ├── __pycache__
+    │       │   └── licenses
+    │       │       └── __pycache__
+    │       ├── packaging-26.0.dist-info
+    │       │   └── licenses
+    │       ├── pathspec
+    │       │   ├── __pycache__
+    │       │   ├── _backends
+    │       │   │   ├── __pycache__
+    │       │   │   ├── hyperscan
+    │       │   │   │   └── __pycache__
+    │       │   │   ├── re2
+    │       │   │   │   └── __pycache__
+    │       │   │   └── simple
+    │       │   │       └── __pycache__
+    │       │   └── patterns
+    │       │       ├── __pycache__
+    │       │       └── gitignore
+    │       │           └── __pycache__
+    │       ├── pathspec-1.0.4.dist-info
+    │       │   └── licenses
+    │       ├── pip
+    │       │   ├── __pycache__
+    │       │   ├── _internal
+    │       │   │   ├── __pycache__
+    │       │   │   ├── cli
+    │       │   │   │   └── __pycache__
+    │       │   │   ├── commands
+    │       │   │   │   └── __pycache__
+    │       │   │   ├── distributions
+    │       │   │   │   └── __pycache__
+    │       │   │   ├── index
+    │       │   │   │   └── __pycache__
+    │       │   │   ├── locations
+    │       │   │   │   └── __pycache__
+    │       │   │   ├── metadata
+    │       │   │   │   ├── __pycache__
+    │       │   │   │   └── importlib
+    │       │   │   │       └── __pycache__
+    │       │   │   ├── models
+    │       │   │   │   └── __pycache__
+    │       │   │   ├── network
+    │       │   │   │   └── __pycache__
+    │       │   │   ├── operations
+    │       │   │   │   ├── __pycache__
+    │       │   │   │   ├── build
+    │       │   │   │   │   └── __pycache__
+    │       │   │   │   └── install
+    │       │   │   │       └── __pycache__
+    │       │   │   ├── req
+    │       │   │   │   └── __pycache__
+    │       │   │   ├── resolution
+    │       │   │   │   ├── __pycache__
+    │       │   │   │   ├── legacy
+    │       │   │   │   │   └── __pycache__
+    │       │   │   │   └── resolvelib
+    │       │   │   │       └── __pycache__
+    │       │   │   ├── utils
+    │       │   │   │   └── __pycache__
+    │       │   │   └── vcs
+    │       │   │       └── __pycache__
+    │       │   └── _vendor
+    │       │       ├── __pycache__
+    │       │       ├── cachecontrol
+    │       │       │   ├── __pycache__
+    │       │       │   └── caches
+    │       │       │       └── __pycache__
+    │       │       ├── certifi
+    │       │       │   └── __pycache__
+    │       │       ├── dependency_groups
+    │       │       │   └── __pycache__
+    │       │       ├── distlib
+    │       │       │   └── __pycache__
+    │       │       ├── distro
+    │       │       │   └── __pycache__
+    │       │       ├── idna
+    │       │       │   └── __pycache__
+    │       │       ├── msgpack
+    │       │       │   └── __pycache__
+    │       │       ├── packaging
+    │       │       │   ├── __pycache__
+    │       │       │   └── licenses
+    │       │       │       └── __pycache__
+    │       │       ├── pkg_resources
+    │       │       │   └── __pycache__
+    │       │       ├── platformdirs
+    │       │       │   └── __pycache__
+    │       │       ├── pygments
+    │       │       │   ├── __pycache__
+    │       │       │   ├── filters
+    │       │       │   │   └── __pycache__
+    │       │       │   ├── formatters
+    │       │       │   │   └── __pycache__
+    │       │       │   ├── lexers
+    │       │       │   │   └── __pycache__
+    │       │       │   └── styles
+    │       │       │       └── __pycache__
+    │       │       ├── pyproject_hooks
+    │       │       │   ├── __pycache__
+    │       │       │   └── _in_process
+    │       │       │       └── __pycache__
+    │       │       ├── requests
+    │       │       │   └── __pycache__
+    │       │       ├── resolvelib
+    │       │       │   ├── __pycache__
+    │       │       │   └── resolvers
+    │       │       │       └── __pycache__
+    │       │       ├── rich
+    │       │       │   └── __pycache__
+    │       │       ├── tomli
+    │       │       │   └── __pycache__
+    │       │       ├── tomli_w
+    │       │       │   └── __pycache__
+    │       │       ├── truststore
+    │       │       │   └── __pycache__
+    │       │       └── urllib3
+    │       │           ├── __pycache__
+    │       │           ├── contrib
+    │       │           │   ├── __pycache__
+    │       │           │   └── _securetransport
+    │       │           │       └── __pycache__
+    │       │           ├── packages
+    │       │           │   ├── __pycache__
+    │       │           │   └── backports
+    │       │           │       └── __pycache__
+    │       │           └── util
+    │       │               └── __pycache__
+    │       ├── pip-26.0.1.dist-info
+    │       │   └── licenses
+    │       │       └── src
+    │       │           └── pip
+    │       │               └── _vendor
+    │       │                   ├── cachecontrol
+    │       │                   ├── certifi
+    │       │                   ├── dependency_groups
+    │       │                   ├── distlib
+    │       │                   ├── distro
+    │       │                   ├── idna
+    │       │                   ├── msgpack
+    │       │                   ├── packaging
+    │       │                   ├── pkg_resources
+    │       │                   ├── platformdirs
+    │       │                   ├── pygments
+    │       │                   ├── pyproject_hooks
+    │       │                   ├── requests
+    │       │                   ├── resolvelib
+    │       │                   ├── rich
+    │       │                   ├── tomli
+    │       │                   ├── tomli_w
+    │       │                   ├── truststore
+    │       │                   └── urllib3
+    │       ├── pkg_resources
+    │       │   ├── __pycache__
+    │       │   ├── _vendor
+    │       │   │   ├── __pycache__
+    │       │   │   ├── importlib_resources
+    │       │   │   │   └── __pycache__
+    │       │   │   ├── jaraco
+    │       │   │   │   ├── __pycache__
+    │       │   │   │   └── text
+    │       │   │   │       └── __pycache__
+    │       │   │   ├── more_itertools
+    │       │   │   │   └── __pycache__
+    │       │   │   ├── packaging
+    │       │   │   │   └── __pycache__
+    │       │   │   └── pyparsing
+    │       │   │       ├── __pycache__
+    │       │   │       └── diagram
+    │       │   │           └── __pycache__
+    │       │   └── extern
+    │       │       └── __pycache__
+    │       ├── platformdirs
+    │       │   └── __pycache__
+    │       ├── platformdirs-4.9.6.dist-info
+    │       │   └── licenses
+    │       ├── pluggy
+    │       │   └── __pycache__
+    │       ├── pluggy-1.6.0.dist-info
+    │       │   └── licenses
+    │       ├── py
+    │       │   ├── __pycache__
+    │       │   ├── _code
+    │       │   │   └── __pycache__
+    │       │   ├── _io
+    │       │   │   └── __pycache__
+    │       │   ├── _log
+    │       │   │   └── __pycache__
+    │       │   ├── _path
+    │       │   │   └── __pycache__
+    │       │   ├── _process
+    │       │   │   └── __pycache__
+    │       │   └── _vendored_packages
+    │       │       ├── __pycache__
+    │       │       ├── apipkg
+    │       │       │   └── __pycache__
+    │       │       ├── apipkg-2.0.0.dist-info
+    │       │       ├── iniconfig
+    │       │       │   └── __pycache__
+    │       │       └── iniconfig-1.1.1.dist-info
+    │       ├── py-1.11.0.dist-info
+    │       ├── pycodestyle-2.14.0.dist-info
+    │       ├── pyflakes
+    │       │   ├── __pycache__
+    │       │   ├── scripts
+    │       │   │   └── __pycache__
+    │       │   └── test
+    │       │       └── __pycache__
+    │       ├── pyflakes-3.4.0.dist-info
+    │       ├── pygments
+    │       │   ├── __pycache__
+    │       │   ├── filters
+    │       │   │   └── __pycache__
+    │       │   ├── formatters
+    │       │   │   └── __pycache__
+    │       │   ├── lexers
+    │       │   │   └── __pycache__
+    │       │   └── styles
+    │       │       └── __pycache__
+    │       ├── pygments-2.20.0.dist-info
+    │       │   └── licenses
+    │       ├── pyparsing
+    │       │   ├── __pycache__
+    │       │   ├── ai
+    │       │   │   ├── __pycache__
+    │       │   │   └── show_best_practices
+    │       │   │       └── __pycache__
+    │       │   ├── diagram
+    │       │   │   └── __pycache__
+    │       │   └── tools
+    │       │       └── __pycache__
+    │       ├── pyparsing-3.3.2.dist-info
+    │       │   └── licenses
+    │       ├── pytest
+    │       │   └── __pycache__
+    │       ├── pytest-9.0.3.dist-info
+    │       │   └── licenses
+    │       ├── pytest_watch
+    │       │   └── __pycache__
+    │       ├── pytest_watch-4.2.0.dist-info
+    │       │   └── licenses
+    │       ├── pytokens
+    │       │   └── __pycache__
+    │       ├── pytokens-0.4.1.dist-info
+    │       │   └── licenses
+    │       ├── setuptools
+    │       │   ├── __pycache__
+    │       │   ├── _distutils
+    │       │   │   ├── __pycache__
+    │       │   │   └── command
+    │       │   │       └── __pycache__
+    │       │   ├── _vendor
+    │       │   │   ├── __pycache__
+    │       │   │   ├── importlib_metadata
+    │       │   │   │   └── __pycache__
+    │       │   │   ├── importlib_resources
+    │       │   │   │   └── __pycache__
+    │       │   │   ├── jaraco
+    │       │   │   │   ├── __pycache__
+    │       │   │   │   └── text
+    │       │   │   │       └── __pycache__
+    │       │   │   ├── more_itertools
+    │       │   │   │   └── __pycache__
+    │       │   │   ├── packaging
+    │       │   │   │   └── __pycache__
+    │       │   │   ├── pyparsing
+    │       │   │   │   ├── __pycache__
+    │       │   │   │   └── diagram
+    │       │   │   │       └── __pycache__
+    │       │   │   └── tomli
+    │       │   │       └── __pycache__
+    │       │   ├── command
+    │       │   │   └── __pycache__
+    │       │   ├── config
+    │       │   │   ├── __pycache__
+    │       │   │   └── _validate_pyproject
+    │       │   │       └── __pycache__
+    │       │   └── extern
+    │       │       └── __pycache__
+    │       ├── setuptools-65.5.0.dist-info
+    │       ├── tomli
+    │       │   └── __pycache__
+    │       ├── tomli-2.4.1.dist-info
+    │       │   └── licenses
+    │       ├── typing_extensions-4.15.0.dist-info
+    │       │   └── licenses
+    │       ├── watchdog
+    │       │   ├── __pycache__
+    │       │   ├── observers
+    │       │   │   └── __pycache__
+    │       │   ├── tricks
+    │       │   │   └── __pycache__
+    │       │   └── utils
+    │       │       └── __pycache__
+    │       └── watchdog-6.0.0.dist-info
+    └── Scripts
+
+414 directories
