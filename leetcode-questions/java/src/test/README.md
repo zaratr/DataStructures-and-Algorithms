@@ -1,4 +1,4 @@
-# Java Test Suite
+# Java Tests
 
 Tests live under:
 
@@ -6,30 +6,60 @@ Tests live under:
 src/test/java/com/leetcode/questions/<problem_slug>/<ProblemName>Test.java
 ```
 
-Run commands from the Java project root:
+Run from the Java project root:
 
 ```powershell
 cd C:\Users\zarat\IdeaProjects\DataStructures-and-Algorithms\leetcode-questions\java
 ```
 
-Run the full suite:
+## Generate A Problem
+
+```powershell
+cd C:\Users\zarat\IdeaProjects\leetcodetestsuite\DatabasePipeline
+$env:LEETCODE_QUESTIONS_ROOT='C:\Users\zarat\IdeaProjects\DataStructures-and-Algorithms\leetcode-questions'
+.\venv\Scripts\python.exe .\orchestrator.py --id 2 --lang java --robust
+```
+
+## Run All Tests
 
 ```powershell
 .\gradlew.bat test --no-daemon
 ```
 
-Run a single test class:
+## Run One Test Class
 
 ```powershell
-.\gradlew.bat test --no-daemon --tests com.leetcode.questions._01matrix._01MatrixTest
+.\gradlew.bat test --no-daemon --tests com.leetcode.questions.twosum.TwoSumTest
 ```
 
-Run with the runner paths explicitly set:
+Problem 2 example:
 
 ```powershell
-.\gradlew.bat test --no-daemon `
-  -Dleetcode.runner.dir=C:\Users\zarat\IdeaProjects\leetcodetestsuite `
-  -Dleetcode.runner.python=C:\Users\zarat\IdeaProjects\leetcodetestsuite\DatabasePipeline\venv\Scripts\python.exe
+.\gradlew.bat test --no-daemon --tests com.leetcode.questions.addtwonumbers.AddTwoNumbersTest
 ```
 
-The Java tests use `LeetCodeRunner`, which shells out to the shared Python runner. `compileJava` and `compileTestJava` errors are setup issues. Assertion failures are expected while the solution methods are still stubs.
+## What To Expect
+
+Generated Java tests use a shared JUnit harness for supported scalar, string,
+array, and list shapes:
+
+```text
+src/test/java/com/leetcode/questions/support/GeneratedLeetCodeTestHarness.java
+```
+
+For those supported shapes, a generated `<ProblemName>Test.java` reads cases
+from:
+
+```text
+generated-test-cases/<title_slug>.json
+```
+
+The case files are generated artifacts and are ignored by Git. The harness
+parses JSON cases, coerces arguments to the Java method signature, normalizes
+return values, and performs the assertion. Linked list, tree, design, and SQL
+shapes may currently preserve the parsed input/expected output as comments
+instead of direct object assertions.
+
+- `compileJava` or `compileTestJava` failures are setup or generator problems.
+- Test assertion failures are expected while generated `Solution` methods are
+  stubs.

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.leetcode.questions.addtwonumbers.AddTwoNumbersTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-05-06T03:09:31" hostname="VIVOBOOK" time="0.0">
-  <properties/>
-  <testcase name="testCases()" classname="com.leetcode.questions.addtwonumbers.AddTwoNumbersTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
