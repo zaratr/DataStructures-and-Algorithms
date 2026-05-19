@@ -2,34 +2,16 @@ name: CMake
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [main]
   pull_request:
-    branches: [ "main" ]
-
-env:
-  # Customize the CMake build type here (Release, Debug, RelWithDebInfo, etc.)
-  BUILD_TYPE: Release
+    branches: [main]
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-    - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
-    - name: Install dependencies
-      run: sudo apt-get update && sudo apt-get -y install cmake libgtest-dev
-
-    - name: Build project
-      run: |
-        cmake -S . -B build
-        cmake --build build
-      working-directory: ./cplusplus
-
-    - name: Verify Build directory
-      run: ls -l cplusplus/build
-
-    - name: Run tests
-      run: |
-        cd ${{github.workspace}}/cplusplus/build
-        ctest --verbose
-      working-directory: ./cplusplus
+      - name: Build and test C++
+        run: docker compose run --rm cpp-cmake
