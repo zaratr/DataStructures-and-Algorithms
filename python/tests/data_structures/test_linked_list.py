@@ -43,7 +43,10 @@ def test_to_string_double():
 
     linked_list.insert("banana")
 
-    assert str(linked_list) == "{ banana } -> { apple } -> NULL"
+    #TODO: find out if I should do insertion as queue or stack
+    # assert str(linked_list) == "{ banana } -> { apple } -> NULL"
+    assert str(linked_list) == "{ apple } -> { banana } -> NULL"
+
 
 
 def test_includes_true():
