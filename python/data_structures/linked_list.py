@@ -26,10 +26,11 @@ class LinkedList:
             return
         else:
             newNode = Node(value)
-            # newNode.next = self.head
-            # self.head = newNode
-            self.tail.next = newNode
-            self.tail = newNode
+            newNode.next = self.head
+            self.tail = self.head
+            self.head = newNode
+            # self.tail.next = newNode
+            # self.tail = newNode
             
 
 
