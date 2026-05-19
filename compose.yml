@@ -1,0 +1,47 @@
+services:
+  cpp-cmake:
+    image: cpp-cmake-runner
+    build:
+      context: .
+      dockerfile: docker/cplusplus.Dockerfile
+    volumes:
+      - .:/workspace
+    working_dir: /workspace/cplusplus
+
+  dotnet:
+    image: dotnet-test-runner
+    build:
+      context: .
+      dockerfile: docker/dotnet.Dockerfile
+    volumes:
+      - .:/workspace
+    working_dir: /workspace
+
+  java:
+    image: java-test-runner
+    build:
+      context: .
+      dockerfile: docker/java.Dockerfile
+    volumes:
+      - .:/workspace
+    working_dir: /workspace/java/datastructures
+
+  javascript:
+    image: javascript-test-runner
+    build:
+      context: .
+      dockerfile: docker/javascript.Dockerfile
+    volumes:
+      - .:/workspace
+    working_dir: /workspace/javascript
+    environment:
+      CI: "true"
+
+  python:
+    image: python-test-runner
+    build:
+      context: .
+      dockerfile: docker/python.Dockerfile
+    volumes:
+      - .:/workspace
+    working_dir: /workspace/python

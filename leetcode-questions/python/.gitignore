@@ -1,0 +1,8 @@
+venv
+.idea
+generated-test-cases/
+
+__pycache__/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/

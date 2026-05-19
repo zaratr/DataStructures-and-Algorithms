@@ -1,0 +1,11 @@
+generated-test-cases/
+
+bin/
+build/
+obj/
+cmake-build-*/
+*.o
+*.out
+*.exe
+*.dll
+*.pdb

@@ -1,24 +1,26 @@
 import pytest
-from data_structures.stack import Stack
+from data_structures.stack import stack
 from data_structures.invalid_operation_error import InvalidOperationError
 
-
 def test_exists():
-    assert Stack
+    arr = []
+
+    arr.append(1)
+    assert stack
 
 
-@pytest.mark.skip("TODO")
+# @pytest.mark.skip("TODO")
 def test_push_onto_empty():
-    s = Stack()
+    s = stack()
     s.push("apple")
     actual = s.top.value
     expected = "apple"
     assert actual == expected
 
 
-@pytest.mark.skip("TODO")
+# @pytest.mark.skip("TODO")
 def test_push_onto_full():
-    s = Stack()
+    s = stack()
     s.push("apple")
     s.push("banana")
     s.push("cucumber")
@@ -27,18 +29,18 @@ def test_push_onto_full():
     assert actual == expected
 
 
-@pytest.mark.skip("TODO")
+# @pytest.mark.skip("TODO")
 def test_pop_single():
-    s = Stack()
+    s = stack()
     s.push("apple")
     actual = s.pop()
     expected = "apple"
     assert actual == expected
 
 
-@pytest.mark.skip("TODO")
+# @pytest.mark.skip("TODO")
 def test_pop_some():
-    s = Stack()
+    s = stack()
 
     s.push("apple")
     s.push("banana")
@@ -52,9 +54,9 @@ def test_pop_some():
     assert actual == expected
 
 
-@pytest.mark.skip("TODO")
+# @pytest.mark.skip("TODO")
 def test_pop_until_empty():
-    s = Stack()
+    s = stack()
     s.push("apple")
     s.push("banana")
     s.push("cucumber")
@@ -66,9 +68,9 @@ def test_pop_until_empty():
     assert actual == expected
 
 
-@pytest.mark.skip("TODO")
+# @pytest.mark.skip("TODO")
 def test_peek():
-    s = Stack()
+    s = stack()
     s.push("apple")
     s.push("banana")
     actual = s.peek()
@@ -76,18 +78,18 @@ def test_peek():
     assert actual == expected
 
 
-@pytest.mark.skip("TODO")
+# @pytest.mark.skip("TODO")
 def test_peek_empty():
-    s = Stack()
+    s = stack()
     with pytest.raises(InvalidOperationError) as e:
         s.peek()
 
     assert str(e.value) == "Method not allowed on empty collection"
 
 
-@pytest.mark.skip("TODO")
+# @pytest.mark.skip("TODO")
 def test_pop_empty():
-    s = Stack()
+    s = stack()
     with pytest.raises(InvalidOperationError) as e:
         s.pop()
 

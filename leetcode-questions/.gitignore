@@ -1,2 +1,20 @@
 /.gradle/
 /build/
+.idea
+generated-test-cases/
+*/generated-test-cases/
+AGENTS.MD
+INTERVIEW_PROFILES.md
+
+# Generated build/test outputs
+**/.gradle/
+**/bin/
+**/build/
+**/obj/
+**/__pycache__/
+*.class
+*.dll
+*.pdb
+*.cache
+*.lscache
+*.code-workspace

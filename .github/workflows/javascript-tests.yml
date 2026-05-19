@@ -2,33 +2,26 @@ name: Run Javascript Tests
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
     paths:
-    - 'javascript/**'
+      - 'javascript/**'
+      - 'compose.yml'
+      - '.dockerignore'
+      - 'docker/javascript.Dockerfile'
   pull_request:
-    branches: [ main ]
+    branches: [main]
     paths:
-    - 'javascript/**'
+      - 'javascript/**'
+      - 'compose.yml'
+      - '.dockerignore'
+      - 'docker/javascript.Dockerfile'
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [12.x]
-
     steps:
-    - uses: actions/checkout@v1
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - name: npm install, build, and test
-      run: |
-        cd javascript
-        npm i
-        npm test
-      env:
-        CI: true
+      - uses: actions/checkout@v4
+
+      - name: Build and test JavaScript
+        run: docker compose run --rm javascript
