@@ -16,7 +16,7 @@ Output: [[1]]
 &nbsp;
 Constraints:
 
-	1 &lt;= n &lt;= 8...
+	1 &lt;= n &lt;= 8
  */
 
 #include <vector>

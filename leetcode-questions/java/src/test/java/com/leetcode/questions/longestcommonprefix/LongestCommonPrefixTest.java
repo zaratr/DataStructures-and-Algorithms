@@ -1,22 +1,22 @@
 package com.leetcode.questions.longestcommonprefix;
 
 import com.leetcode.questions.leetcode.editor.en.LongestCommonPrefix;
+import com.leetcode.questions.support.GeneratedLeetCodeTestHarness;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
 
 public class LongestCommonPrefixTest {
-    @Test
-    public void testCases() {
-        LongestCommonPrefix.Solution solution = new LongestCommonPrefix.Solution();
-        // Auto-generated test cases:
-        // Test Case 1
-        String[] strs0 = new String[]{"flower", "flow", "flight"};
-        String expected0 = "fl";
-        assertEquals(expected0, solution.longestCommonPrefix(strs0));
 
-        // Test Case 2
-        String[] strs1 = new String[]{"dog", "racecar", "car"};
-        String expected1 = "";
-        assertEquals(expected1, solution.longestCommonPrefix(strs1));
+    private static final Path CASES_PATH = Path.of("generated-test-cases", "longest-common-prefix.json");
+
+    public LongestCommonPrefixTest() {
+
+    }
+
+    @Test
+    public void testCases() throws Exception {
+        GeneratedLeetCodeTestHarness.run(LongestCommonPrefix.Solution.class, "longestCommonPrefix", Files.readString(CASES_PATH));
     }
 }

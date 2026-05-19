@@ -1,0 +1,10 @@
+generated-test-cases/
+
+bin/
+build/
+obj/
+*.o
+*.out
+*.exe
+*.dll
+*.pdb

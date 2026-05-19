@@ -15,7 +15,7 @@ ryan 30
 Output the following:
 
 name alice ryan
-age 21 30...
+age 21 30
  */
 public class TransposeFile {
     //leetcode submit region begin(Prohibit modification and deletion)

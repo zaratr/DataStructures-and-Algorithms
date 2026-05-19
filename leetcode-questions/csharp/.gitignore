@@ -1,0 +1,8 @@
+generated-test-cases/
+
+bin/
+obj/
+*.dll
+*.pdb
+*.cache
+*.lscache

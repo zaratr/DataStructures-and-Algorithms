@@ -3,7 +3,8 @@ package com.leetcode.questions.leetcode.editor.en;
 /**
  * 7. Reverse Integer
  * 
- * Given a signed 32-bit integer x, return x with its digits reversed. If reversing x causes the value to go outside the signed 32-bit integer range [-231, 231 - 1], then return 0.
+ * Given a signed 32-bit integer x, return x with its digits reversed. 
+ * If reversing x causes the value to go outside the signed 32-bit integer range [-231, 231 - 1], then return 0.
 Assume the environment does not allow you to store 64-bit integers (signed or unsigned).
 &nbsp;
 Example 1:
@@ -24,12 +25,16 @@ Output: 21
 &nbsp;
 Constraints:
 
-	-231 &lt;= x &lt;= 231 - 1...
+	-231 &lt;= x &lt;= 231 - 1
  */
 public class ReverseInteger {
     //leetcode submit region begin(Prohibit modification and deletion)
 public static class Solution {
-    public int reverse(int x) { return 0; }
+    public int reverse(int x) { 
+
+        
+        return 0; 
+        }
 }
     //leetcode submit region end(Prohibit modification and deletion)
 }

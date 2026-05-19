@@ -3,6 +3,7 @@
 #include <stdbool.h>
 #include <string.h>
 #include <assert.h>
+#include "../support/generated_leetcode_test_harness.h"
 #include "c:/Users/zarat/IdeaProjects/DataStructures-and-Algorithms/leetcode-questions/c/src/main/c/com/leetcode/questions/leetcode/editor/en/SetMatrixZeroes.c"
 
 int main() {
@@ -26,7 +27,7 @@ int main() {
     int matrix1Size = 3;
     // Expected output: [[0, 0, 0, 0], [0, 4, 5, 0], [0, 3, 1, 0]]
     // Unsupported C return type for direct assertion: void
-    
+
     printf("All tests for Set Matrix Zeroes passed!\n");
     return 0;
 }

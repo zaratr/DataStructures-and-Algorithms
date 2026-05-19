@@ -25,7 +25,9 @@ Constraints:
 &nbsp;
 Follow up:
 
-	A straightforward solution usi...
+	A straightforward solution using O(mn) space is probably a bad idea.
+	A simple improvement uses O(m + n) space, but still not the best solution.
+	Could you devise a constant space solution?
 """
 
 # leetcode submit region begin(Prohibit modification and deletion)

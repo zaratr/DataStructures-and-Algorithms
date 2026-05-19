@@ -3,6 +3,7 @@
 #include <stdbool.h>
 #include <string.h>
 #include <assert.h>
+#include "../support/generated_leetcode_test_harness.h"
 #include "c:/Users/zarat/IdeaProjects/DataStructures-and-Algorithms/leetcode-questions/c/src/main/c/com/leetcode/questions/leetcode/editor/en/CombineTwoTables.c"
 
 int main() {
@@ -16,7 +17,7 @@ int main() {
     // | Bob       | Alice    | New York City | New York |
     // +-----------+----------+---------------+----------+
     // No direct C assertion generated for this constructor/design/SQL shape.
-    
+
     printf("All tests for Combine Two Tables passed!\n");
     return 0;
 }

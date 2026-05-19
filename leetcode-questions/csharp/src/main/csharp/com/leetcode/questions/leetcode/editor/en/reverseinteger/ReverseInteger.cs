@@ -22,7 +22,7 @@ Output: 21
 &nbsp;
 Constraints:
 
-	-231 &lt;= x &lt;= 231 - 1...
+	-231 &lt;= x &lt;= 231 - 1
  */
 
 using System;

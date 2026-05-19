@@ -18,7 +18,7 @@ Output: [[1]]
 &nbsp;
 Constraints:
 
-	1 &lt;= n &lt;= 8...
+	1 &lt;= n &lt;= 8
  */
 public class UniqueBinarySearchTreesIi {
     //leetcode submit region begin(Prohibit modification and deletion)

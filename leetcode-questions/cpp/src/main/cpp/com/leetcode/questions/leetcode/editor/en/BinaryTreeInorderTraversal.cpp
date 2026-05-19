@@ -34,7 +34,7 @@ Constraints:
 	-100 &lt;= Node.val &lt;= 100
 
 &nbsp;
-Follow up: Recursive solutio...
+Follow up: Recursive solution is trivial, could you do it iteratively?
  */
 
 #include <vector>

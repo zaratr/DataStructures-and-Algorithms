@@ -2,28 +2,26 @@
 import os
 import sys
 import unittest
+from pathlib import Path
 
 # Path to the user's solution module.
 sys.path.append(os.path.abspath(os.path.join(
     os.path.dirname(__file__), "../../../../../../main/python")))
+sys.path.append(os.path.abspath(os.path.join(
+    os.path.dirname(__file__), "../../../../")))
 
 from com.leetcode.questions.leetcode.editor.en.TheSkylineProblem import Solution  # noqa: E402
+from com.leetcode.questions.support.generated_leetcode_test_harness import run_cases  # noqa: E402
 
+CASES_PATH = Path("generated-test-cases") / "the-skyline-problem.json"
 
 class TestTheSkylineProblem(unittest.TestCase):
     def setUp(self):
         self.solution = Solution()
 
-    def test_all_cases(self):
-        # Test Case 1
-        input0_0 = [[2, 9, 10], [3, 7, 15], [5, 12, 12], [15, 20, 10], [19, 24, 8]]
-        expected0 = [[2, 10], [3, 15], [7, 12], [12, 0], [15, 10], [20, 8], [24, 0]]
-        self.assertEqual(expected0, self.solution.getSkyline(input0_0))
 
-        # Test Case 2
-        input0_1 = [[0, 2, 3], [2, 5, 3]]
-        expected1 = [[0, 3], [5, 0]]
-        self.assertEqual(expected1, self.solution.getSkyline(input0_1))
+    def test_all_cases(self):
+        run_cases(self, self.solution, "getSkyline", CASES_PATH.read_text(encoding="utf-8"))
 
 
 if __name__ == "__main__":

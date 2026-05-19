@@ -1,4 +1,4 @@
-# C++ Test Suite
+# C++ Tests
 
 Tests live under:
 
@@ -6,31 +6,64 @@ Tests live under:
 src/test/cpp/com/leetcode/questions/<problem_slug>/<ProblemName>Test.cpp
 ```
 
-Run commands from the C++ project root:
+Run from the C++ project root:
 
 ```powershell
 cd C:\Users\zarat\IdeaProjects\DataStructures-and-Algorithms\leetcode-questions\cpp
 ```
 
-If `g++` is not already visible in the current terminal, prepend MinGW for this session:
+If `g++` is not visible:
 
 ```powershell
 $env:PATH='C:\Users\zarat\mingw64\bin;' + $env:PATH
 ```
 
-Compile and run the 01 Matrix smoke test:
+## Generate A Problem
 
 ```powershell
-g++ -std=c++17 -Wall -Wextra -o _01MatrixTest.exe src\test\cpp\com\leetcode\questions\_01matrix\_01MatrixTest.cpp
-.\_01MatrixTest.exe
-Remove-Item .\_01MatrixTest.exe
+cd C:\Users\zarat\IdeaProjects\leetcodetestsuite\DatabasePipeline
+$env:LEETCODE_QUESTIONS_ROOT='C:\Users\zarat\IdeaProjects\DataStructures-and-Algorithms\leetcode-questions'
+.\venv\Scripts\python.exe .\orchestrator.py --id 2 --lang cpp --robust
 ```
 
-Debug the same test with gdb:
+## Compile And Run One Test
 
 ```powershell
-g++ -std=c++17 -g -O0 -Wall -Wextra -o _01MatrixTest.exe src\test\cpp\com\leetcode\questions\_01matrix\_01MatrixTest.cpp
-gdb .\_01MatrixTest.exe
+g++ -std=c++17 -Wall -Wextra -o TwoSumTest.exe src\test\cpp\com\leetcode\questions\twosum\TwoSumTest.cpp
+.\TwoSumTest.exe
+Remove-Item .\TwoSumTest.exe
 ```
 
-Assertion failures are expected while solution stubs are incomplete. Compiler errors, crashes before assertions, or missing includes indicate boilerplate or harness problems.
+Problem 2 example:
+
+```powershell
+g++ -std=c++17 -Wall -Wextra -o AddTwoNumbersTest.exe src\test\cpp\com\leetcode\questions\addtwonumbers\AddTwoNumbersTest.cpp
+.\AddTwoNumbersTest.exe
+Remove-Item .\AddTwoNumbersTest.exe
+```
+
+## Syntax Check All Generated C++ Tests
+
+```powershell
+Get-ChildItem .\src\test\cpp\com\leetcode\questions -Recurse -Filter *Test.cpp |
+  ForEach-Object { g++ -std=c++17 -fsyntax-only $_.FullName }
+```
+
+## What To Expect
+
+Generated tests use `leetcode_pyleet_data.parsed_cases` for input and expected
+output. When generated with `--robust`, additional usable cases may be merged
+from `leetcode_complete_data.test_cases`.
+
+C++ tests include the shared assertion support header:
+
+```text
+src/test/cpp/com/leetcode/questions/support/GeneratedLeetCodeTestHarness.hpp
+```
+
+C++ generated tests still provide the compile-time method call adapter.
+Comparisons for supported return shapes go through the shared header.
+
+Assertion failures are expected while C++ solution methods are stubs. Compiler
+errors, missing includes, or crashes before assertions are generator or setup
+problems.

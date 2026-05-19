@@ -3,6 +3,7 @@
 #include <stdbool.h>
 #include <string.h>
 #include <assert.h>
+#include "../support/generated_leetcode_test_harness.h"
 #include "c:/Users/zarat/IdeaProjects/DataStructures-and-Algorithms/leetcode-questions/c/src/main/c/com/leetcode/questions/leetcode/editor/en/MergeKSortedLists.c"
 
 int main() {
@@ -21,7 +22,7 @@ int main() {
     // Unsupported C input lists: [[]]
     // Expected output: []
     // Unsupported C input type for direct assertion.
-    
+
     printf("All tests for Merge k Sorted Lists passed!\n");
     return 0;
 }

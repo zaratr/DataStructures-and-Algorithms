@@ -23,7 +23,7 @@ Output: false
 Constraints:
 
 	The number of nodes in both trees is in the range [0, 100].
-	-104 &lt;= Node.val &...
+	-104 &lt;= Node.val &lt;= 104
 """
 
 # leetcode submit region begin(Prohibit modification and deletion)

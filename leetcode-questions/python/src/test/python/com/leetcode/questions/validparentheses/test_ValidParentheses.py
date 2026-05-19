@@ -2,48 +2,26 @@
 import os
 import sys
 import unittest
+from pathlib import Path
 
 # Path to the user's solution module.
 sys.path.append(os.path.abspath(os.path.join(
     os.path.dirname(__file__), "../../../../../../main/python")))
+sys.path.append(os.path.abspath(os.path.join(
+    os.path.dirname(__file__), "../../../../")))
 
 from com.leetcode.questions.leetcode.editor.en.ValidParentheses import Solution  # noqa: E402
+from com.leetcode.questions.support.generated_leetcode_test_harness import run_cases  # noqa: E402
 
+CASES_PATH = Path("generated-test-cases") / "valid-parentheses.json"
 
 class TestValidParentheses(unittest.TestCase):
     def setUp(self):
         self.solution = Solution()
 
+
     def test_all_cases(self):
-        # Test Case 1
-        input0_0 = "()"
-        # Expected output: ""
-        # Composite or non-boolean expected output; direct assertion skipped.
-        self.solution.isValid(input0_0)
-
-        # Test Case 2
-        input0_1 = "()[]{}"
-        # Expected output: ""
-        # Composite or non-boolean expected output; direct assertion skipped.
-        self.solution.isValid(input0_1)
-
-        # Test Case 3
-        input0_2 = "(]"
-        # Expected output: ""
-        # Composite or non-boolean expected output; direct assertion skipped.
-        self.solution.isValid(input0_2)
-
-        # Test Case 4
-        input0_3 = "([])"
-        # Expected output: ""
-        # Composite or non-boolean expected output; direct assertion skipped.
-        self.solution.isValid(input0_3)
-
-        # Test Case 5
-        input0_4 = "([)]"
-        # Expected output: ""
-        # Composite or non-boolean expected output; direct assertion skipped.
-        self.solution.isValid(input0_4)
+        run_cases(self, self.solution, "isValid", CASES_PATH.read_text(encoding="utf-8"))
 
 
 if __name__ == "__main__":

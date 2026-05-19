@@ -1,24 +1,22 @@
 package com.leetcode.questions.removeduplicatesfromsortedarray;
 
 import com.leetcode.questions.leetcode.editor.en.RemoveDuplicatesFromSortedArray;
+import com.leetcode.questions.support.GeneratedLeetCodeTestHarness;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
 
 public class RemoveDuplicatesFromSortedArrayTest {
-    @Test
-    public void testCases() {
-        RemoveDuplicatesFromSortedArray.Solution solution = new RemoveDuplicatesFromSortedArray.Solution();
-        // Auto-generated test cases:
-        // Test Case 1
-        int[] nums0 = new int[]{1, 1, 2};
-        // Expected output: "2, nums = [1,2,_]"
-        // Composite or non-scalar expected output; direct assertion skipped.
-        solution.removeDuplicates(nums0);
 
-        // Test Case 2
-        int[] nums1 = new int[]{0, 0, 1, 1, 1, 2, 2, 3, 3, 4};
-        // Expected output: "5, nums = [0,1,2,3,4,_,_,_,_,_]"
-        // Composite or non-scalar expected output; direct assertion skipped.
-        solution.removeDuplicates(nums1);
+    private static final Path CASES_PATH = Path.of("generated-test-cases", "remove-duplicates-from-sorted-array.json");
+
+    public RemoveDuplicatesFromSortedArrayTest() {
+
+    }
+
+    @Test
+    public void testCases() throws Exception {
+        GeneratedLeetCodeTestHarness.run(RemoveDuplicatesFromSortedArray.Solution.class, "removeDuplicates", Files.readString(CASES_PATH));
     }
 }

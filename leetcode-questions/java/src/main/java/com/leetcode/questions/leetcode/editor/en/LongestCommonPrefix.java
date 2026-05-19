@@ -21,7 +21,8 @@ Explanation: There is no common prefix among the input strings.
 Constraints:
 
 	1 &lt;= strs.length &lt;= 200
-	0 &lt;= strs[...
+	0 &lt;= strs[i].length &lt;= 200
+	strs[i] consists of only lowercase English letters if it is non-empty.
  */
 public class LongestCommonPrefix {
     //leetcode submit region begin(Prohibit modification and deletion)

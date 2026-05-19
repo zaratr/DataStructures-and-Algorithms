@@ -1,12 +1,22 @@
 package com.leetcode.questions.designcirculardeque;
 
 import com.leetcode.questions.leetcode.editor.en.DesignCircularDeque;
+import com.leetcode.questions.support.GeneratedLeetCodeTestHarness;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
 
 public class DesignCircularDequeTest {
+
+
+
+    public DesignCircularDequeTest() {
+
+    }
+
     @Test
-    public void testCases() {
+    public void testCases() throws Exception {
         DesignCircularDeque.Solution solution = new DesignCircularDeque.Solution();
         // Auto-generated test cases:
         // Test Case 1

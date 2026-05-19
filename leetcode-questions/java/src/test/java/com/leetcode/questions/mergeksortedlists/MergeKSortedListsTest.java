@@ -1,12 +1,22 @@
 package com.leetcode.questions.mergeksortedlists;
 
 import com.leetcode.questions.leetcode.editor.en.MergeKSortedLists;
+import com.leetcode.questions.support.GeneratedLeetCodeTestHarness;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
 
 public class MergeKSortedListsTest {
+
+
+
+    public MergeKSortedListsTest() {
+
+    }
+
     @Test
-    public void testCases() {
+    public void testCases() throws Exception {
         MergeKSortedLists.Solution solution = new MergeKSortedLists.Solution();
         // Auto-generated test cases:
         // Test Case 1

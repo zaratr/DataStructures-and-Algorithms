@@ -1,1 +1,6 @@
 generated-test-cases/
+
+.gradle/
+bin/
+build/
+*.class

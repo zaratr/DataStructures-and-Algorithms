@@ -1,42 +1,22 @@
 package com.leetcode.questions.validparentheses;
 
 import com.leetcode.questions.leetcode.editor.en.ValidParentheses;
+import com.leetcode.questions.support.GeneratedLeetCodeTestHarness;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
 
 public class ValidParenthesesTest {
+
+    private static final Path CASES_PATH = Path.of("generated-test-cases", "valid-parentheses.json");
+
+    public ValidParenthesesTest() {
+
+    }
+
     @Test
-    public void testCases() {
-        ValidParentheses.Solution solution = new ValidParentheses.Solution();
-        // Auto-generated test cases:
-        // Test Case 1
-        String s0 = "()";
-        // Expected output: ""
-        // Composite or non-boolean expected output; direct assertion skipped.
-        solution.isValid(s0);
-
-        // Test Case 2
-        String s1 = "()[]{}";
-        // Expected output: ""
-        // Composite or non-boolean expected output; direct assertion skipped.
-        solution.isValid(s1);
-
-        // Test Case 3
-        String s2 = "(]";
-        // Expected output: ""
-        // Composite or non-boolean expected output; direct assertion skipped.
-        solution.isValid(s2);
-
-        // Test Case 4
-        String s3 = "([])";
-        // Expected output: ""
-        // Composite or non-boolean expected output; direct assertion skipped.
-        solution.isValid(s3);
-
-        // Test Case 5
-        String s4 = "([)]";
-        // Expected output: ""
-        // Composite or non-boolean expected output; direct assertion skipped.
-        solution.isValid(s4);
+    public void testCases() throws Exception {
+        GeneratedLeetCodeTestHarness.run(ValidParentheses.Solution.class, "isValid", Files.readString(CASES_PATH));
     }
 }

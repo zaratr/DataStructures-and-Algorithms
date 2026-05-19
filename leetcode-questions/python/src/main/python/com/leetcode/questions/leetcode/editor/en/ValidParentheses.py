@@ -19,7 +19,21 @@ Example 2:
 Input: s = &quot;()[]{}&quot;
 Output: true
 
-E...
+Example 3:
+
+Input: s = &quot;(]&quot;
+Output: false
+
+Example 4:
+
+Input: s = &quot;([])&quot;
+Output: true
+
+&nbsp;
+Constraints:
+
+	1 &lt;= s.length &lt;= 104
+	s consists of parentheses only &#39;()[]{}&#39;.
 """
 
 # leetcode submit region begin(Prohibit modification and deletion)

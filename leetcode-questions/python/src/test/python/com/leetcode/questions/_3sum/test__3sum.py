@@ -2,33 +2,26 @@
 import os
 import sys
 import unittest
+from pathlib import Path
 
 # Path to the user's solution module.
 sys.path.append(os.path.abspath(os.path.join(
     os.path.dirname(__file__), "../../../../../../main/python")))
+sys.path.append(os.path.abspath(os.path.join(
+    os.path.dirname(__file__), "../../../../")))
 
 from com.leetcode.questions.leetcode.editor.en._3sum import Solution  # noqa: E402
+from com.leetcode.questions.support.generated_leetcode_test_harness import run_cases  # noqa: E402
 
+CASES_PATH = Path("generated-test-cases") / "3sum.json"
 
 class Test_3sum(unittest.TestCase):
     def setUp(self):
         self.solution = Solution()
 
+
     def test_all_cases(self):
-        # Test Case 1
-        input0_0 = [-1, 0, 1, 2, -1, -4]
-        expected0 = [[-1, -1, 2], [-1, 0, 1]]
-        self.assertEqual(expected0, self.solution.threeSum(input0_0))
-
-        # Test Case 2
-        input0_1 = [0, 1, 1]
-        expected1 = []
-        self.assertEqual(expected1, self.solution.threeSum(input0_1))
-
-        # Test Case 3
-        input0_2 = [0, 0, 0]
-        expected2 = [[0, 0, 0]]
-        self.assertEqual(expected2, self.solution.threeSum(input0_2))
+        run_cases(self, self.solution, "threeSum", CASES_PATH.read_text(encoding="utf-8"))
 
 
 if __name__ == "__main__":

@@ -3,6 +3,7 @@
 #include <stdbool.h>
 #include <string.h>
 #include <assert.h>
+#include "../support/generated_leetcode_test_harness.h"
 #include "c:/Users/zarat/IdeaProjects/DataStructures-and-Algorithms/leetcode-questions/c/src/main/c/com/leetcode/questions/leetcode/editor/en/UniqueBinarySearchTreesIi.c"
 
 int main() {
@@ -16,7 +17,7 @@ int main() {
     int n1 = 1;
     // Expected output: [[1]]
     // Unsupported C return type for direct assertion: list<TreeNode>
-    
+
     printf("All tests for Unique Binary Search Trees II passed!\n");
     return 0;
 }
