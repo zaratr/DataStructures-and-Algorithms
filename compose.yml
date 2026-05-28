@@ -45,3 +45,14 @@ services:
     volumes:
       - .:/workspace
     working_dir: /workspace/python
+
+  leetcode-questions:
+    image: leetcode-questions-runner
+    build:
+      context: .
+      dockerfile: docker/leetcode-questions.Dockerfile
+    volumes:
+      - .:/workspace
+    working_dir: /workspace/leetcode-questions
+    stdin_open: true
+    tty: true
